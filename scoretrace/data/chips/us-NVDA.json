@@ -1,0 +1,18 @@
+{
+  "market": "us",
+  "symbol": "NVDA",
+  "chips": {
+    "status": "ok",
+    "averageCost": 212.1304201368382,
+    "peakCost": 210.40571428571428,
+    "concentration70Pct": 12.189742161366567,
+    "overheadSharePct": 1.1622114595568076,
+    "latestPrice": 233.95,
+    "sampleBars": 120,
+    "asOf": "2026-10-02",
+    "source": "Nasdaq 历史行情",
+    "verifyUrl": "https://www.nasdaq.com/market-activity/stocks/nvda/historical",
+    "note": "由近120个交易日OHLCV按日内三角分布估算，是成本密集区代理，不是账户级真实持仓，也不能识别主力身份。"
+  },
+  "generatedAt": "2026-10-03T08:19:25.519Z"
+}

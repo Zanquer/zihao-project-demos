@@ -1,0 +1,18 @@
+{
+  "market": "us",
+  "symbol": "AVGO",
+  "chips": {
+    "status": "ok",
+    "averageCost": 389.88580671541416,
+    "peakCost": 381.2962142857143,
+    "concentration70Pct": 15.782522057873466,
+    "overheadSharePct": 89.16274887340424,
+    "latestPrice": 355.14,
+    "sampleBars": 120,
+    "asOf": "2026-10-02",
+    "source": "Nasdaq 历史行情",
+    "verifyUrl": "https://www.nasdaq.com/market-activity/stocks/avgo/historical",
+    "note": "由近120个交易日OHLCV按日内三角分布估算，是成本密集区代理，不是账户级真实持仓，也不能识别主力身份。"
+  },
+  "generatedAt": "2026-10-03T08:19:26.593Z"
+}

@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[97367,["/zihao-project-demos/scoretrace/_next/static/chunks/0dbhjjzl8qfwv.js"],"ViewportBoundary"]
+3:I[97367,["/zihao-project-demos/scoretrace/_next/static/chunks/0dbhjjzl8qfwv.js"],"MetadataBoundary"]
+4:"$Sreact.suspense"
+5:I[27201,["/zihao-project-demos/scoretrace/_next/static/chunks/0dbhjjzl8qfwv.js"],"IconMark"]
+0:{"rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"ScoreTrace｜交互展示版"}],["$","meta","1",{"name":"description","content":"真实历史数据快照上的半导体研究看板，保留筛选、排序和可解释评分。"}],["$","link","2",{"rel":"icon","href":"/zihao-project-demos/scoretrace/favicon.svg"}],["$","$L5","3",{}]]}]}]}],null]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"fvsPO5zjSjh37SfwYnnyS"}

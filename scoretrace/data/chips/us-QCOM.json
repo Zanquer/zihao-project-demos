@@ -1,0 +1,18 @@
+{
+  "market": "us",
+  "symbol": "QCOM",
+  "chips": {
+    "status": "ok",
+    "averageCost": 189.01498090529907,
+    "peakCost": 185.19705882352943,
+    "concentration70Pct": 33.2304814858901,
+    "overheadSharePct": 52.99943115883086,
+    "latestPrice": 184.87,
+    "sampleBars": 120,
+    "asOf": "2026-10-02",
+    "source": "Nasdaq 历史行情",
+    "verifyUrl": "https://www.nasdaq.com/market-activity/stocks/qcom/historical",
+    "note": "由近120个交易日OHLCV按日内三角分布估算，是成本密集区代理，不是账户级真实持仓，也不能识别主力身份。"
+  },
+  "generatedAt": "2026-10-03T08:19:25.946Z"
+}

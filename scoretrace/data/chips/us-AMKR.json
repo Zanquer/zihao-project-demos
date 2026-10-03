@@ -1,0 +1,18 @@
+{
+  "market": "us",
+  "symbol": "AMKR",
+  "chips": {
+    "status": "ok",
+    "averageCost": 64.62867976818434,
+    "peakCost": 47.65344537815126,
+    "concentration70Pct": 43.54858253415089,
+    "overheadSharePct": 64.262869323348,
+    "latestPrice": 56.02,
+    "sampleBars": 120,
+    "asOf": "2026-10-02",
+    "source": "Nasdaq 历史行情",
+    "verifyUrl": "https://www.nasdaq.com/market-activity/stocks/amkr/historical",
+    "note": "由近120个交易日OHLCV按日内三角分布估算，是成本密集区代理，不是账户级真实持仓，也不能识别主力身份。"
+  },
+  "generatedAt": "2026-10-03T08:19:28.682Z"
+}

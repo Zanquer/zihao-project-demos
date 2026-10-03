@@ -1,0 +1,262 @@
+{
+  "mode": "interactive-snapshot-demo",
+  "capturedAt": "2026-10-03T08:19:28.685304+00:00",
+  "sourceSite": "https://scoretrace-research.ycai0417.chatgpt.site/",
+  "sourceVersion": 6,
+  "sourceCommit": "05160a2b4ae024583818d2384f4d8d85ca293d76",
+  "scoringVersion": "preview-0.3",
+  "markets": [
+    {
+      "market": "a",
+      "generatedAt": "2026-10-03T08:19:20.343Z",
+      "coverage": {
+        "total": 15,
+        "marketDataAvailable": 15,
+        "evidenceAvailable": 15,
+        "leverageAvailable": 15
+      },
+      "dataStatus": "ok",
+      "quoteTimes": [
+        "2026-09-30T08:14:30.000Z",
+        "2026-09-30T08:14:37.000Z",
+        "2026-09-30T08:14:39.000Z",
+        "2026-09-30T08:14:45.000Z",
+        "2026-09-30T08:14:47.000Z",
+        "2026-09-30T08:14:49.000Z",
+        "2026-09-30T08:14:50.000Z",
+        "2026-09-30T08:14:51.000Z",
+        "2026-09-30T08:14:53.000Z",
+        "2026-09-30T08:14:55.000Z",
+        "2026-09-30T08:15:00.000Z"
+      ]
+    },
+    {
+      "market": "us",
+      "generatedAt": "2026-10-03T08:19:20.838Z",
+      "coverage": {
+        "total": 15,
+        "marketDataAvailable": 15,
+        "evidenceAvailable": 3,
+        "leverageAvailable": 0
+      },
+      "dataStatus": "partial",
+      "quoteTimes": [
+        "2026-10-02T20:00:01.000Z",
+        "2026-10-02T20:04:35.000Z"
+      ]
+    }
+  ],
+  "detailSnapshots": [
+    {
+      "market": "a",
+      "symbol": "688525",
+      "httpStatus": 200,
+      "available": true,
+      "generatedAt": "2026-10-03T08:19:24.997Z"
+    },
+    {
+      "market": "a",
+      "symbol": "688981",
+      "httpStatus": 200,
+      "available": true,
+      "generatedAt": "2026-10-03T08:19:24.844Z"
+    },
+    {
+      "market": "a",
+      "symbol": "603986",
+      "httpStatus": 200,
+      "available": true,
+      "generatedAt": "2026-10-03T08:19:24.981Z"
+    },
+    {
+      "market": "a",
+      "symbol": "002156",
+      "httpStatus": 200,
+      "available": true,
+      "generatedAt": "2026-10-03T08:19:25.000Z"
+    },
+    {
+      "market": "a",
+      "symbol": "688012",
+      "httpStatus": 200,
+      "available": true,
+      "generatedAt": "2026-10-03T08:19:25.034Z"
+    },
+    {
+      "market": "a",
+      "symbol": "002185",
+      "httpStatus": 200,
+      "available": true,
+      "generatedAt": "2026-10-03T08:19:25.047Z"
+    },
+    {
+      "market": "a",
+      "symbol": "688019",
+      "httpStatus": 200,
+      "available": true,
+      "generatedAt": "2026-10-03T08:19:25.084Z"
+    },
+    {
+      "market": "a",
+      "symbol": "688072",
+      "httpStatus": 200,
+      "available": true,
+      "generatedAt": "2026-10-03T08:19:25.096Z"
+    },
+    {
+      "market": "a",
+      "symbol": "300782",
+      "httpStatus": 200,
+      "available": true,
+      "generatedAt": "2026-10-03T08:19:25.121Z"
+    },
+    {
+      "market": "a",
+      "symbol": "002371",
+      "httpStatus": 200,
+      "available": true,
+      "generatedAt": "2026-10-03T08:19:25.133Z"
+    },
+    {
+      "market": "a",
+      "symbol": "688126",
+      "httpStatus": 200,
+      "available": true,
+      "generatedAt": "2026-10-03T08:19:25.165Z"
+    },
+    {
+      "market": "a",
+      "symbol": "688008",
+      "httpStatus": 200,
+      "available": true,
+      "generatedAt": "2026-10-03T08:19:25.186Z"
+    },
+    {
+      "market": "a",
+      "symbol": "688347",
+      "httpStatus": 200,
+      "available": true,
+      "generatedAt": "2026-10-03T08:19:25.176Z"
+    },
+    {
+      "market": "a",
+      "symbol": "688110",
+      "httpStatus": 200,
+      "available": true,
+      "generatedAt": "2026-10-03T08:19:25.229Z"
+    },
+    {
+      "market": "a",
+      "symbol": "600584",
+      "httpStatus": 200,
+      "available": true,
+      "generatedAt": "2026-10-03T08:19:25.241Z"
+    },
+    {
+      "market": "us",
+      "symbol": "TSM",
+      "httpStatus": 503,
+      "available": false,
+      "generatedAt": "2026-10-03T08:19:25.512Z"
+    },
+    {
+      "market": "us",
+      "symbol": "QCOM",
+      "httpStatus": 200,
+      "available": true,
+      "generatedAt": "2026-10-03T08:19:25.946Z"
+    },
+    {
+      "market": "us",
+      "symbol": "MKSI",
+      "httpStatus": 200,
+      "available": true,
+      "generatedAt": "2026-10-03T08:19:26.185Z"
+    },
+    {
+      "market": "us",
+      "symbol": "NVDA",
+      "httpStatus": 200,
+      "available": true,
+      "generatedAt": "2026-10-03T08:19:25.519Z"
+    },
+    {
+      "market": "us",
+      "symbol": "AMAT",
+      "httpStatus": 200,
+      "available": true,
+      "generatedAt": "2026-10-03T08:19:26.250Z"
+    },
+    {
+      "market": "us",
+      "symbol": "KLAC",
+      "httpStatus": 200,
+      "available": true,
+      "generatedAt": "2026-10-03T08:19:26.342Z"
+    },
+    {
+      "market": "us",
+      "symbol": "AMKR",
+      "httpStatus": 200,
+      "available": true,
+      "generatedAt": "2026-10-03T08:19:28.682Z"
+    },
+    {
+      "market": "us",
+      "symbol": "AVGO",
+      "httpStatus": 200,
+      "available": true,
+      "generatedAt": "2026-10-03T08:19:26.593Z"
+    },
+    {
+      "market": "us",
+      "symbol": "MU",
+      "httpStatus": 200,
+      "available": true,
+      "generatedAt": "2026-10-03T08:19:26.708Z"
+    },
+    {
+      "market": "us",
+      "symbol": "ASX",
+      "httpStatus": 200,
+      "available": true,
+      "generatedAt": "2026-10-03T08:19:27.210Z"
+    },
+    {
+      "market": "us",
+      "symbol": "SNDK",
+      "httpStatus": 200,
+      "available": true,
+      "generatedAt": "2026-10-03T08:19:27.047Z"
+    },
+    {
+      "market": "us",
+      "symbol": "LRCX",
+      "httpStatus": 200,
+      "available": true,
+      "generatedAt": "2026-10-03T08:19:27.412Z"
+    },
+    {
+      "market": "us",
+      "symbol": "ENTG",
+      "httpStatus": 200,
+      "available": true,
+      "generatedAt": "2026-10-03T08:19:27.593Z"
+    },
+    {
+      "market": "us",
+      "symbol": "GFS",
+      "httpStatus": 200,
+      "available": true,
+      "generatedAt": "2026-10-03T08:19:27.789Z"
+    },
+    {
+      "market": "us",
+      "symbol": "AMD",
+      "httpStatus": 200,
+      "available": true,
+      "generatedAt": "2026-10-03T08:19:27.987Z"
+    }
+  ],
+  "notice": "All financial values are captured from the existing API without substitution. Original provider timestamps and missing fields are retained. Reloading this demo does not fetch current market data."
+}

@@ -1,0 +1,18 @@
+{
+  "market": "us",
+  "symbol": "MU",
+  "chips": {
+    "status": "ok",
+    "averageCost": 875.1762740640429,
+    "peakCost": 927.1295798319328,
+    "concentration70Pct": 46.23137788474371,
+    "overheadSharePct": 10.421636914115766,
+    "latestPrice": 1074.89,
+    "sampleBars": 120,
+    "asOf": "2026-10-02",
+    "source": "Nasdaq 历史行情",
+    "verifyUrl": "https://www.nasdaq.com/market-activity/stocks/mu/historical",
+    "note": "由近120个交易日OHLCV按日内三角分布估算，是成本密集区代理，不是账户级真实持仓，也不能识别主力身份。"
+  },
+  "generatedAt": "2026-10-03T08:19:26.708Z"
+}

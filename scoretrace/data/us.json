@@ -1,0 +1,2556 @@
+{
+  "market": "us",
+  "generatedAt": "2026-10-03T08:19:20.838Z",
+  "status": "partial",
+  "coverage": {
+    "total": 15,
+    "marketDataAvailable": 15,
+    "evidenceAvailable": 3,
+    "leverageAvailable": 0
+  },
+  "subIndustries": [
+    "晶圆制造",
+    "半导体设备",
+    "芯片设计",
+    "存储",
+    "半导体材料",
+    "封装测试"
+  ],
+  "scoringVersion": "preview-0.3",
+  "comparisonPolicy": "A股与美股分开；PE、PB、ROE只在同市场、同子行业观察池内比较。筛选不会重新计算分数。",
+  "stocks": [
+    {
+      "symbol": "TSM",
+      "name": "TSMC ADR",
+      "exchange": "NYSE",
+      "market": "us",
+      "industry": "半导体",
+      "subIndustry": "晶圆制造",
+      "focus": "先进制程晶圆代工，重点验证产能利用率、先进节点与资本开支",
+      "price": 472.78,
+      "previousClose": 459.2,
+      "changePct": 2.96,
+      "marketCap": 2452061184000,
+      "floatMarketCap": null,
+      "peTtm": 35.21,
+      "pb": 12.15,
+      "roe": 40.06,
+      "quoteTime": "2026-10-02T20:04:35.000Z",
+      "quoteSource": "腾讯行情聚合",
+      "score": 60,
+      "scoreStatus": "complete",
+      "components": {
+        "roe": 75,
+        "pe": 75,
+        "pb": 25,
+        "evidence": 50,
+        "price": 65
+      },
+      "confidence": 61,
+      "confidenceLabel": "中等",
+      "evidence": [],
+      "irUrl": "https://investor.tsmc.com/english/quarterly-results",
+      "verifyUrl": "https://www.sec.gov/edgar/browse/?CIK=TSM&owner=exclude&action=getcompany",
+      "valuation": {
+        "pePercentile": 25,
+        "pbPercentile": 75,
+        "roePercentile": 75,
+        "combinedPercentile": 50,
+        "band": "中性",
+        "comparisonScope": "美股上市标的 · 晶圆制造",
+        "sampleSize": 2,
+        "preferredMetrics": [
+          "PB",
+          "EV/EBITDA",
+          "EV/Sales"
+        ],
+        "interpretation": "估值位于可比样本中部，而ROE相对靠前；下一步应确认ROE是否由可持续经营产生，以及现金流是否同步。",
+        "caveat": "当前同组仅2只，分位对单只样本很敏感；历史分位和一致预期尚未接入。"
+      },
+      "industryValidation": {
+        "summary": "不要用单条新闻直接跳到估值结论；至少沿相邻节点核验需求、经营与财务兑现。",
+        "nodes": [
+          {
+            "stage": "终端需求",
+            "question": "终端出货与晶圆需求是否共同改善，而不只是单月价格波动",
+            "state": "待查证",
+            "sourceLabel": "WSTS 全球半导体市场更新",
+            "url": "https://www.wsts.org/76/Recent-News-Release"
+          },
+          {
+            "stage": "供给/订单",
+            "question": "产能利用率、ASP、先进/特色工艺占比与资本开支",
+            "state": "待查证",
+            "sourceLabel": "SEMI 行业与晶圆厂更新",
+            "url": "https://www.semi.org/en/news-resources/press-releases"
+          },
+          {
+            "stage": "公司经营",
+            "question": "先进制程晶圆代工，重点验证产能利用率、先进节点与资本开支",
+            "state": "待查证",
+            "sourceLabel": "公司IR / 监管披露",
+            "url": "https://investor.tsmc.com/english/quarterly-results"
+          },
+          {
+            "stage": "财务兑现",
+            "question": "收入和毛利率改善能否覆盖折旧，并转化为经营现金流",
+            "state": "待查证",
+            "sourceLabel": "SEC EDGAR",
+            "url": "https://www.sec.gov/edgar/browse/?CIK=TSM&owner=exclude&action=getcompany"
+          }
+        ]
+      },
+      "structure": {
+        "scoreImpact": "独立风险层，尚未计入研究分",
+        "riskSummary": "美股没有与A股融资余额完全等价的统一公开口径；当前不拿短卖成交量冒充空头持仓。",
+        "margin": {
+          "status": "not_applicable",
+          "balance": null,
+          "buyAmount": null,
+          "shortBalance": null,
+          "totalBalance": null,
+          "change5dPct": null,
+          "toFloatMarketCapPct": null,
+          "percentile": null,
+          "asOf": null,
+          "source": "未采用替代口径",
+          "verifyUrl": "https://www.finra.org/finra-data/browse-catalog/equity-short-interest/data",
+          "note": "FINRA short interest与short volume口径不同；本页当前均未纳入评分。"
+        },
+        "chips": {
+          "status": "error",
+          "averageCost": null,
+          "peakCost": null,
+          "concentration70Pct": null,
+          "overheadSharePct": null,
+          "latestPrice": null,
+          "sampleBars": 0,
+          "asOf": null,
+          "source": "日K量价成本模型",
+          "verifyUrl": "https://quote.eastmoney.com/us/TSM.html",
+          "note": "成本代理改为点开个股时按需计算，避免整池刷新触发行情源限流；若单股请求失败则保持空值。"
+        },
+        "identitySignals": [
+          {
+            "label": "成本密集区",
+            "state": "按需计算",
+            "explanation": "点开本页时用Nasdaq日K估算价格上方潜在筹码压力；不是账户级真实成本。"
+          },
+          {
+            "label": "空头仓位",
+            "state": "待 FINRA 授权",
+            "explanation": "Short interest是半月披露的真实空头仓位；short volume不能冒充仓位。"
+          },
+          {
+            "label": "机构/内部人",
+            "state": "待 SEC 批处理",
+            "explanation": "13F是季度机构长仓；Form 4是事件披露，均需单列日期与滞后。"
+          },
+          {
+            "label": "期权拥挤",
+            "state": "待接 OCC 日批次",
+            "explanation": "可观察前一结算日OI，但不能由put/call推断交易者身份。"
+          }
+        ]
+      },
+      "sources": {
+        "marketData": {
+          "status": "ok",
+          "source": "腾讯行情聚合",
+          "asOf": "2026-10-02T20:04:35.000Z",
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "reason": null
+        },
+        "evidence": {
+          "status": "empty",
+          "source": "公司 Investor Relations",
+          "asOf": null,
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "itemCount": 0,
+          "reason": null
+        },
+        "leverage": {
+          "status": "empty",
+          "source": "交易所融资融券披露入口",
+          "asOf": null,
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "reason": null
+        }
+      },
+      "errors": [],
+      "groupRank": 1,
+      "groupSize": 2
+    },
+    {
+      "symbol": "QCOM",
+      "name": "Qualcomm",
+      "exchange": "NASDAQ",
+      "market": "us",
+      "industry": "半导体",
+      "subIndustry": "芯片设计",
+      "focus": "通信与边缘计算芯片，重点验证手机周期、授权业务与汽车订单",
+      "price": 184.87,
+      "previousClose": 182.09,
+      "changePct": 1.53,
+      "marketCap": 197452342000,
+      "floatMarketCap": null,
+      "peTtm": 21.13,
+      "pb": 7.14,
+      "roe": 33.75,
+      "quoteTime": "2026-10-02T20:00:01.000Z",
+      "quoteSource": "腾讯行情聚合",
+      "score": 60,
+      "scoreStatus": "complete",
+      "components": {
+        "roe": 38,
+        "pe": 88,
+        "pb": 88,
+        "evidence": 50,
+        "price": 58
+      },
+      "confidence": 61,
+      "confidenceLabel": "中等",
+      "evidence": [],
+      "irUrl": "https://investor.qualcomm.com/financial-information",
+      "verifyUrl": "https://www.sec.gov/edgar/browse/?CIK=QCOM&owner=exclude&action=getcompany",
+      "valuation": {
+        "pePercentile": 13,
+        "pbPercentile": 13,
+        "roePercentile": 38,
+        "combinedPercentile": 13,
+        "band": "相对低位",
+        "comparisonScope": "美股上市标的 · 芯片设计",
+        "sampleSize": 4,
+        "preferredMetrics": [
+          "远期PE*",
+          "EV/Sales",
+          "FCF收益率"
+        ],
+        "interpretation": "芯片设计可比样本中估值处于较低分位；这可能是安全边际，也可能反映周期下行或盈利质量问题，需和库存、订单及现金流一起查证。",
+        "caveat": "当前为观察池横截面分位，不是公司历史分位；带*指标需要一致预期数据，尚未接入时只作研究提示。"
+      },
+      "industryValidation": {
+        "summary": "不要用单条新闻直接跳到估值结论；至少沿相邻节点核验需求、经营与财务兑现。",
+        "nodes": [
+          {
+            "stage": "终端需求",
+            "question": "终端销量、平台迭代与客户库存是否支持真实出货",
+            "state": "待查证",
+            "sourceLabel": "WSTS 全球半导体市场更新",
+            "url": "https://www.wsts.org/76/Recent-News-Release"
+          },
+          {
+            "stage": "供给/订单",
+            "question": "出货量、ASP、产品组合、库存天数与毛利率",
+            "state": "待查证",
+            "sourceLabel": "SEMI 行业与晶圆厂更新",
+            "url": "https://www.semi.org/en/news-resources/press-releases"
+          },
+          {
+            "stage": "公司经营",
+            "question": "通信与边缘计算芯片，重点验证手机周期、授权业务与汽车订单",
+            "state": "待查证",
+            "sourceLabel": "公司IR / 监管披露",
+            "url": "https://investor.qualcomm.com/financial-information"
+          },
+          {
+            "stage": "财务兑现",
+            "question": "收入增速、毛利率与自由现金流是否同向兑现",
+            "state": "待查证",
+            "sourceLabel": "SEC EDGAR",
+            "url": "https://www.sec.gov/edgar/browse/?CIK=QCOM&owner=exclude&action=getcompany"
+          }
+        ]
+      },
+      "structure": {
+        "scoreImpact": "独立风险层，尚未计入研究分",
+        "riskSummary": "美股没有与A股融资余额完全等价的统一公开口径；当前不拿短卖成交量冒充空头持仓。",
+        "margin": {
+          "status": "not_applicable",
+          "balance": null,
+          "buyAmount": null,
+          "shortBalance": null,
+          "totalBalance": null,
+          "change5dPct": null,
+          "toFloatMarketCapPct": null,
+          "percentile": null,
+          "asOf": null,
+          "source": "未采用替代口径",
+          "verifyUrl": "https://www.finra.org/finra-data/browse-catalog/equity-short-interest/data",
+          "note": "FINRA short interest与short volume口径不同；本页当前均未纳入评分。"
+        },
+        "chips": {
+          "status": "error",
+          "averageCost": null,
+          "peakCost": null,
+          "concentration70Pct": null,
+          "overheadSharePct": null,
+          "latestPrice": null,
+          "sampleBars": 0,
+          "asOf": null,
+          "source": "日K量价成本模型",
+          "verifyUrl": "https://quote.eastmoney.com/us/QCOM.html",
+          "note": "成本代理改为点开个股时按需计算，避免整池刷新触发行情源限流；若单股请求失败则保持空值。"
+        },
+        "identitySignals": [
+          {
+            "label": "成本密集区",
+            "state": "按需计算",
+            "explanation": "点开本页时用Nasdaq日K估算价格上方潜在筹码压力；不是账户级真实成本。"
+          },
+          {
+            "label": "空头仓位",
+            "state": "待 FINRA 授权",
+            "explanation": "Short interest是半月披露的真实空头仓位；short volume不能冒充仓位。"
+          },
+          {
+            "label": "机构/内部人",
+            "state": "待 SEC 批处理",
+            "explanation": "13F是季度机构长仓；Form 4是事件披露，均需单列日期与滞后。"
+          },
+          {
+            "label": "期权拥挤",
+            "state": "待接 OCC 日批次",
+            "explanation": "可观察前一结算日OI，但不能由put/call推断交易者身份。"
+          }
+        ]
+      },
+      "sources": {
+        "marketData": {
+          "status": "ok",
+          "source": "腾讯行情聚合",
+          "asOf": "2026-10-02T20:00:01.000Z",
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "reason": null
+        },
+        "evidence": {
+          "status": "empty",
+          "source": "公司 Investor Relations",
+          "asOf": null,
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "itemCount": 0,
+          "reason": null
+        },
+        "leverage": {
+          "status": "empty",
+          "source": "交易所融资融券披露入口",
+          "asOf": null,
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "reason": null
+        }
+      },
+      "errors": [],
+      "groupRank": 1,
+      "groupSize": 4
+    },
+    {
+      "symbol": "MKSI",
+      "name": "MKS Instruments",
+      "exchange": "NASDAQ",
+      "market": "us",
+      "industry": "半导体",
+      "subIndustry": "半导体材料",
+      "focus": "工艺组件与材料，重点验证半导体需求、产品组合与现金流",
+      "price": 279.15,
+      "previousClose": 271.24,
+      "changePct": 2.92,
+      "marketCap": 18875441000,
+      "floatMarketCap": null,
+      "peTtm": 44.45,
+      "pb": 6.32,
+      "roe": 15.92,
+      "quoteTime": "2026-10-02T20:00:01.000Z",
+      "quoteSource": "腾讯行情聚合",
+      "score": 60,
+      "scoreStatus": "complete",
+      "components": {
+        "roe": 75,
+        "pe": 75,
+        "pb": 25,
+        "evidence": 50,
+        "price": 65
+      },
+      "confidence": 61,
+      "confidenceLabel": "中等",
+      "evidence": [],
+      "irUrl": "https://investor.mks.com/financial-information/quarterly-results",
+      "verifyUrl": "https://www.sec.gov/edgar/browse/?CIK=MKSI&owner=exclude&action=getcompany",
+      "valuation": {
+        "pePercentile": 25,
+        "pbPercentile": 75,
+        "roePercentile": 75,
+        "combinedPercentile": 50,
+        "band": "中性",
+        "comparisonScope": "美股上市标的 · 半导体材料",
+        "sampleSize": 2,
+        "preferredMetrics": [
+          "PE",
+          "EV/EBITDA",
+          "FCF收益率"
+        ],
+        "interpretation": "估值位于可比样本中部，而ROE相对靠前；下一步应确认ROE是否由可持续经营产生，以及现金流是否同步。",
+        "caveat": "当前同组仅2只，分位对单只样本很敏感；历史分位和一致预期尚未接入。"
+      },
+      "industryValidation": {
+        "summary": "不要用单条新闻直接跳到估值结论；至少沿相邻节点核验需求、经营与财务兑现。",
+        "nodes": [
+          {
+            "stage": "终端需求",
+            "question": "晶圆投片量与先进制程用量是否带动材料消耗",
+            "state": "待查证",
+            "sourceLabel": "WSTS 全球半导体市场更新",
+            "url": "https://www.wsts.org/76/Recent-News-Release"
+          },
+          {
+            "stage": "供给/订单",
+            "question": "客户认证、份额、销量、价格与新产能利用率",
+            "state": "待查证",
+            "sourceLabel": "SEMI 行业与晶圆厂更新",
+            "url": "https://www.semi.org/en/news-resources/press-releases"
+          },
+          {
+            "stage": "公司经营",
+            "question": "工艺组件与材料，重点验证半导体需求、产品组合与现金流",
+            "state": "待查证",
+            "sourceLabel": "公司IR / 监管披露",
+            "url": "https://investor.mks.com/financial-information/quarterly-results"
+          },
+          {
+            "stage": "财务兑现",
+            "question": "放量能否带来毛利率与现金流，而非应收和存货堆积",
+            "state": "待查证",
+            "sourceLabel": "SEC EDGAR",
+            "url": "https://www.sec.gov/edgar/browse/?CIK=MKSI&owner=exclude&action=getcompany"
+          }
+        ]
+      },
+      "structure": {
+        "scoreImpact": "独立风险层，尚未计入研究分",
+        "riskSummary": "美股没有与A股融资余额完全等价的统一公开口径；当前不拿短卖成交量冒充空头持仓。",
+        "margin": {
+          "status": "not_applicable",
+          "balance": null,
+          "buyAmount": null,
+          "shortBalance": null,
+          "totalBalance": null,
+          "change5dPct": null,
+          "toFloatMarketCapPct": null,
+          "percentile": null,
+          "asOf": null,
+          "source": "未采用替代口径",
+          "verifyUrl": "https://www.finra.org/finra-data/browse-catalog/equity-short-interest/data",
+          "note": "FINRA short interest与short volume口径不同；本页当前均未纳入评分。"
+        },
+        "chips": {
+          "status": "error",
+          "averageCost": null,
+          "peakCost": null,
+          "concentration70Pct": null,
+          "overheadSharePct": null,
+          "latestPrice": null,
+          "sampleBars": 0,
+          "asOf": null,
+          "source": "日K量价成本模型",
+          "verifyUrl": "https://quote.eastmoney.com/us/MKSI.html",
+          "note": "成本代理改为点开个股时按需计算，避免整池刷新触发行情源限流；若单股请求失败则保持空值。"
+        },
+        "identitySignals": [
+          {
+            "label": "成本密集区",
+            "state": "按需计算",
+            "explanation": "点开本页时用Nasdaq日K估算价格上方潜在筹码压力；不是账户级真实成本。"
+          },
+          {
+            "label": "空头仓位",
+            "state": "待 FINRA 授权",
+            "explanation": "Short interest是半月披露的真实空头仓位；short volume不能冒充仓位。"
+          },
+          {
+            "label": "机构/内部人",
+            "state": "待 SEC 批处理",
+            "explanation": "13F是季度机构长仓；Form 4是事件披露，均需单列日期与滞后。"
+          },
+          {
+            "label": "期权拥挤",
+            "state": "待接 OCC 日批次",
+            "explanation": "可观察前一结算日OI，但不能由put/call推断交易者身份。"
+          }
+        ]
+      },
+      "sources": {
+        "marketData": {
+          "status": "ok",
+          "source": "腾讯行情聚合",
+          "asOf": "2026-10-02T20:00:01.000Z",
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "reason": null
+        },
+        "evidence": {
+          "status": "empty",
+          "source": "公司 Investor Relations",
+          "asOf": null,
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "itemCount": 0,
+          "reason": null
+        },
+        "leverage": {
+          "status": "empty",
+          "source": "交易所融资融券披露入口",
+          "asOf": null,
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "reason": null
+        }
+      },
+      "errors": [],
+      "groupRank": 1,
+      "groupSize": 2
+    },
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA",
+      "exchange": "NASDAQ",
+      "market": "us",
+      "industry": "半导体",
+      "subIndustry": "芯片设计",
+      "focus": "加速计算与AI芯片，重点验证数据中心需求、供给与毛利率",
+      "price": 233.95,
+      "previousClose": 230.86,
+      "changePct": 1.34,
+      "marketCap": 5649190650000,
+      "floatMarketCap": null,
+      "peTtm": 29.58,
+      "pb": 24.67,
+      "roe": 117.21,
+      "quoteTime": "2026-10-02T20:00:01.000Z",
+      "quoteSource": "腾讯行情聚合",
+      "score": 59,
+      "scoreStatus": "complete",
+      "components": {
+        "roe": 88,
+        "pe": 63,
+        "pb": 13,
+        "evidence": 50,
+        "price": 57
+      },
+      "confidence": 85,
+      "confidenceLabel": "相对较高",
+      "evidence": [
+        {
+          "title": "NVIDIA Announces Upcoming Event for Financial Community",
+          "date": "2026-08-27",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-upcoming-event-for-financial-community-6927858",
+          "verifyUrl": "https://www.sec.gov/edgar/browse/?CIK=1045810&owner=exclude",
+          "source": "公司 Investor Relations",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        },
+        {
+          "title": "NVIDIA Announces a $150 Billion Share Repurchase Authorization Increase",
+          "date": "2026-09-28",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-a-150-billion-share-repurchase-authorization-increase",
+          "verifyUrl": "https://www.sec.gov/edgar/browse/?CIK=1045810&owner=exclude",
+          "source": "公司 Investor Relations",
+          "kind": "公司新闻",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        },
+        {
+          "title": "NVIDIA Launches Open Agent Safety Platform to Secure Agents From Testing to Deployment",
+          "date": "2026-09-28",
+          "url": "https://nvidianews.nvidia.com/news/open-agent-safety-platform",
+          "verifyUrl": "https://www.sec.gov/edgar/browse/?CIK=1045810&owner=exclude",
+          "source": "公司 Investor Relations",
+          "kind": "公司新闻",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        }
+      ],
+      "irUrl": "https://investor.nvidia.com/financial-info/quarterly-results/default.aspx",
+      "verifyUrl": "https://www.sec.gov/edgar/browse/?CIK=1045810&owner=exclude",
+      "valuation": {
+        "pePercentile": 38,
+        "pbPercentile": 88,
+        "roePercentile": 88,
+        "combinedPercentile": 63,
+        "band": "偏高",
+        "comparisonScope": "美股上市标的 · 芯片设计",
+        "sampleSize": 4,
+        "preferredMetrics": [
+          "远期PE*",
+          "EV/Sales",
+          "FCF收益率"
+        ],
+        "interpretation": "估值位于可比样本中部，而ROE相对靠前；下一步应确认ROE是否由可持续经营产生，以及现金流是否同步。",
+        "caveat": "当前为观察池横截面分位，不是公司历史分位；带*指标需要一致预期数据，尚未接入时只作研究提示。"
+      },
+      "industryValidation": {
+        "summary": "不要用单条新闻直接跳到估值结论；至少沿相邻节点核验需求、经营与财务兑现。",
+        "nodes": [
+          {
+            "stage": "终端需求",
+            "question": "终端销量、平台迭代与客户库存是否支持真实出货",
+            "state": "待查证",
+            "sourceLabel": "WSTS 全球半导体市场更新",
+            "url": "https://www.wsts.org/76/Recent-News-Release"
+          },
+          {
+            "stage": "供给/订单",
+            "question": "出货量、ASP、产品组合、库存天数与毛利率",
+            "state": "待查证",
+            "sourceLabel": "SEMI 行业与晶圆厂更新",
+            "url": "https://www.semi.org/en/news-resources/press-releases"
+          },
+          {
+            "stage": "公司经营",
+            "question": "加速计算与AI芯片，重点验证数据中心需求、供给与毛利率",
+            "state": "有新披露",
+            "sourceLabel": "公司IR / 监管披露",
+            "url": "https://investor.nvidia.com/financial-info/quarterly-results/default.aspx"
+          },
+          {
+            "stage": "财务兑现",
+            "question": "收入增速、毛利率与自由现金流是否同向兑现",
+            "state": "有新披露",
+            "sourceLabel": "SEC EDGAR",
+            "url": "https://www.sec.gov/edgar/browse/?CIK=1045810&owner=exclude"
+          }
+        ]
+      },
+      "structure": {
+        "scoreImpact": "独立风险层，尚未计入研究分",
+        "riskSummary": "美股没有与A股融资余额完全等价的统一公开口径；当前不拿短卖成交量冒充空头持仓。",
+        "margin": {
+          "status": "not_applicable",
+          "balance": null,
+          "buyAmount": null,
+          "shortBalance": null,
+          "totalBalance": null,
+          "change5dPct": null,
+          "toFloatMarketCapPct": null,
+          "percentile": null,
+          "asOf": null,
+          "source": "未采用替代口径",
+          "verifyUrl": "https://www.finra.org/finra-data/browse-catalog/equity-short-interest/data",
+          "note": "FINRA short interest与short volume口径不同；本页当前均未纳入评分。"
+        },
+        "chips": {
+          "status": "error",
+          "averageCost": null,
+          "peakCost": null,
+          "concentration70Pct": null,
+          "overheadSharePct": null,
+          "latestPrice": null,
+          "sampleBars": 0,
+          "asOf": null,
+          "source": "日K量价成本模型",
+          "verifyUrl": "https://quote.eastmoney.com/us/NVDA.html",
+          "note": "成本代理改为点开个股时按需计算，避免整池刷新触发行情源限流；若单股请求失败则保持空值。"
+        },
+        "identitySignals": [
+          {
+            "label": "成本密集区",
+            "state": "按需计算",
+            "explanation": "点开本页时用Nasdaq日K估算价格上方潜在筹码压力；不是账户级真实成本。"
+          },
+          {
+            "label": "空头仓位",
+            "state": "待 FINRA 授权",
+            "explanation": "Short interest是半月披露的真实空头仓位；short volume不能冒充仓位。"
+          },
+          {
+            "label": "机构/内部人",
+            "state": "待 SEC 批处理",
+            "explanation": "13F是季度机构长仓；Form 4是事件披露，均需单列日期与滞后。"
+          },
+          {
+            "label": "期权拥挤",
+            "state": "待接 OCC 日批次",
+            "explanation": "可观察前一结算日OI，但不能由put/call推断交易者身份。"
+          }
+        ]
+      },
+      "sources": {
+        "marketData": {
+          "status": "ok",
+          "source": "腾讯行情聚合",
+          "asOf": "2026-10-02T20:00:01.000Z",
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "reason": null
+        },
+        "evidence": {
+          "status": "ok",
+          "source": "公司 Investor Relations",
+          "asOf": "2026-08-27",
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "itemCount": 3,
+          "reason": null
+        },
+        "leverage": {
+          "status": "empty",
+          "source": "交易所融资融券披露入口",
+          "asOf": null,
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "reason": null
+        }
+      },
+      "errors": [],
+      "groupRank": 2,
+      "groupSize": 4
+    },
+    {
+      "symbol": "AMAT",
+      "name": "Applied Materials",
+      "exchange": "NASDAQ",
+      "market": "us",
+      "industry": "半导体",
+      "subIndustry": "半导体设备",
+      "focus": "综合晶圆设备，重点验证晶圆厂资本开支、订单与服务收入",
+      "price": 540.04,
+      "previousClose": 529.3,
+      "changePct": 2.03,
+      "marketCap": 428574363000,
+      "floatMarketCap": null,
+      "peTtm": 46.6,
+      "pb": 16.72,
+      "roe": 41.07,
+      "quoteTime": "2026-10-02T20:00:01.000Z",
+      "quoteSource": "腾讯行情聚合",
+      "score": 56,
+      "scoreStatus": "complete",
+      "components": {
+        "roe": 17,
+        "pe": 83,
+        "pb": 83,
+        "evidence": 62,
+        "price": 60
+      },
+      "confidence": 85,
+      "confidenceLabel": "相对较高",
+      "evidence": [
+        {
+          "title": "Applied Materials Announces Third Quarter 2026 Results",
+          "date": "2026-08-13",
+          "url": "https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-third-quarter-2026-results",
+          "verifyUrl": "https://www.sec.gov/edgar/browse/?CIK=6951&owner=exclude",
+          "source": "公司 Investor Relations",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        },
+        {
+          "title": "Applied Materials and Besi Expand Strategic Partnership to Advance Next-Generation Packaging for AI Scaling",
+          "date": "2026-10-01",
+          "url": "https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-and-besi-expand-strategic-partnership-advance",
+          "verifyUrl": "https://www.sec.gov/edgar/browse/?CIK=6951&owner=exclude",
+          "source": "公司 Investor Relations",
+          "kind": "公司新闻",
+          "tone": "positive",
+          "impact": 1,
+          "impactReason": "标题命中正向经营关键词，尚未判断财务量级"
+        },
+        {
+          "title": "Applied Materials and KIOXIA Partner at the EPIC Center to Advance Next-Generation Memory Technology",
+          "date": "2026-09-29",
+          "url": "https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-and-kioxia-partner-epic-center-advance-next",
+          "verifyUrl": "https://www.sec.gov/edgar/browse/?CIK=6951&owner=exclude",
+          "source": "公司 Investor Relations",
+          "kind": "公司新闻",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        }
+      ],
+      "irUrl": "https://ir.appliedmaterials.com/financial-information/quarterly-results/",
+      "verifyUrl": "https://www.sec.gov/edgar/browse/?CIK=6951&owner=exclude",
+      "valuation": {
+        "pePercentile": 17,
+        "pbPercentile": 17,
+        "roePercentile": 17,
+        "combinedPercentile": 17,
+        "band": "相对低位",
+        "comparisonScope": "美股上市标的 · 半导体设备",
+        "sampleSize": 3,
+        "preferredMetrics": [
+          "远期PE*",
+          "EV/EBITDA",
+          "PEG*"
+        ],
+        "interpretation": "半导体设备可比样本中估值处于较低分位；这可能是安全边际，也可能反映周期下行或盈利质量问题，需和库存、订单及现金流一起查证。",
+        "caveat": "当前同组仅3只，分位对单只样本很敏感；历史分位和一致预期尚未接入。"
+      },
+      "industryValidation": {
+        "summary": "不要用单条新闻直接跳到估值结论；至少沿相邻节点核验需求、经营与财务兑现。",
+        "nodes": [
+          {
+            "stage": "终端需求",
+            "question": "全球及本地晶圆厂资本开支是否进入确认与交付周期",
+            "state": "待查证",
+            "sourceLabel": "WSTS 全球半导体市场更新",
+            "url": "https://www.wsts.org/76/Recent-News-Release"
+          },
+          {
+            "stage": "供给/订单",
+            "question": "订单/在手订单、客户验证、交付验收与合同负债",
+            "state": "待查证",
+            "sourceLabel": "SEMI 行业与晶圆厂更新",
+            "url": "https://www.semi.org/en/news-resources/press-releases"
+          },
+          {
+            "stage": "公司经营",
+            "question": "综合晶圆设备，重点验证晶圆厂资本开支、订单与服务收入",
+            "state": "有新披露",
+            "sourceLabel": "公司IR / 监管披露",
+            "url": "https://ir.appliedmaterials.com/financial-information/quarterly-results/"
+          },
+          {
+            "stage": "财务兑现",
+            "question": "订单能否兑现为收入、毛利率与经营现金流",
+            "state": "有新披露",
+            "sourceLabel": "SEC EDGAR",
+            "url": "https://www.sec.gov/edgar/browse/?CIK=6951&owner=exclude"
+          }
+        ]
+      },
+      "structure": {
+        "scoreImpact": "独立风险层，尚未计入研究分",
+        "riskSummary": "美股没有与A股融资余额完全等价的统一公开口径；当前不拿短卖成交量冒充空头持仓。",
+        "margin": {
+          "status": "not_applicable",
+          "balance": null,
+          "buyAmount": null,
+          "shortBalance": null,
+          "totalBalance": null,
+          "change5dPct": null,
+          "toFloatMarketCapPct": null,
+          "percentile": null,
+          "asOf": null,
+          "source": "未采用替代口径",
+          "verifyUrl": "https://www.finra.org/finra-data/browse-catalog/equity-short-interest/data",
+          "note": "FINRA short interest与short volume口径不同；本页当前均未纳入评分。"
+        },
+        "chips": {
+          "status": "error",
+          "averageCost": null,
+          "peakCost": null,
+          "concentration70Pct": null,
+          "overheadSharePct": null,
+          "latestPrice": null,
+          "sampleBars": 0,
+          "asOf": null,
+          "source": "日K量价成本模型",
+          "verifyUrl": "https://quote.eastmoney.com/us/AMAT.html",
+          "note": "成本代理改为点开个股时按需计算，避免整池刷新触发行情源限流；若单股请求失败则保持空值。"
+        },
+        "identitySignals": [
+          {
+            "label": "成本密集区",
+            "state": "按需计算",
+            "explanation": "点开本页时用Nasdaq日K估算价格上方潜在筹码压力；不是账户级真实成本。"
+          },
+          {
+            "label": "空头仓位",
+            "state": "待 FINRA 授权",
+            "explanation": "Short interest是半月披露的真实空头仓位；short volume不能冒充仓位。"
+          },
+          {
+            "label": "机构/内部人",
+            "state": "待 SEC 批处理",
+            "explanation": "13F是季度机构长仓；Form 4是事件披露，均需单列日期与滞后。"
+          },
+          {
+            "label": "期权拥挤",
+            "state": "待接 OCC 日批次",
+            "explanation": "可观察前一结算日OI，但不能由put/call推断交易者身份。"
+          }
+        ]
+      },
+      "sources": {
+        "marketData": {
+          "status": "ok",
+          "source": "腾讯行情聚合",
+          "asOf": "2026-10-02T20:00:01.000Z",
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "reason": null
+        },
+        "evidence": {
+          "status": "ok",
+          "source": "公司 Investor Relations",
+          "asOf": "2026-08-13",
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "itemCount": 3,
+          "reason": null
+        },
+        "leverage": {
+          "status": "empty",
+          "source": "交易所融资融券披露入口",
+          "asOf": null,
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "reason": null
+        }
+      },
+      "errors": [],
+      "groupRank": 1,
+      "groupSize": 3
+    },
+    {
+      "symbol": "KLAC",
+      "name": "KLA",
+      "exchange": "NASDAQ",
+      "market": "us",
+      "industry": "半导体",
+      "subIndustry": "半导体设备",
+      "focus": "过程控制与检测，重点验证先进制程复杂度、订单与服务收入",
+      "price": 206.89,
+      "previousClose": 200.33,
+      "changePct": 3.27,
+      "marketCap": 269992792999.99997,
+      "floatMarketCap": null,
+      "peTtm": 56.53,
+      "pb": 42.52,
+      "roe": 87.5,
+      "quoteTime": "2026-10-02T20:00:01.000Z",
+      "quoteSource": "腾讯行情聚合",
+      "score": 56,
+      "scoreStatus": "complete",
+      "components": {
+        "roe": 83,
+        "pe": 50,
+        "pb": 17,
+        "evidence": 50,
+        "price": 66
+      },
+      "confidence": 61,
+      "confidenceLabel": "中等",
+      "evidence": [],
+      "irUrl": "https://ir.kla.com/quarterly-results",
+      "verifyUrl": "https://www.sec.gov/edgar/browse/?CIK=KLAC&owner=exclude&action=getcompany",
+      "valuation": {
+        "pePercentile": 50,
+        "pbPercentile": 83,
+        "roePercentile": 83,
+        "combinedPercentile": 67,
+        "band": "偏高",
+        "comparisonScope": "美股上市标的 · 半导体设备",
+        "sampleSize": 3,
+        "preferredMetrics": [
+          "远期PE*",
+          "EV/EBITDA",
+          "PEG*"
+        ],
+        "interpretation": "估值位于可比样本中部，而ROE相对靠前；下一步应确认ROE是否由可持续经营产生，以及现金流是否同步。",
+        "caveat": "当前同组仅3只，分位对单只样本很敏感；历史分位和一致预期尚未接入。"
+      },
+      "industryValidation": {
+        "summary": "不要用单条新闻直接跳到估值结论；至少沿相邻节点核验需求、经营与财务兑现。",
+        "nodes": [
+          {
+            "stage": "终端需求",
+            "question": "全球及本地晶圆厂资本开支是否进入确认与交付周期",
+            "state": "待查证",
+            "sourceLabel": "WSTS 全球半导体市场更新",
+            "url": "https://www.wsts.org/76/Recent-News-Release"
+          },
+          {
+            "stage": "供给/订单",
+            "question": "订单/在手订单、客户验证、交付验收与合同负债",
+            "state": "待查证",
+            "sourceLabel": "SEMI 行业与晶圆厂更新",
+            "url": "https://www.semi.org/en/news-resources/press-releases"
+          },
+          {
+            "stage": "公司经营",
+            "question": "过程控制与检测，重点验证先进制程复杂度、订单与服务收入",
+            "state": "待查证",
+            "sourceLabel": "公司IR / 监管披露",
+            "url": "https://ir.kla.com/quarterly-results"
+          },
+          {
+            "stage": "财务兑现",
+            "question": "订单能否兑现为收入、毛利率与经营现金流",
+            "state": "待查证",
+            "sourceLabel": "SEC EDGAR",
+            "url": "https://www.sec.gov/edgar/browse/?CIK=KLAC&owner=exclude&action=getcompany"
+          }
+        ]
+      },
+      "structure": {
+        "scoreImpact": "独立风险层，尚未计入研究分",
+        "riskSummary": "美股没有与A股融资余额完全等价的统一公开口径；当前不拿短卖成交量冒充空头持仓。",
+        "margin": {
+          "status": "not_applicable",
+          "balance": null,
+          "buyAmount": null,
+          "shortBalance": null,
+          "totalBalance": null,
+          "change5dPct": null,
+          "toFloatMarketCapPct": null,
+          "percentile": null,
+          "asOf": null,
+          "source": "未采用替代口径",
+          "verifyUrl": "https://www.finra.org/finra-data/browse-catalog/equity-short-interest/data",
+          "note": "FINRA short interest与short volume口径不同；本页当前均未纳入评分。"
+        },
+        "chips": {
+          "status": "error",
+          "averageCost": null,
+          "peakCost": null,
+          "concentration70Pct": null,
+          "overheadSharePct": null,
+          "latestPrice": null,
+          "sampleBars": 0,
+          "asOf": null,
+          "source": "日K量价成本模型",
+          "verifyUrl": "https://quote.eastmoney.com/us/KLAC.html",
+          "note": "成本代理改为点开个股时按需计算，避免整池刷新触发行情源限流；若单股请求失败则保持空值。"
+        },
+        "identitySignals": [
+          {
+            "label": "成本密集区",
+            "state": "按需计算",
+            "explanation": "点开本页时用Nasdaq日K估算价格上方潜在筹码压力；不是账户级真实成本。"
+          },
+          {
+            "label": "空头仓位",
+            "state": "待 FINRA 授权",
+            "explanation": "Short interest是半月披露的真实空头仓位；short volume不能冒充仓位。"
+          },
+          {
+            "label": "机构/内部人",
+            "state": "待 SEC 批处理",
+            "explanation": "13F是季度机构长仓；Form 4是事件披露，均需单列日期与滞后。"
+          },
+          {
+            "label": "期权拥挤",
+            "state": "待接 OCC 日批次",
+            "explanation": "可观察前一结算日OI，但不能由put/call推断交易者身份。"
+          }
+        ]
+      },
+      "sources": {
+        "marketData": {
+          "status": "ok",
+          "source": "腾讯行情聚合",
+          "asOf": "2026-10-02T20:00:01.000Z",
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "reason": null
+        },
+        "evidence": {
+          "status": "empty",
+          "source": "公司 Investor Relations",
+          "asOf": null,
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "itemCount": 0,
+          "reason": null
+        },
+        "leverage": {
+          "status": "empty",
+          "source": "交易所融资融券披露入口",
+          "asOf": null,
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "reason": null
+        }
+      },
+      "errors": [],
+      "groupRank": 2,
+      "groupSize": 3
+    },
+    {
+      "symbol": "AMKR",
+      "name": "Amkor",
+      "exchange": "NASDAQ",
+      "market": "us",
+      "industry": "半导体",
+      "subIndustry": "封装测试",
+      "focus": "外包封装测试，重点验证稼动率、先进封装需求与资本开支",
+      "price": 56.02,
+      "previousClose": 52.9,
+      "changePct": 5.9,
+      "marketCap": 13918306999.999998,
+      "floatMarketCap": null,
+      "peTtm": 25.12,
+      "pb": 2.99,
+      "roe": 12.56,
+      "quoteTime": "2026-10-02T20:00:01.000Z",
+      "quoteSource": "腾讯行情聚合",
+      "score": 53,
+      "scoreStatus": "complete",
+      "components": {
+        "roe": 25,
+        "pe": 75,
+        "pb": 75,
+        "evidence": 50,
+        "price": 80
+      },
+      "confidence": 61,
+      "confidenceLabel": "中等",
+      "evidence": [],
+      "irUrl": "https://ir.amkor.com/financial-information/quarterly-results",
+      "verifyUrl": "https://www.sec.gov/edgar/browse/?CIK=AMKR&owner=exclude&action=getcompany",
+      "valuation": {
+        "pePercentile": 25,
+        "pbPercentile": 25,
+        "roePercentile": 25,
+        "combinedPercentile": 25,
+        "band": "偏低",
+        "comparisonScope": "美股上市标的 · 封装测试",
+        "sampleSize": 2,
+        "preferredMetrics": [
+          "EV/EBITDA",
+          "PB",
+          "PE"
+        ],
+        "interpretation": "封装测试可比样本中估值处于较低分位；这可能是安全边际，也可能反映周期下行或盈利质量问题，需和库存、订单及现金流一起查证。",
+        "caveat": "当前同组仅2只，分位对单只样本很敏感；历史分位和一致预期尚未接入。"
+      },
+      "industryValidation": {
+        "summary": "不要用单条新闻直接跳到估值结论；至少沿相邻节点核验需求、经营与财务兑现。",
+        "nodes": [
+          {
+            "stage": "终端需求",
+            "question": "终端需求与先进封装需求是否同步传导至订单",
+            "state": "待查证",
+            "sourceLabel": "WSTS 全球半导体市场更新",
+            "url": "https://www.wsts.org/76/Recent-News-Release"
+          },
+          {
+            "stage": "供给/订单",
+            "question": "稼动率、单价、先进封装占比与资本开支效率",
+            "state": "待查证",
+            "sourceLabel": "SEMI 行业与晶圆厂更新",
+            "url": "https://www.semi.org/en/news-resources/press-releases"
+          },
+          {
+            "stage": "公司经营",
+            "question": "外包封装测试，重点验证稼动率、先进封装需求与资本开支",
+            "state": "待查证",
+            "sourceLabel": "公司IR / 监管披露",
+            "url": "https://ir.amkor.com/financial-information/quarterly-results"
+          },
+          {
+            "stage": "财务兑现",
+            "question": "毛利率、折旧压力与经营现金流是否改善",
+            "state": "待查证",
+            "sourceLabel": "SEC EDGAR",
+            "url": "https://www.sec.gov/edgar/browse/?CIK=AMKR&owner=exclude&action=getcompany"
+          }
+        ]
+      },
+      "structure": {
+        "scoreImpact": "独立风险层，尚未计入研究分",
+        "riskSummary": "美股没有与A股融资余额完全等价的统一公开口径；当前不拿短卖成交量冒充空头持仓。",
+        "margin": {
+          "status": "not_applicable",
+          "balance": null,
+          "buyAmount": null,
+          "shortBalance": null,
+          "totalBalance": null,
+          "change5dPct": null,
+          "toFloatMarketCapPct": null,
+          "percentile": null,
+          "asOf": null,
+          "source": "未采用替代口径",
+          "verifyUrl": "https://www.finra.org/finra-data/browse-catalog/equity-short-interest/data",
+          "note": "FINRA short interest与short volume口径不同；本页当前均未纳入评分。"
+        },
+        "chips": {
+          "status": "error",
+          "averageCost": null,
+          "peakCost": null,
+          "concentration70Pct": null,
+          "overheadSharePct": null,
+          "latestPrice": null,
+          "sampleBars": 0,
+          "asOf": null,
+          "source": "日K量价成本模型",
+          "verifyUrl": "https://quote.eastmoney.com/us/AMKR.html",
+          "note": "成本代理改为点开个股时按需计算，避免整池刷新触发行情源限流；若单股请求失败则保持空值。"
+        },
+        "identitySignals": [
+          {
+            "label": "成本密集区",
+            "state": "按需计算",
+            "explanation": "点开本页时用Nasdaq日K估算价格上方潜在筹码压力；不是账户级真实成本。"
+          },
+          {
+            "label": "空头仓位",
+            "state": "待 FINRA 授权",
+            "explanation": "Short interest是半月披露的真实空头仓位；short volume不能冒充仓位。"
+          },
+          {
+            "label": "机构/内部人",
+            "state": "待 SEC 批处理",
+            "explanation": "13F是季度机构长仓；Form 4是事件披露，均需单列日期与滞后。"
+          },
+          {
+            "label": "期权拥挤",
+            "state": "待接 OCC 日批次",
+            "explanation": "可观察前一结算日OI，但不能由put/call推断交易者身份。"
+          }
+        ]
+      },
+      "sources": {
+        "marketData": {
+          "status": "ok",
+          "source": "腾讯行情聚合",
+          "asOf": "2026-10-02T20:00:01.000Z",
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "reason": null
+        },
+        "evidence": {
+          "status": "empty",
+          "source": "公司 Investor Relations",
+          "asOf": null,
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "itemCount": 0,
+          "reason": null
+        },
+        "leverage": {
+          "status": "empty",
+          "source": "交易所融资融券披露入口",
+          "asOf": null,
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "reason": null
+        }
+      },
+      "errors": [],
+      "groupRank": 1,
+      "groupSize": 2
+    },
+    {
+      "symbol": "AVGO",
+      "name": "Broadcom",
+      "exchange": "NASDAQ",
+      "market": "us",
+      "industry": "半导体",
+      "subIndustry": "芯片设计",
+      "focus": "网络与定制加速芯片，重点验证AI网络需求与客户集中度",
+      "price": 355.14,
+      "previousClose": 343.64,
+      "changePct": 3.35,
+      "marketCap": 1695306910000,
+      "floatMarketCap": null,
+      "peTtm": 45.3,
+      "pb": 17.01,
+      "roe": 44.25,
+      "quoteTime": "2026-10-02T20:00:01.000Z",
+      "quoteSource": "腾讯行情聚合",
+      "score": 51,
+      "scoreStatus": "complete",
+      "components": {
+        "roe": 63,
+        "pe": 38,
+        "pb": 38,
+        "evidence": 50,
+        "price": 67
+      },
+      "confidence": 61,
+      "confidenceLabel": "中等",
+      "evidence": [],
+      "irUrl": "https://investors.broadcom.com/financial-information",
+      "verifyUrl": "https://www.sec.gov/edgar/browse/?CIK=AVGO&owner=exclude&action=getcompany",
+      "valuation": {
+        "pePercentile": 63,
+        "pbPercentile": 63,
+        "roePercentile": 63,
+        "combinedPercentile": 63,
+        "band": "偏高",
+        "comparisonScope": "美股上市标的 · 芯片设计",
+        "sampleSize": 4,
+        "preferredMetrics": [
+          "远期PE*",
+          "EV/Sales",
+          "FCF收益率"
+        ],
+        "interpretation": "估值位于可比样本中部，单靠PE/PB不足以形成结论；应优先寻找行业景气与公司财务兑现的同向证据。",
+        "caveat": "当前为观察池横截面分位，不是公司历史分位；带*指标需要一致预期数据，尚未接入时只作研究提示。"
+      },
+      "industryValidation": {
+        "summary": "不要用单条新闻直接跳到估值结论；至少沿相邻节点核验需求、经营与财务兑现。",
+        "nodes": [
+          {
+            "stage": "终端需求",
+            "question": "终端销量、平台迭代与客户库存是否支持真实出货",
+            "state": "待查证",
+            "sourceLabel": "WSTS 全球半导体市场更新",
+            "url": "https://www.wsts.org/76/Recent-News-Release"
+          },
+          {
+            "stage": "供给/订单",
+            "question": "出货量、ASP、产品组合、库存天数与毛利率",
+            "state": "待查证",
+            "sourceLabel": "SEMI 行业与晶圆厂更新",
+            "url": "https://www.semi.org/en/news-resources/press-releases"
+          },
+          {
+            "stage": "公司经营",
+            "question": "网络与定制加速芯片，重点验证AI网络需求与客户集中度",
+            "state": "待查证",
+            "sourceLabel": "公司IR / 监管披露",
+            "url": "https://investors.broadcom.com/financial-information"
+          },
+          {
+            "stage": "财务兑现",
+            "question": "收入增速、毛利率与自由现金流是否同向兑现",
+            "state": "待查证",
+            "sourceLabel": "SEC EDGAR",
+            "url": "https://www.sec.gov/edgar/browse/?CIK=AVGO&owner=exclude&action=getcompany"
+          }
+        ]
+      },
+      "structure": {
+        "scoreImpact": "独立风险层，尚未计入研究分",
+        "riskSummary": "美股没有与A股融资余额完全等价的统一公开口径；当前不拿短卖成交量冒充空头持仓。",
+        "margin": {
+          "status": "not_applicable",
+          "balance": null,
+          "buyAmount": null,
+          "shortBalance": null,
+          "totalBalance": null,
+          "change5dPct": null,
+          "toFloatMarketCapPct": null,
+          "percentile": null,
+          "asOf": null,
+          "source": "未采用替代口径",
+          "verifyUrl": "https://www.finra.org/finra-data/browse-catalog/equity-short-interest/data",
+          "note": "FINRA short interest与short volume口径不同；本页当前均未纳入评分。"
+        },
+        "chips": {
+          "status": "error",
+          "averageCost": null,
+          "peakCost": null,
+          "concentration70Pct": null,
+          "overheadSharePct": null,
+          "latestPrice": null,
+          "sampleBars": 0,
+          "asOf": null,
+          "source": "日K量价成本模型",
+          "verifyUrl": "https://quote.eastmoney.com/us/AVGO.html",
+          "note": "成本代理改为点开个股时按需计算，避免整池刷新触发行情源限流；若单股请求失败则保持空值。"
+        },
+        "identitySignals": [
+          {
+            "label": "成本密集区",
+            "state": "按需计算",
+            "explanation": "点开本页时用Nasdaq日K估算价格上方潜在筹码压力；不是账户级真实成本。"
+          },
+          {
+            "label": "空头仓位",
+            "state": "待 FINRA 授权",
+            "explanation": "Short interest是半月披露的真实空头仓位；short volume不能冒充仓位。"
+          },
+          {
+            "label": "机构/内部人",
+            "state": "待 SEC 批处理",
+            "explanation": "13F是季度机构长仓；Form 4是事件披露，均需单列日期与滞后。"
+          },
+          {
+            "label": "期权拥挤",
+            "state": "待接 OCC 日批次",
+            "explanation": "可观察前一结算日OI，但不能由put/call推断交易者身份。"
+          }
+        ]
+      },
+      "sources": {
+        "marketData": {
+          "status": "ok",
+          "source": "腾讯行情聚合",
+          "asOf": "2026-10-02T20:00:01.000Z",
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "reason": null
+        },
+        "evidence": {
+          "status": "empty",
+          "source": "公司 Investor Relations",
+          "asOf": null,
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "itemCount": 0,
+          "reason": null
+        },
+        "leverage": {
+          "status": "empty",
+          "source": "交易所融资融券披露入口",
+          "asOf": null,
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "reason": null
+        }
+      },
+      "errors": [],
+      "groupRank": 3,
+      "groupSize": 4
+    },
+    {
+      "symbol": "MU",
+      "name": "Micron",
+      "exchange": "NASDAQ",
+      "market": "us",
+      "industry": "半导体",
+      "subIndustry": "存储",
+      "focus": "DRAM与NAND，重点验证ASP、库存、HBM供需与资本开支",
+      "price": 1074.89,
+      "previousClose": 1097.39,
+      "changePct": -2.05,
+      "marketCap": 1213973404000,
+      "floatMarketCap": null,
+      "peTtm": 14.46,
+      "pb": 8.77,
+      "roe": 88.26,
+      "quoteTime": "2026-10-02T20:00:01.000Z",
+      "quoteSource": "腾讯行情聚合",
+      "score": 51,
+      "scoreStatus": "complete",
+      "components": {
+        "roe": 25,
+        "pe": 75,
+        "pb": 75,
+        "evidence": 50,
+        "price": 40
+      },
+      "confidence": 61,
+      "confidenceLabel": "中等",
+      "evidence": [],
+      "irUrl": "https://investors.micron.com/quarterly-results",
+      "verifyUrl": "https://www.sec.gov/edgar/browse/?CIK=MU&owner=exclude&action=getcompany",
+      "valuation": {
+        "pePercentile": 25,
+        "pbPercentile": 25,
+        "roePercentile": 25,
+        "combinedPercentile": 25,
+        "band": "偏低",
+        "comparisonScope": "美股上市标的 · 存储",
+        "sampleSize": 2,
+        "preferredMetrics": [
+          "PB",
+          "周期中枢EV/EBITDA",
+          "经营现金流"
+        ],
+        "interpretation": "存储可比样本中估值处于较低分位；这可能是安全边际，也可能反映周期下行或盈利质量问题，需和库存、订单及现金流一起查证。",
+        "caveat": "当前同组仅2只，分位对单只样本很敏感；历史分位和一致预期尚未接入。"
+      },
+      "industryValidation": {
+        "summary": "不要用单条新闻直接跳到估值结论；至少沿相邻节点核验需求、经营与财务兑现。",
+        "nodes": [
+          {
+            "stage": "终端需求",
+            "question": "位元需求、合约价格与客户库存是否处于同一周期方向",
+            "state": "待查证",
+            "sourceLabel": "WSTS 全球半导体市场更新",
+            "url": "https://www.wsts.org/76/Recent-News-Release"
+          },
+          {
+            "stage": "供给/订单",
+            "question": "ASP、位元出货、库存、产能纪律与高端产品占比",
+            "state": "待查证",
+            "sourceLabel": "SEMI 行业与晶圆厂更新",
+            "url": "https://www.semi.org/en/news-resources/press-releases"
+          },
+          {
+            "stage": "公司经营",
+            "question": "DRAM与NAND，重点验证ASP、库存、HBM供需与资本开支",
+            "state": "待查证",
+            "sourceLabel": "公司IR / 监管披露",
+            "url": "https://investors.micron.com/quarterly-results"
+          },
+          {
+            "stage": "财务兑现",
+            "question": "毛利率、库存减值和经营现金流能否持续改善",
+            "state": "待查证",
+            "sourceLabel": "SEC EDGAR",
+            "url": "https://www.sec.gov/edgar/browse/?CIK=MU&owner=exclude&action=getcompany"
+          }
+        ]
+      },
+      "structure": {
+        "scoreImpact": "独立风险层，尚未计入研究分",
+        "riskSummary": "美股没有与A股融资余额完全等价的统一公开口径；当前不拿短卖成交量冒充空头持仓。",
+        "margin": {
+          "status": "not_applicable",
+          "balance": null,
+          "buyAmount": null,
+          "shortBalance": null,
+          "totalBalance": null,
+          "change5dPct": null,
+          "toFloatMarketCapPct": null,
+          "percentile": null,
+          "asOf": null,
+          "source": "未采用替代口径",
+          "verifyUrl": "https://www.finra.org/finra-data/browse-catalog/equity-short-interest/data",
+          "note": "FINRA short interest与short volume口径不同；本页当前均未纳入评分。"
+        },
+        "chips": {
+          "status": "error",
+          "averageCost": null,
+          "peakCost": null,
+          "concentration70Pct": null,
+          "overheadSharePct": null,
+          "latestPrice": null,
+          "sampleBars": 0,
+          "asOf": null,
+          "source": "日K量价成本模型",
+          "verifyUrl": "https://quote.eastmoney.com/us/MU.html",
+          "note": "成本代理改为点开个股时按需计算，避免整池刷新触发行情源限流；若单股请求失败则保持空值。"
+        },
+        "identitySignals": [
+          {
+            "label": "成本密集区",
+            "state": "按需计算",
+            "explanation": "点开本页时用Nasdaq日K估算价格上方潜在筹码压力；不是账户级真实成本。"
+          },
+          {
+            "label": "空头仓位",
+            "state": "待 FINRA 授权",
+            "explanation": "Short interest是半月披露的真实空头仓位；short volume不能冒充仓位。"
+          },
+          {
+            "label": "机构/内部人",
+            "state": "待 SEC 批处理",
+            "explanation": "13F是季度机构长仓；Form 4是事件披露，均需单列日期与滞后。"
+          },
+          {
+            "label": "期权拥挤",
+            "state": "待接 OCC 日批次",
+            "explanation": "可观察前一结算日OI，但不能由put/call推断交易者身份。"
+          }
+        ]
+      },
+      "sources": {
+        "marketData": {
+          "status": "ok",
+          "source": "腾讯行情聚合",
+          "asOf": "2026-10-02T20:00:01.000Z",
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "reason": null
+        },
+        "evidence": {
+          "status": "empty",
+          "source": "公司 Investor Relations",
+          "asOf": null,
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "itemCount": 0,
+          "reason": null
+        },
+        "leverage": {
+          "status": "empty",
+          "source": "交易所融资融券披露入口",
+          "asOf": null,
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "reason": null
+        }
+      },
+      "errors": [],
+      "groupRank": 1,
+      "groupSize": 2
+    },
+    {
+      "symbol": "ASX",
+      "name": "ASE Technology ADR",
+      "exchange": "NYSE",
+      "market": "us",
+      "industry": "半导体",
+      "subIndustry": "封装测试",
+      "focus": "封装测试与电子制造，重点验证先进封装、稼动率与产品组合",
+      "price": 47.45,
+      "previousClose": 44.73,
+      "changePct": 6.08,
+      "marketCap": 106064327000,
+      "floatMarketCap": null,
+      "peTtm": 57.88,
+      "pb": 10.12,
+      "roe": 17.52,
+      "quoteTime": "2026-10-02T20:04:35.000Z",
+      "quoteSource": "腾讯行情聚合",
+      "score": 50,
+      "scoreStatus": "complete",
+      "components": {
+        "roe": 75,
+        "pe": 25,
+        "pb": 25,
+        "evidence": 50,
+        "price": 80
+      },
+      "confidence": 61,
+      "confidenceLabel": "中等",
+      "evidence": [],
+      "irUrl": "https://www.aseglobal.com/investors/financial-information/",
+      "verifyUrl": "https://www.sec.gov/edgar/browse/?CIK=ASX&owner=exclude&action=getcompany",
+      "valuation": {
+        "pePercentile": 75,
+        "pbPercentile": 75,
+        "roePercentile": 75,
+        "combinedPercentile": 75,
+        "band": "偏高",
+        "comparisonScope": "美股上市标的 · 封装测试",
+        "sampleSize": 2,
+        "preferredMetrics": [
+          "EV/EBITDA",
+          "PB",
+          "PE"
+        ],
+        "interpretation": "封装测试可比样本中估值处于较高分位；需要盈利增速、ROE或现金流改善来验证溢价，而不是把“高PE”直接解释为高质量。",
+        "caveat": "当前同组仅2只，分位对单只样本很敏感；历史分位和一致预期尚未接入。"
+      },
+      "industryValidation": {
+        "summary": "不要用单条新闻直接跳到估值结论；至少沿相邻节点核验需求、经营与财务兑现。",
+        "nodes": [
+          {
+            "stage": "终端需求",
+            "question": "终端需求与先进封装需求是否同步传导至订单",
+            "state": "待查证",
+            "sourceLabel": "WSTS 全球半导体市场更新",
+            "url": "https://www.wsts.org/76/Recent-News-Release"
+          },
+          {
+            "stage": "供给/订单",
+            "question": "稼动率、单价、先进封装占比与资本开支效率",
+            "state": "待查证",
+            "sourceLabel": "SEMI 行业与晶圆厂更新",
+            "url": "https://www.semi.org/en/news-resources/press-releases"
+          },
+          {
+            "stage": "公司经营",
+            "question": "封装测试与电子制造，重点验证先进封装、稼动率与产品组合",
+            "state": "待查证",
+            "sourceLabel": "公司IR / 监管披露",
+            "url": "https://www.aseglobal.com/investors/financial-information/"
+          },
+          {
+            "stage": "财务兑现",
+            "question": "毛利率、折旧压力与经营现金流是否改善",
+            "state": "待查证",
+            "sourceLabel": "SEC EDGAR",
+            "url": "https://www.sec.gov/edgar/browse/?CIK=ASX&owner=exclude&action=getcompany"
+          }
+        ]
+      },
+      "structure": {
+        "scoreImpact": "独立风险层，尚未计入研究分",
+        "riskSummary": "美股没有与A股融资余额完全等价的统一公开口径；当前不拿短卖成交量冒充空头持仓。",
+        "margin": {
+          "status": "not_applicable",
+          "balance": null,
+          "buyAmount": null,
+          "shortBalance": null,
+          "totalBalance": null,
+          "change5dPct": null,
+          "toFloatMarketCapPct": null,
+          "percentile": null,
+          "asOf": null,
+          "source": "未采用替代口径",
+          "verifyUrl": "https://www.finra.org/finra-data/browse-catalog/equity-short-interest/data",
+          "note": "FINRA short interest与short volume口径不同；本页当前均未纳入评分。"
+        },
+        "chips": {
+          "status": "error",
+          "averageCost": null,
+          "peakCost": null,
+          "concentration70Pct": null,
+          "overheadSharePct": null,
+          "latestPrice": null,
+          "sampleBars": 0,
+          "asOf": null,
+          "source": "日K量价成本模型",
+          "verifyUrl": "https://quote.eastmoney.com/us/ASX.html",
+          "note": "成本代理改为点开个股时按需计算，避免整池刷新触发行情源限流；若单股请求失败则保持空值。"
+        },
+        "identitySignals": [
+          {
+            "label": "成本密集区",
+            "state": "按需计算",
+            "explanation": "点开本页时用Nasdaq日K估算价格上方潜在筹码压力；不是账户级真实成本。"
+          },
+          {
+            "label": "空头仓位",
+            "state": "待 FINRA 授权",
+            "explanation": "Short interest是半月披露的真实空头仓位；short volume不能冒充仓位。"
+          },
+          {
+            "label": "机构/内部人",
+            "state": "待 SEC 批处理",
+            "explanation": "13F是季度机构长仓；Form 4是事件披露，均需单列日期与滞后。"
+          },
+          {
+            "label": "期权拥挤",
+            "state": "待接 OCC 日批次",
+            "explanation": "可观察前一结算日OI，但不能由put/call推断交易者身份。"
+          }
+        ]
+      },
+      "sources": {
+        "marketData": {
+          "status": "ok",
+          "source": "腾讯行情聚合",
+          "asOf": "2026-10-02T20:04:35.000Z",
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "reason": null
+        },
+        "evidence": {
+          "status": "empty",
+          "source": "公司 Investor Relations",
+          "asOf": null,
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "itemCount": 0,
+          "reason": null
+        },
+        "leverage": {
+          "status": "empty",
+          "source": "交易所融资融券披露入口",
+          "asOf": null,
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "reason": null
+        }
+      },
+      "errors": [],
+      "groupRank": 2,
+      "groupSize": 2
+    },
+    {
+      "symbol": "SNDK",
+      "name": "SanDisk",
+      "exchange": "NASDAQ",
+      "market": "us",
+      "industry": "半导体",
+      "subIndustry": "存储",
+      "focus": "NAND闪存，重点验证价格周期、位元出货、库存与资本强度",
+      "price": 1719.99,
+      "previousClose": 1787.69,
+      "changePct": -3.79,
+      "marketCap": 251839217999.99997,
+      "floatMarketCap": null,
+      "peTtm": 23.32,
+      "pb": 16,
+      "roe": 91.64,
+      "quoteTime": "2026-10-02T20:00:01.000Z",
+      "quoteSource": "腾讯行情聚合",
+      "score": 48,
+      "scoreStatus": "complete",
+      "components": {
+        "roe": 75,
+        "pe": 25,
+        "pb": 25,
+        "evidence": 50,
+        "price": 31
+      },
+      "confidence": 61,
+      "confidenceLabel": "中等",
+      "evidence": [],
+      "irUrl": "https://investor.sandisk.com/financial-information/quarterly-results",
+      "verifyUrl": "https://www.sec.gov/edgar/browse/?CIK=SNDK&owner=exclude&action=getcompany",
+      "valuation": {
+        "pePercentile": 75,
+        "pbPercentile": 75,
+        "roePercentile": 75,
+        "combinedPercentile": 75,
+        "band": "偏高",
+        "comparisonScope": "美股上市标的 · 存储",
+        "sampleSize": 2,
+        "preferredMetrics": [
+          "PB",
+          "周期中枢EV/EBITDA",
+          "经营现金流"
+        ],
+        "interpretation": "存储可比样本中估值处于较高分位；需要盈利增速、ROE或现金流改善来验证溢价，而不是把“高PE”直接解释为高质量。",
+        "caveat": "当前同组仅2只，分位对单只样本很敏感；历史分位和一致预期尚未接入。"
+      },
+      "industryValidation": {
+        "summary": "不要用单条新闻直接跳到估值结论；至少沿相邻节点核验需求、经营与财务兑现。",
+        "nodes": [
+          {
+            "stage": "终端需求",
+            "question": "位元需求、合约价格与客户库存是否处于同一周期方向",
+            "state": "待查证",
+            "sourceLabel": "WSTS 全球半导体市场更新",
+            "url": "https://www.wsts.org/76/Recent-News-Release"
+          },
+          {
+            "stage": "供给/订单",
+            "question": "ASP、位元出货、库存、产能纪律与高端产品占比",
+            "state": "待查证",
+            "sourceLabel": "SEMI 行业与晶圆厂更新",
+            "url": "https://www.semi.org/en/news-resources/press-releases"
+          },
+          {
+            "stage": "公司经营",
+            "question": "NAND闪存，重点验证价格周期、位元出货、库存与资本强度",
+            "state": "待查证",
+            "sourceLabel": "公司IR / 监管披露",
+            "url": "https://investor.sandisk.com/financial-information/quarterly-results"
+          },
+          {
+            "stage": "财务兑现",
+            "question": "毛利率、库存减值和经营现金流能否持续改善",
+            "state": "待查证",
+            "sourceLabel": "SEC EDGAR",
+            "url": "https://www.sec.gov/edgar/browse/?CIK=SNDK&owner=exclude&action=getcompany"
+          }
+        ]
+      },
+      "structure": {
+        "scoreImpact": "独立风险层，尚未计入研究分",
+        "riskSummary": "美股没有与A股融资余额完全等价的统一公开口径；当前不拿短卖成交量冒充空头持仓。",
+        "margin": {
+          "status": "not_applicable",
+          "balance": null,
+          "buyAmount": null,
+          "shortBalance": null,
+          "totalBalance": null,
+          "change5dPct": null,
+          "toFloatMarketCapPct": null,
+          "percentile": null,
+          "asOf": null,
+          "source": "未采用替代口径",
+          "verifyUrl": "https://www.finra.org/finra-data/browse-catalog/equity-short-interest/data",
+          "note": "FINRA short interest与short volume口径不同；本页当前均未纳入评分。"
+        },
+        "chips": {
+          "status": "error",
+          "averageCost": null,
+          "peakCost": null,
+          "concentration70Pct": null,
+          "overheadSharePct": null,
+          "latestPrice": null,
+          "sampleBars": 0,
+          "asOf": null,
+          "source": "日K量价成本模型",
+          "verifyUrl": "https://quote.eastmoney.com/us/SNDK.html",
+          "note": "成本代理改为点开个股时按需计算，避免整池刷新触发行情源限流；若单股请求失败则保持空值。"
+        },
+        "identitySignals": [
+          {
+            "label": "成本密集区",
+            "state": "按需计算",
+            "explanation": "点开本页时用Nasdaq日K估算价格上方潜在筹码压力；不是账户级真实成本。"
+          },
+          {
+            "label": "空头仓位",
+            "state": "待 FINRA 授权",
+            "explanation": "Short interest是半月披露的真实空头仓位；short volume不能冒充仓位。"
+          },
+          {
+            "label": "机构/内部人",
+            "state": "待 SEC 批处理",
+            "explanation": "13F是季度机构长仓；Form 4是事件披露，均需单列日期与滞后。"
+          },
+          {
+            "label": "期权拥挤",
+            "state": "待接 OCC 日批次",
+            "explanation": "可观察前一结算日OI，但不能由put/call推断交易者身份。"
+          }
+        ]
+      },
+      "sources": {
+        "marketData": {
+          "status": "ok",
+          "source": "腾讯行情聚合",
+          "asOf": "2026-10-02T20:00:01.000Z",
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "reason": null
+        },
+        "evidence": {
+          "status": "empty",
+          "source": "公司 Investor Relations",
+          "asOf": null,
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "itemCount": 0,
+          "reason": null
+        },
+        "leverage": {
+          "status": "empty",
+          "source": "交易所融资融券披露入口",
+          "asOf": null,
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "reason": null
+        }
+      },
+      "errors": [],
+      "groupRank": 2,
+      "groupSize": 2
+    },
+    {
+      "symbol": "LRCX",
+      "name": "Lam Research",
+      "exchange": "NASDAQ",
+      "market": "us",
+      "industry": "半导体",
+      "subIndustry": "半导体设备",
+      "focus": "刻蚀与沉积设备，重点验证存储资本开支、订单与服务收入",
+      "price": 347.49,
+      "previousClose": 340.1,
+      "changePct": 2.17,
+      "marketCap": 434857452000,
+      "floatMarketCap": null,
+      "peTtm": 60.33,
+      "pb": 34.87,
+      "roe": 65.07,
+      "quoteTime": "2026-10-02T20:00:01.000Z",
+      "quoteSource": "腾讯行情聚合",
+      "score": 44,
+      "scoreStatus": "complete",
+      "components": {
+        "roe": 50,
+        "pe": 17,
+        "pb": 50,
+        "evidence": 50,
+        "price": 61
+      },
+      "confidence": 61,
+      "confidenceLabel": "中等",
+      "evidence": [],
+      "irUrl": "https://investor.lamresearch.com/quarterly-results",
+      "verifyUrl": "https://www.sec.gov/edgar/browse/?CIK=LRCX&owner=exclude&action=getcompany",
+      "valuation": {
+        "pePercentile": 83,
+        "pbPercentile": 50,
+        "roePercentile": 50,
+        "combinedPercentile": 67,
+        "band": "偏高",
+        "comparisonScope": "美股上市标的 · 半导体设备",
+        "sampleSize": 3,
+        "preferredMetrics": [
+          "远期PE*",
+          "EV/EBITDA",
+          "PEG*"
+        ],
+        "interpretation": "估值位于可比样本中部，单靠PE/PB不足以形成结论；应优先寻找行业景气与公司财务兑现的同向证据。",
+        "caveat": "当前同组仅3只，分位对单只样本很敏感；历史分位和一致预期尚未接入。"
+      },
+      "industryValidation": {
+        "summary": "不要用单条新闻直接跳到估值结论；至少沿相邻节点核验需求、经营与财务兑现。",
+        "nodes": [
+          {
+            "stage": "终端需求",
+            "question": "全球及本地晶圆厂资本开支是否进入确认与交付周期",
+            "state": "待查证",
+            "sourceLabel": "WSTS 全球半导体市场更新",
+            "url": "https://www.wsts.org/76/Recent-News-Release"
+          },
+          {
+            "stage": "供给/订单",
+            "question": "订单/在手订单、客户验证、交付验收与合同负债",
+            "state": "待查证",
+            "sourceLabel": "SEMI 行业与晶圆厂更新",
+            "url": "https://www.semi.org/en/news-resources/press-releases"
+          },
+          {
+            "stage": "公司经营",
+            "question": "刻蚀与沉积设备，重点验证存储资本开支、订单与服务收入",
+            "state": "待查证",
+            "sourceLabel": "公司IR / 监管披露",
+            "url": "https://investor.lamresearch.com/quarterly-results"
+          },
+          {
+            "stage": "财务兑现",
+            "question": "订单能否兑现为收入、毛利率与经营现金流",
+            "state": "待查证",
+            "sourceLabel": "SEC EDGAR",
+            "url": "https://www.sec.gov/edgar/browse/?CIK=LRCX&owner=exclude&action=getcompany"
+          }
+        ]
+      },
+      "structure": {
+        "scoreImpact": "独立风险层，尚未计入研究分",
+        "riskSummary": "美股没有与A股融资余额完全等价的统一公开口径；当前不拿短卖成交量冒充空头持仓。",
+        "margin": {
+          "status": "not_applicable",
+          "balance": null,
+          "buyAmount": null,
+          "shortBalance": null,
+          "totalBalance": null,
+          "change5dPct": null,
+          "toFloatMarketCapPct": null,
+          "percentile": null,
+          "asOf": null,
+          "source": "未采用替代口径",
+          "verifyUrl": "https://www.finra.org/finra-data/browse-catalog/equity-short-interest/data",
+          "note": "FINRA short interest与short volume口径不同；本页当前均未纳入评分。"
+        },
+        "chips": {
+          "status": "error",
+          "averageCost": null,
+          "peakCost": null,
+          "concentration70Pct": null,
+          "overheadSharePct": null,
+          "latestPrice": null,
+          "sampleBars": 0,
+          "asOf": null,
+          "source": "日K量价成本模型",
+          "verifyUrl": "https://quote.eastmoney.com/us/LRCX.html",
+          "note": "成本代理改为点开个股时按需计算，避免整池刷新触发行情源限流；若单股请求失败则保持空值。"
+        },
+        "identitySignals": [
+          {
+            "label": "成本密集区",
+            "state": "按需计算",
+            "explanation": "点开本页时用Nasdaq日K估算价格上方潜在筹码压力；不是账户级真实成本。"
+          },
+          {
+            "label": "空头仓位",
+            "state": "待 FINRA 授权",
+            "explanation": "Short interest是半月披露的真实空头仓位；short volume不能冒充仓位。"
+          },
+          {
+            "label": "机构/内部人",
+            "state": "待 SEC 批处理",
+            "explanation": "13F是季度机构长仓；Form 4是事件披露，均需单列日期与滞后。"
+          },
+          {
+            "label": "期权拥挤",
+            "state": "待接 OCC 日批次",
+            "explanation": "可观察前一结算日OI，但不能由put/call推断交易者身份。"
+          }
+        ]
+      },
+      "sources": {
+        "marketData": {
+          "status": "ok",
+          "source": "腾讯行情聚合",
+          "asOf": "2026-10-02T20:00:01.000Z",
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "reason": null
+        },
+        "evidence": {
+          "status": "empty",
+          "source": "公司 Investor Relations",
+          "asOf": null,
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "itemCount": 0,
+          "reason": null
+        },
+        "leverage": {
+          "status": "empty",
+          "source": "交易所融资融券披露入口",
+          "asOf": null,
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "reason": null
+        }
+      },
+      "errors": [],
+      "groupRank": 3,
+      "groupSize": 3
+    },
+    {
+      "symbol": "ENTG",
+      "name": "Entegris",
+      "exchange": "NASDAQ",
+      "market": "us",
+      "industry": "半导体",
+      "subIndustry": "半导体材料",
+      "focus": "工艺材料与污染控制，重点验证晶圆投片、先进节点用量与利润率",
+      "price": 166.47,
+      "previousClose": 158.48,
+      "changePct": 5.04,
+      "marketCap": 25436616000,
+      "floatMarketCap": null,
+      "peTtm": 83.23,
+      "pb": 6.12,
+      "roe": 7.67,
+      "quoteTime": "2026-10-02T20:00:01.000Z",
+      "quoteSource": "腾讯行情聚合",
+      "score": 43,
+      "scoreStatus": "complete",
+      "components": {
+        "roe": 25,
+        "pe": 25,
+        "pb": 75,
+        "evidence": 50,
+        "price": 75
+      },
+      "confidence": 61,
+      "confidenceLabel": "中等",
+      "evidence": [],
+      "irUrl": "https://investor.entegris.com/quarterly-results",
+      "verifyUrl": "https://www.sec.gov/edgar/browse/?CIK=ENTG&owner=exclude&action=getcompany",
+      "valuation": {
+        "pePercentile": 75,
+        "pbPercentile": 25,
+        "roePercentile": 25,
+        "combinedPercentile": 50,
+        "band": "中性",
+        "comparisonScope": "美股上市标的 · 半导体材料",
+        "sampleSize": 2,
+        "preferredMetrics": [
+          "PE",
+          "EV/EBITDA",
+          "FCF收益率"
+        ],
+        "interpretation": "估值位于可比样本中部，单靠PE/PB不足以形成结论；应优先寻找行业景气与公司财务兑现的同向证据。",
+        "caveat": "当前同组仅2只，分位对单只样本很敏感；历史分位和一致预期尚未接入。"
+      },
+      "industryValidation": {
+        "summary": "不要用单条新闻直接跳到估值结论；至少沿相邻节点核验需求、经营与财务兑现。",
+        "nodes": [
+          {
+            "stage": "终端需求",
+            "question": "晶圆投片量与先进制程用量是否带动材料消耗",
+            "state": "待查证",
+            "sourceLabel": "WSTS 全球半导体市场更新",
+            "url": "https://www.wsts.org/76/Recent-News-Release"
+          },
+          {
+            "stage": "供给/订单",
+            "question": "客户认证、份额、销量、价格与新产能利用率",
+            "state": "待查证",
+            "sourceLabel": "SEMI 行业与晶圆厂更新",
+            "url": "https://www.semi.org/en/news-resources/press-releases"
+          },
+          {
+            "stage": "公司经营",
+            "question": "工艺材料与污染控制，重点验证晶圆投片、先进节点用量与利润率",
+            "state": "待查证",
+            "sourceLabel": "公司IR / 监管披露",
+            "url": "https://investor.entegris.com/quarterly-results"
+          },
+          {
+            "stage": "财务兑现",
+            "question": "放量能否带来毛利率与现金流，而非应收和存货堆积",
+            "state": "待查证",
+            "sourceLabel": "SEC EDGAR",
+            "url": "https://www.sec.gov/edgar/browse/?CIK=ENTG&owner=exclude&action=getcompany"
+          }
+        ]
+      },
+      "structure": {
+        "scoreImpact": "独立风险层，尚未计入研究分",
+        "riskSummary": "美股没有与A股融资余额完全等价的统一公开口径；当前不拿短卖成交量冒充空头持仓。",
+        "margin": {
+          "status": "not_applicable",
+          "balance": null,
+          "buyAmount": null,
+          "shortBalance": null,
+          "totalBalance": null,
+          "change5dPct": null,
+          "toFloatMarketCapPct": null,
+          "percentile": null,
+          "asOf": null,
+          "source": "未采用替代口径",
+          "verifyUrl": "https://www.finra.org/finra-data/browse-catalog/equity-short-interest/data",
+          "note": "FINRA short interest与short volume口径不同；本页当前均未纳入评分。"
+        },
+        "chips": {
+          "status": "error",
+          "averageCost": null,
+          "peakCost": null,
+          "concentration70Pct": null,
+          "overheadSharePct": null,
+          "latestPrice": null,
+          "sampleBars": 0,
+          "asOf": null,
+          "source": "日K量价成本模型",
+          "verifyUrl": "https://quote.eastmoney.com/us/ENTG.html",
+          "note": "成本代理改为点开个股时按需计算，避免整池刷新触发行情源限流；若单股请求失败则保持空值。"
+        },
+        "identitySignals": [
+          {
+            "label": "成本密集区",
+            "state": "按需计算",
+            "explanation": "点开本页时用Nasdaq日K估算价格上方潜在筹码压力；不是账户级真实成本。"
+          },
+          {
+            "label": "空头仓位",
+            "state": "待 FINRA 授权",
+            "explanation": "Short interest是半月披露的真实空头仓位；short volume不能冒充仓位。"
+          },
+          {
+            "label": "机构/内部人",
+            "state": "待 SEC 批处理",
+            "explanation": "13F是季度机构长仓；Form 4是事件披露，均需单列日期与滞后。"
+          },
+          {
+            "label": "期权拥挤",
+            "state": "待接 OCC 日批次",
+            "explanation": "可观察前一结算日OI，但不能由put/call推断交易者身份。"
+          }
+        ]
+      },
+      "sources": {
+        "marketData": {
+          "status": "ok",
+          "source": "腾讯行情聚合",
+          "asOf": "2026-10-02T20:00:01.000Z",
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "reason": null
+        },
+        "evidence": {
+          "status": "empty",
+          "source": "公司 Investor Relations",
+          "asOf": null,
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "itemCount": 0,
+          "reason": null
+        },
+        "leverage": {
+          "status": "empty",
+          "source": "交易所融资融券披露入口",
+          "asOf": null,
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "reason": null
+        }
+      },
+      "errors": [],
+      "groupRank": 2,
+      "groupSize": 2
+    },
+    {
+      "symbol": "GFS",
+      "name": "GlobalFoundries",
+      "exchange": "NASDAQ",
+      "market": "us",
+      "industry": "半导体",
+      "subIndustry": "晶圆制造",
+      "focus": "特色工艺晶圆制造，重点验证稼动率、长期协议与ASP",
+      "price": 50.17,
+      "previousClose": 48.68,
+      "changePct": 3.06,
+      "marketCap": 27965691000,
+      "floatMarketCap": null,
+      "peTtm": 39.2,
+      "pb": 2.37,
+      "roe": 6.16,
+      "quoteTime": "2026-10-02T20:00:01.000Z",
+      "quoteSource": "腾讯行情聚合",
+      "score": 42,
+      "scoreStatus": "complete",
+      "components": {
+        "roe": 25,
+        "pe": 25,
+        "pb": 75,
+        "evidence": 50,
+        "price": 65
+      },
+      "confidence": 61,
+      "confidenceLabel": "中等",
+      "evidence": [],
+      "irUrl": "https://investors.gf.com/financials/quarterly-results/default.aspx",
+      "verifyUrl": "https://www.sec.gov/edgar/browse/?CIK=GFS&owner=exclude&action=getcompany",
+      "valuation": {
+        "pePercentile": 75,
+        "pbPercentile": 25,
+        "roePercentile": 25,
+        "combinedPercentile": 50,
+        "band": "中性",
+        "comparisonScope": "美股上市标的 · 晶圆制造",
+        "sampleSize": 2,
+        "preferredMetrics": [
+          "PB",
+          "EV/EBITDA",
+          "EV/Sales"
+        ],
+        "interpretation": "估值位于可比样本中部，单靠PE/PB不足以形成结论；应优先寻找行业景气与公司财务兑现的同向证据。",
+        "caveat": "当前同组仅2只，分位对单只样本很敏感；历史分位和一致预期尚未接入。"
+      },
+      "industryValidation": {
+        "summary": "不要用单条新闻直接跳到估值结论；至少沿相邻节点核验需求、经营与财务兑现。",
+        "nodes": [
+          {
+            "stage": "终端需求",
+            "question": "终端出货与晶圆需求是否共同改善，而不只是单月价格波动",
+            "state": "待查证",
+            "sourceLabel": "WSTS 全球半导体市场更新",
+            "url": "https://www.wsts.org/76/Recent-News-Release"
+          },
+          {
+            "stage": "供给/订单",
+            "question": "产能利用率、ASP、先进/特色工艺占比与资本开支",
+            "state": "待查证",
+            "sourceLabel": "SEMI 行业与晶圆厂更新",
+            "url": "https://www.semi.org/en/news-resources/press-releases"
+          },
+          {
+            "stage": "公司经营",
+            "question": "特色工艺晶圆制造，重点验证稼动率、长期协议与ASP",
+            "state": "待查证",
+            "sourceLabel": "公司IR / 监管披露",
+            "url": "https://investors.gf.com/financials/quarterly-results/default.aspx"
+          },
+          {
+            "stage": "财务兑现",
+            "question": "收入和毛利率改善能否覆盖折旧，并转化为经营现金流",
+            "state": "待查证",
+            "sourceLabel": "SEC EDGAR",
+            "url": "https://www.sec.gov/edgar/browse/?CIK=GFS&owner=exclude&action=getcompany"
+          }
+        ]
+      },
+      "structure": {
+        "scoreImpact": "独立风险层，尚未计入研究分",
+        "riskSummary": "美股没有与A股融资余额完全等价的统一公开口径；当前不拿短卖成交量冒充空头持仓。",
+        "margin": {
+          "status": "not_applicable",
+          "balance": null,
+          "buyAmount": null,
+          "shortBalance": null,
+          "totalBalance": null,
+          "change5dPct": null,
+          "toFloatMarketCapPct": null,
+          "percentile": null,
+          "asOf": null,
+          "source": "未采用替代口径",
+          "verifyUrl": "https://www.finra.org/finra-data/browse-catalog/equity-short-interest/data",
+          "note": "FINRA short interest与short volume口径不同；本页当前均未纳入评分。"
+        },
+        "chips": {
+          "status": "error",
+          "averageCost": null,
+          "peakCost": null,
+          "concentration70Pct": null,
+          "overheadSharePct": null,
+          "latestPrice": null,
+          "sampleBars": 0,
+          "asOf": null,
+          "source": "日K量价成本模型",
+          "verifyUrl": "https://quote.eastmoney.com/us/GFS.html",
+          "note": "成本代理改为点开个股时按需计算，避免整池刷新触发行情源限流；若单股请求失败则保持空值。"
+        },
+        "identitySignals": [
+          {
+            "label": "成本密集区",
+            "state": "按需计算",
+            "explanation": "点开本页时用Nasdaq日K估算价格上方潜在筹码压力；不是账户级真实成本。"
+          },
+          {
+            "label": "空头仓位",
+            "state": "待 FINRA 授权",
+            "explanation": "Short interest是半月披露的真实空头仓位；short volume不能冒充仓位。"
+          },
+          {
+            "label": "机构/内部人",
+            "state": "待 SEC 批处理",
+            "explanation": "13F是季度机构长仓；Form 4是事件披露，均需单列日期与滞后。"
+          },
+          {
+            "label": "期权拥挤",
+            "state": "待接 OCC 日批次",
+            "explanation": "可观察前一结算日OI，但不能由put/call推断交易者身份。"
+          }
+        ]
+      },
+      "sources": {
+        "marketData": {
+          "status": "ok",
+          "source": "腾讯行情聚合",
+          "asOf": "2026-10-02T20:00:01.000Z",
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "reason": null
+        },
+        "evidence": {
+          "status": "empty",
+          "source": "公司 Investor Relations",
+          "asOf": null,
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "itemCount": 0,
+          "reason": null
+        },
+        "leverage": {
+          "status": "empty",
+          "source": "交易所融资融券披露入口",
+          "asOf": null,
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "reason": null
+        }
+      },
+      "errors": [],
+      "groupRank": 2,
+      "groupSize": 2
+    },
+    {
+      "symbol": "AMD",
+      "name": "AMD",
+      "exchange": "NASDAQ",
+      "market": "us",
+      "industry": "半导体",
+      "subIndustry": "芯片设计",
+      "focus": "CPU与GPU设计，重点验证服务器份额、AI加速卡与毛利率",
+      "price": 633.91,
+      "previousClose": 615.73,
+      "changePct": 2.95,
+      "marketCap": 1034842254000,
+      "floatMarketCap": null,
+      "peTtm": 162.54,
+      "pb": 15.39,
+      "roe": 10.2,
+      "quoteTime": "2026-10-02T20:00:01.000Z",
+      "quoteSource": "腾讯行情聚合",
+      "score": 34,
+      "scoreStatus": "complete",
+      "components": {
+        "roe": 13,
+        "pe": 13,
+        "pb": 63,
+        "evidence": 50,
+        "price": 65
+      },
+      "confidence": 85,
+      "confidenceLabel": "相对较高",
+      "evidence": [
+        {
+          "title": "AMD Reports Second Quarter 2026 Financial Results",
+          "date": "2026-08-04",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results",
+          "verifyUrl": "https://www.sec.gov/edgar/browse/?CIK=2488&owner=exclude",
+          "source": "公司 Investor Relations",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        },
+        {
+          "title": "AMD to Acquire World Labs to Advance the Future of AI Compute",
+          "date": "2026-09-28",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1299/amd-to-acquire-world-labs-to-advance-the-future-of-ai-compute",
+          "verifyUrl": "https://www.sec.gov/edgar/browse/?CIK=2488&owner=exclude",
+          "source": "公司 Investor Relations",
+          "kind": "公司新闻",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        },
+        {
+          "title": "AMD, Cisco and HUMAIN Expand Saudi Arabia’s AI Infrastructure as AMD Instinct Systems Go Live",
+          "date": "2026-08-31",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1298/amd-cisco-and-humain-expand-saudi-arabias-ai-infrastructure-as-amd-instinct-systems-go-live",
+          "verifyUrl": "https://www.sec.gov/edgar/browse/?CIK=2488&owner=exclude",
+          "source": "公司 Investor Relations",
+          "kind": "公司新闻",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        }
+      ],
+      "irUrl": "https://ir.amd.com/financial-information/financial-results",
+      "verifyUrl": "https://www.sec.gov/edgar/browse/?CIK=2488&owner=exclude",
+      "valuation": {
+        "pePercentile": 88,
+        "pbPercentile": 38,
+        "roePercentile": 13,
+        "combinedPercentile": 63,
+        "band": "偏高",
+        "comparisonScope": "美股上市标的 · 芯片设计",
+        "sampleSize": 4,
+        "preferredMetrics": [
+          "远期PE*",
+          "EV/Sales",
+          "FCF收益率"
+        ],
+        "interpretation": "估值位于可比样本中部，单靠PE/PB不足以形成结论；应优先寻找行业景气与公司财务兑现的同向证据。",
+        "caveat": "当前为观察池横截面分位，不是公司历史分位；带*指标需要一致预期数据，尚未接入时只作研究提示。"
+      },
+      "industryValidation": {
+        "summary": "不要用单条新闻直接跳到估值结论；至少沿相邻节点核验需求、经营与财务兑现。",
+        "nodes": [
+          {
+            "stage": "终端需求",
+            "question": "终端销量、平台迭代与客户库存是否支持真实出货",
+            "state": "待查证",
+            "sourceLabel": "WSTS 全球半导体市场更新",
+            "url": "https://www.wsts.org/76/Recent-News-Release"
+          },
+          {
+            "stage": "供给/订单",
+            "question": "出货量、ASP、产品组合、库存天数与毛利率",
+            "state": "待查证",
+            "sourceLabel": "SEMI 行业与晶圆厂更新",
+            "url": "https://www.semi.org/en/news-resources/press-releases"
+          },
+          {
+            "stage": "公司经营",
+            "question": "CPU与GPU设计，重点验证服务器份额、AI加速卡与毛利率",
+            "state": "有新披露",
+            "sourceLabel": "公司IR / 监管披露",
+            "url": "https://ir.amd.com/financial-information/financial-results"
+          },
+          {
+            "stage": "财务兑现",
+            "question": "收入增速、毛利率与自由现金流是否同向兑现",
+            "state": "有新披露",
+            "sourceLabel": "SEC EDGAR",
+            "url": "https://www.sec.gov/edgar/browse/?CIK=2488&owner=exclude"
+          }
+        ]
+      },
+      "structure": {
+        "scoreImpact": "独立风险层，尚未计入研究分",
+        "riskSummary": "美股没有与A股融资余额完全等价的统一公开口径；当前不拿短卖成交量冒充空头持仓。",
+        "margin": {
+          "status": "not_applicable",
+          "balance": null,
+          "buyAmount": null,
+          "shortBalance": null,
+          "totalBalance": null,
+          "change5dPct": null,
+          "toFloatMarketCapPct": null,
+          "percentile": null,
+          "asOf": null,
+          "source": "未采用替代口径",
+          "verifyUrl": "https://www.finra.org/finra-data/browse-catalog/equity-short-interest/data",
+          "note": "FINRA short interest与short volume口径不同；本页当前均未纳入评分。"
+        },
+        "chips": {
+          "status": "error",
+          "averageCost": null,
+          "peakCost": null,
+          "concentration70Pct": null,
+          "overheadSharePct": null,
+          "latestPrice": null,
+          "sampleBars": 0,
+          "asOf": null,
+          "source": "日K量价成本模型",
+          "verifyUrl": "https://quote.eastmoney.com/us/AMD.html",
+          "note": "成本代理改为点开个股时按需计算，避免整池刷新触发行情源限流；若单股请求失败则保持空值。"
+        },
+        "identitySignals": [
+          {
+            "label": "成本密集区",
+            "state": "按需计算",
+            "explanation": "点开本页时用Nasdaq日K估算价格上方潜在筹码压力；不是账户级真实成本。"
+          },
+          {
+            "label": "空头仓位",
+            "state": "待 FINRA 授权",
+            "explanation": "Short interest是半月披露的真实空头仓位；short volume不能冒充仓位。"
+          },
+          {
+            "label": "机构/内部人",
+            "state": "待 SEC 批处理",
+            "explanation": "13F是季度机构长仓；Form 4是事件披露，均需单列日期与滞后。"
+          },
+          {
+            "label": "期权拥挤",
+            "state": "待接 OCC 日批次",
+            "explanation": "可观察前一结算日OI，但不能由put/call推断交易者身份。"
+          }
+        ]
+      },
+      "sources": {
+        "marketData": {
+          "status": "ok",
+          "source": "腾讯行情聚合",
+          "asOf": "2026-10-02T20:00:01.000Z",
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "reason": null
+        },
+        "evidence": {
+          "status": "ok",
+          "source": "公司 Investor Relations",
+          "asOf": "2026-08-04",
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "itemCount": 3,
+          "reason": null
+        },
+        "leverage": {
+          "status": "empty",
+          "source": "交易所融资融券披露入口",
+          "asOf": null,
+          "attemptedAt": "2026-10-03T08:19:20.811Z",
+          "reason": null
+        }
+      },
+      "errors": [],
+      "groupRank": 4,
+      "groupSize": 4
+    }
+  ],
+  "disclosure": "实验性研究优先级评分，不构成投资建议。行情可能延迟；标题规则只用于排序；资金身份不从公开成交中猜测，事实以原始链接为准。"
+}

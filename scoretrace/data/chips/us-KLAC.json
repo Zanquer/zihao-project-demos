@@ -1,0 +1,18 @@
+{
+  "market": "us",
+  "symbol": "KLAC",
+  "chips": {
+    "status": "ok",
+    "averageCost": 203.33207367295384,
+    "peakCost": 181.39697647058824,
+    "concentration70Pct": 32.45337573002723,
+    "overheadSharePct": 35.14453929749407,
+    "latestPrice": 206.89,
+    "sampleBars": 120,
+    "asOf": "2026-10-02",
+    "source": "Nasdaq 历史行情",
+    "verifyUrl": "https://www.nasdaq.com/market-activity/stocks/klac/historical",
+    "note": "由近120个交易日OHLCV按日内三角分布估算，是成本密集区代理，不是账户级真实持仓，也不能识别主力身份。"
+  },
+  "generatedAt": "2026-10-03T08:19:26.342Z"
+}

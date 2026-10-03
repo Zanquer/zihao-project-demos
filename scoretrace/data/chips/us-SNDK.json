@@ -1,0 +1,18 @@
+{
+  "market": "us",
+  "symbol": "SNDK",
+  "chips": {
+    "status": "ok",
+    "averageCost": 1495.4880550005735,
+    "peakCost": 911.2525184873949,
+    "concentration70Pct": 45.75403795309119,
+    "overheadSharePct": 23.657077148570707,
+    "latestPrice": 1719.99,
+    "sampleBars": 120,
+    "asOf": "2026-10-02",
+    "source": "Nasdaq 历史行情",
+    "verifyUrl": "https://www.nasdaq.com/market-activity/stocks/sndk/historical",
+    "note": "由近120个交易日OHLCV按日内三角分布估算，是成本密集区代理，不是账户级真实持仓，也不能识别主力身份。"
+  },
+  "generatedAt": "2026-10-03T08:19:27.047Z"
+}

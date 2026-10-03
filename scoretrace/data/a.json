@@ -1,0 +1,2964 @@
+{
+  "market": "a",
+  "generatedAt": "2026-10-03T08:19:20.343Z",
+  "status": "ok",
+  "coverage": {
+    "total": 15,
+    "marketDataAvailable": 15,
+    "evidenceAvailable": 15,
+    "leverageAvailable": 15
+  },
+  "subIndustries": [
+    "晶圆制造",
+    "半导体设备",
+    "芯片设计",
+    "存储",
+    "半导体材料",
+    "封装测试"
+  ],
+  "scoringVersion": "preview-0.3",
+  "comparisonPolicy": "A股与美股分开；PE、PB、ROE只在同市场、同子行业观察池内比较。筛选不会重新计算分数。",
+  "stocks": [
+    {
+      "symbol": "688525",
+      "name": "佰维存储",
+      "exchange": "科创板",
+      "market": "a",
+      "industry": "半导体",
+      "subIndustry": "存储",
+      "focus": "存储产品与先进封装，重点验证价格周期、库存和产品结构",
+      "price": 192.35,
+      "previousClose": 198.6,
+      "changePct": -3.15,
+      "marketCap": 91719000000,
+      "floatMarketCap": 91719000000,
+      "peTtm": 11.12,
+      "pb": 7.29,
+      "roe": 64.92,
+      "quoteTime": "2026-09-30T08:14:49.000Z",
+      "quoteSource": "腾讯行情聚合",
+      "score": 69,
+      "scoreStatus": "complete",
+      "components": {
+        "roe": 75,
+        "pe": 75,
+        "pb": 75,
+        "evidence": 62,
+        "price": 34
+      },
+      "confidence": 85,
+      "confidenceLabel": "相对较高",
+      "evidence": [
+        {
+          "title": "佰维存储:2026年第四次临时股东会会议资料",
+          "date": "2026-09-24",
+          "url": "https://data.eastmoney.com/notices/detail/688525/AN202609241829866310.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688525",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        },
+        {
+          "title": "佰维存储:关于2026年度以集中竞价交易方式首次回购公司股份的公告",
+          "date": "2026-09-24",
+          "url": "https://data.eastmoney.com/notices/detail/688525/AN202609241829866294.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688525",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "positive",
+          "impact": 1,
+          "impactReason": "标题命中正向经营关键词，尚未判断财务量级"
+        },
+        {
+          "title": "佰维存储:深圳佰维存储科技股份有限公司投资者关系活动记录表(2026年9月16日、2026年9月17日、2026年9月24日)",
+          "date": "2026-09-24",
+          "url": "https://data.eastmoney.com/notices/detail/688525/AN202609241829863353.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688525",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        }
+      ],
+      "irUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688525",
+      "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688525",
+      "valuation": {
+        "pePercentile": 25,
+        "pbPercentile": 25,
+        "roePercentile": 75,
+        "combinedPercentile": 25,
+        "band": "偏低",
+        "comparisonScope": "A股 · 存储",
+        "sampleSize": 2,
+        "preferredMetrics": [
+          "PB",
+          "周期中枢EV/EBITDA",
+          "经营现金流"
+        ],
+        "interpretation": "存储可比样本中估值处于较低分位；这可能是安全边际，也可能反映周期下行或盈利质量问题，需和库存、订单及现金流一起查证。",
+        "caveat": "当前同组仅2只，分位对单只样本很敏感；历史分位和一致预期尚未接入。"
+      },
+      "industryValidation": {
+        "summary": "不要用单条新闻直接跳到估值结论；至少沿相邻节点核验需求、经营与财务兑现。",
+        "nodes": [
+          {
+            "stage": "终端需求",
+            "question": "位元需求、合约价格与客户库存是否处于同一周期方向",
+            "state": "待查证",
+            "sourceLabel": "工信部电子信息制造业数据",
+            "url": "https://www.miit.gov.cn/gxsj/tjfx/dzxx/index.html"
+          },
+          {
+            "stage": "供给/订单",
+            "question": "ASP、位元出货、库存、产能纪律与高端产品占比",
+            "state": "待查证",
+            "sourceLabel": "SEMI 行业与晶圆厂更新",
+            "url": "https://www.semi.org/en/news-resources/press-releases"
+          },
+          {
+            "stage": "公司经营",
+            "question": "存储产品与先进封装，重点验证价格周期、库存和产品结构",
+            "state": "有新披露",
+            "sourceLabel": "公司IR / 监管披露",
+            "url": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688525"
+          },
+          {
+            "stage": "财务兑现",
+            "question": "毛利率、库存减值和经营现金流能否持续改善",
+            "state": "有新披露",
+            "sourceLabel": "巨潮资讯",
+            "url": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688525"
+          }
+        ]
+      },
+      "structure": {
+        "scoreImpact": "独立风险层，尚未计入研究分",
+        "riskSummary": "融资余额近5个交易日减少3.0%；占流通市值9.26%（池内P97）。",
+        "margin": {
+          "status": "ok",
+          "balance": 8493640080,
+          "buyAmount": 234828529,
+          "shortBalance": null,
+          "totalBalance": null,
+          "change5dPct": -2.9749839201808292,
+          "toFloatMarketCapPct": 9.260502273247637,
+          "percentile": 97,
+          "asOf": "2026-09-30",
+          "source": "上交所官网",
+          "verifyUrl": "https://www.sse.com.cn/market/othersdata/margin/detail/index.shtml",
+          "note": "融资余额是杠杆拥挤代理，不代表国家队、量化或散户的真实身份。"
+        },
+        "chips": {
+          "status": "error",
+          "averageCost": null,
+          "peakCost": null,
+          "concentration70Pct": null,
+          "overheadSharePct": null,
+          "latestPrice": null,
+          "sampleBars": 0,
+          "asOf": null,
+          "source": "日K量价成本模型",
+          "verifyUrl": "https://quote.eastmoney.com/sh688525.html",
+          "note": "成本代理改为点开个股时按需计算，避免整池刷新触发行情源限流；若单股请求失败则保持空值。"
+        },
+        "identitySignals": [
+          {
+            "label": "两融杠杆",
+            "state": "官方日频",
+            "explanation": "融资余额衡量杠杆拥挤，不代表资金身份；融券余量与余额金额不会混用。"
+          },
+          {
+            "label": "成本密集区",
+            "state": "按需计算",
+            "explanation": "点开本页时用日K量价估算潜在套牢与集中区，只作为对手盘压力代理。"
+          },
+          {
+            "label": "股东结构",
+            "state": "待接季报批次",
+            "explanation": "国家队、机构与股东户数只能依公告滞后确认，不能推断实时净流入。"
+          },
+          {
+            "label": "账户身份",
+            "state": "公开数据不可穿透",
+            "explanation": "量化、散户与所谓主力账户无法由免费公开盘口可靠识别。"
+          }
+        ]
+      },
+      "sources": {
+        "marketData": {
+          "status": "ok",
+          "source": "腾讯行情聚合",
+          "asOf": "2026-09-30T08:14:49.000Z",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "reason": null
+        },
+        "evidence": {
+          "status": "ok",
+          "source": "上市公司公告",
+          "asOf": "2026-09-24",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "itemCount": 3,
+          "reason": null
+        },
+        "leverage": {
+          "status": "ok",
+          "source": "上交所官网",
+          "asOf": "2026-09-30",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "reason": null
+        }
+      },
+      "errors": [],
+      "groupRank": 1,
+      "groupSize": 2
+    },
+    {
+      "symbol": "688981",
+      "name": "中芯国际",
+      "exchange": "科创板",
+      "market": "a",
+      "industry": "半导体",
+      "subIndustry": "晶圆制造",
+      "focus": "成熟与特色工艺晶圆代工，重点验证产能利用率、ASP 与资本开支",
+      "price": 111.99,
+      "previousClose": 117.51,
+      "changePct": -4.7,
+      "marketCap": 958896999999.9999,
+      "floatMarketCap": 224046999999.99997,
+      "peTtm": 133.05,
+      "pb": 5.59,
+      "roe": 4.2,
+      "quoteTime": "2026-09-30T08:14:47.000Z",
+      "quoteSource": "腾讯行情聚合",
+      "score": 65,
+      "scoreStatus": "complete",
+      "components": {
+        "roe": 75,
+        "pe": 75,
+        "pb": 75,
+        "evidence": 50,
+        "price": 27
+      },
+      "confidence": 85,
+      "confidenceLabel": "相对较高",
+      "evidence": [
+        {
+          "title": "中芯国际:港股公告:2026年中期业绩公告",
+          "date": "2026-08-27",
+          "url": "https://data.eastmoney.com/notices/detail/688981/AN202608271828548643.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688981",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        },
+        {
+          "title": "中芯国际:港股公告:翌日披露报表",
+          "date": "2026-09-28",
+          "url": "https://data.eastmoney.com/notices/detail/688981/AN202609281829964976.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688981",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        },
+        {
+          "title": "中芯国际:港股公告:翌日披露报表",
+          "date": "2026-09-09",
+          "url": "https://data.eastmoney.com/notices/detail/688981/AN202609091829179210.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688981",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        }
+      ],
+      "irUrl": "https://www.smics.com/site/company_financialSummary",
+      "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688981",
+      "valuation": {
+        "pePercentile": 25,
+        "pbPercentile": 25,
+        "roePercentile": 75,
+        "combinedPercentile": 25,
+        "band": "偏低",
+        "comparisonScope": "A股 · 晶圆制造",
+        "sampleSize": 2,
+        "preferredMetrics": [
+          "PB",
+          "EV/EBITDA",
+          "EV/Sales"
+        ],
+        "interpretation": "晶圆制造可比样本中估值处于较低分位；这可能是安全边际，也可能反映周期下行或盈利质量问题，需和库存、订单及现金流一起查证。",
+        "caveat": "当前同组仅2只，分位对单只样本很敏感；历史分位和一致预期尚未接入。"
+      },
+      "industryValidation": {
+        "summary": "不要用单条新闻直接跳到估值结论；至少沿相邻节点核验需求、经营与财务兑现。",
+        "nodes": [
+          {
+            "stage": "终端需求",
+            "question": "终端出货与晶圆需求是否共同改善，而不只是单月价格波动",
+            "state": "待查证",
+            "sourceLabel": "工信部电子信息制造业数据",
+            "url": "https://www.miit.gov.cn/gxsj/tjfx/dzxx/index.html"
+          },
+          {
+            "stage": "供给/订单",
+            "question": "产能利用率、ASP、先进/特色工艺占比与资本开支",
+            "state": "待查证",
+            "sourceLabel": "SEMI 行业与晶圆厂更新",
+            "url": "https://www.semi.org/en/news-resources/press-releases"
+          },
+          {
+            "stage": "公司经营",
+            "question": "成熟与特色工艺晶圆代工，重点验证产能利用率、ASP 与资本开支",
+            "state": "有新披露",
+            "sourceLabel": "公司IR / 监管披露",
+            "url": "https://www.smics.com/site/company_financialSummary"
+          },
+          {
+            "stage": "财务兑现",
+            "question": "收入和毛利率改善能否覆盖折旧，并转化为经营现金流",
+            "state": "有新披露",
+            "sourceLabel": "巨潮资讯",
+            "url": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688981"
+          }
+        ]
+      },
+      "structure": {
+        "scoreImpact": "独立风险层，尚未计入研究分",
+        "riskSummary": "融资余额近5个交易日增加0.0%；占流通市值4.81%（池内P57）。",
+        "margin": {
+          "status": "ok",
+          "balance": 10784324256,
+          "buyAmount": 454473991,
+          "shortBalance": null,
+          "totalBalance": null,
+          "change5dPct": 0,
+          "toFloatMarketCapPct": 4.813420512660291,
+          "percentile": 57,
+          "asOf": "2026-09-30",
+          "source": "上交所官网",
+          "verifyUrl": "https://www.sse.com.cn/market/othersdata/margin/detail/index.shtml",
+          "note": "融资余额是杠杆拥挤代理，不代表国家队、量化或散户的真实身份。"
+        },
+        "chips": {
+          "status": "error",
+          "averageCost": null,
+          "peakCost": null,
+          "concentration70Pct": null,
+          "overheadSharePct": null,
+          "latestPrice": null,
+          "sampleBars": 0,
+          "asOf": null,
+          "source": "日K量价成本模型",
+          "verifyUrl": "https://quote.eastmoney.com/sh688981.html",
+          "note": "成本代理改为点开个股时按需计算，避免整池刷新触发行情源限流；若单股请求失败则保持空值。"
+        },
+        "identitySignals": [
+          {
+            "label": "两融杠杆",
+            "state": "官方日频",
+            "explanation": "融资余额衡量杠杆拥挤，不代表资金身份；融券余量与余额金额不会混用。"
+          },
+          {
+            "label": "成本密集区",
+            "state": "按需计算",
+            "explanation": "点开本页时用日K量价估算潜在套牢与集中区，只作为对手盘压力代理。"
+          },
+          {
+            "label": "股东结构",
+            "state": "待接季报批次",
+            "explanation": "国家队、机构与股东户数只能依公告滞后确认，不能推断实时净流入。"
+          },
+          {
+            "label": "账户身份",
+            "state": "公开数据不可穿透",
+            "explanation": "量化、散户与所谓主力账户无法由免费公开盘口可靠识别。"
+          }
+        ]
+      },
+      "sources": {
+        "marketData": {
+          "status": "ok",
+          "source": "腾讯行情聚合",
+          "asOf": "2026-09-30T08:14:47.000Z",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "reason": null
+        },
+        "evidence": {
+          "status": "ok",
+          "source": "上市公司公告",
+          "asOf": "2026-08-27",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "itemCount": 3,
+          "reason": null
+        },
+        "leverage": {
+          "status": "ok",
+          "source": "上交所官网",
+          "asOf": "2026-09-30",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "reason": null
+        }
+      },
+      "errors": [],
+      "groupRank": 1,
+      "groupSize": 2
+    },
+    {
+      "symbol": "603986",
+      "name": "兆易创新",
+      "exchange": "上交所",
+      "market": "a",
+      "industry": "半导体",
+      "subIndustry": "芯片设计",
+      "focus": "存储与MCU设计，重点验证出货、价格、库存与毛利率",
+      "price": 353.9,
+      "previousClose": 367.57,
+      "changePct": -3.72,
+      "marketCap": 249135000000,
+      "floatMarketCap": 237367000000,
+      "peTtm": 31.42,
+      "pb": 6.65,
+      "roe": 21.27,
+      "quoteTime": "2026-09-30T08:15:00.000Z",
+      "quoteSource": "腾讯行情聚合",
+      "score": 64,
+      "scoreStatus": "complete",
+      "components": {
+        "roe": 83,
+        "pe": 75,
+        "pb": 50,
+        "evidence": 50,
+        "price": 31
+      },
+      "confidence": 85,
+      "confidenceLabel": "相对较高",
+      "evidence": [
+        {
+          "title": "兆易创新:H股公告-翌日披露报表",
+          "date": "2026-09-29",
+          "url": "https://data.eastmoney.com/notices/detail/603986/AN202609291829996716.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=603986",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        },
+        {
+          "title": "兆易创新:根据2026年H股股份奖励计划授予奖励股份",
+          "date": "2026-09-28",
+          "url": "https://data.eastmoney.com/notices/detail/603986/AN202609281829963956.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=603986",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        },
+        {
+          "title": "兆易创新:兆易创新第五届董事会第十六次会议决议公告",
+          "date": "2026-09-28",
+          "url": "https://data.eastmoney.com/notices/detail/603986/AN202609281829960309.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=603986",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        }
+      ],
+      "irUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=603986",
+      "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=603986",
+      "valuation": {
+        "pePercentile": 25,
+        "pbPercentile": 50,
+        "roePercentile": 83,
+        "combinedPercentile": 38,
+        "band": "偏低",
+        "comparisonScope": "A股 · 芯片设计",
+        "sampleSize": 3,
+        "preferredMetrics": [
+          "远期PE*",
+          "EV/Sales",
+          "FCF收益率"
+        ],
+        "interpretation": "估值位于可比样本中部，而ROE相对靠前；下一步应确认ROE是否由可持续经营产生，以及现金流是否同步。",
+        "caveat": "当前同组仅3只，分位对单只样本很敏感；历史分位和一致预期尚未接入。"
+      },
+      "industryValidation": {
+        "summary": "不要用单条新闻直接跳到估值结论；至少沿相邻节点核验需求、经营与财务兑现。",
+        "nodes": [
+          {
+            "stage": "终端需求",
+            "question": "终端销量、平台迭代与客户库存是否支持真实出货",
+            "state": "待查证",
+            "sourceLabel": "工信部电子信息制造业数据",
+            "url": "https://www.miit.gov.cn/gxsj/tjfx/dzxx/index.html"
+          },
+          {
+            "stage": "供给/订单",
+            "question": "出货量、ASP、产品组合、库存天数与毛利率",
+            "state": "待查证",
+            "sourceLabel": "SEMI 行业与晶圆厂更新",
+            "url": "https://www.semi.org/en/news-resources/press-releases"
+          },
+          {
+            "stage": "公司经营",
+            "question": "存储与MCU设计，重点验证出货、价格、库存与毛利率",
+            "state": "有新披露",
+            "sourceLabel": "公司IR / 监管披露",
+            "url": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=603986"
+          },
+          {
+            "stage": "财务兑现",
+            "question": "收入增速、毛利率与自由现金流是否同向兑现",
+            "state": "有新披露",
+            "sourceLabel": "巨潮资讯",
+            "url": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=603986"
+          }
+        ]
+      },
+      "structure": {
+        "scoreImpact": "独立风险层，尚未计入研究分",
+        "riskSummary": "融资余额近5个交易日减少1.3%；占流通市值6.90%（池内P90）。",
+        "margin": {
+          "status": "ok",
+          "balance": 16382717078,
+          "buyAmount": 778740256,
+          "shortBalance": null,
+          "totalBalance": null,
+          "change5dPct": -1.3393459762872761,
+          "toFloatMarketCapPct": 6.901851174763131,
+          "percentile": 90,
+          "asOf": "2026-09-30",
+          "source": "上交所官网",
+          "verifyUrl": "https://www.sse.com.cn/market/othersdata/margin/detail/index.shtml",
+          "note": "融资余额是杠杆拥挤代理，不代表国家队、量化或散户的真实身份。"
+        },
+        "chips": {
+          "status": "error",
+          "averageCost": null,
+          "peakCost": null,
+          "concentration70Pct": null,
+          "overheadSharePct": null,
+          "latestPrice": null,
+          "sampleBars": 0,
+          "asOf": null,
+          "source": "日K量价成本模型",
+          "verifyUrl": "https://quote.eastmoney.com/sh603986.html",
+          "note": "成本代理改为点开个股时按需计算，避免整池刷新触发行情源限流；若单股请求失败则保持空值。"
+        },
+        "identitySignals": [
+          {
+            "label": "两融杠杆",
+            "state": "官方日频",
+            "explanation": "融资余额衡量杠杆拥挤，不代表资金身份；融券余量与余额金额不会混用。"
+          },
+          {
+            "label": "成本密集区",
+            "state": "按需计算",
+            "explanation": "点开本页时用日K量价估算潜在套牢与集中区，只作为对手盘压力代理。"
+          },
+          {
+            "label": "股东结构",
+            "state": "待接季报批次",
+            "explanation": "国家队、机构与股东户数只能依公告滞后确认，不能推断实时净流入。"
+          },
+          {
+            "label": "账户身份",
+            "state": "公开数据不可穿透",
+            "explanation": "量化、散户与所谓主力账户无法由免费公开盘口可靠识别。"
+          }
+        ]
+      },
+      "sources": {
+        "marketData": {
+          "status": "ok",
+          "source": "腾讯行情聚合",
+          "asOf": "2026-09-30T08:15:00.000Z",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "reason": null
+        },
+        "evidence": {
+          "status": "ok",
+          "source": "上市公司公告",
+          "asOf": "2026-09-29",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "itemCount": 3,
+          "reason": null
+        },
+        "leverage": {
+          "status": "ok",
+          "source": "上交所官网",
+          "asOf": "2026-09-30",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "reason": null
+        }
+      },
+      "errors": [],
+      "groupRank": 1,
+      "groupSize": 3
+    },
+    {
+      "symbol": "002156",
+      "name": "通富微电",
+      "exchange": "深交所",
+      "market": "a",
+      "industry": "半导体",
+      "subIndustry": "封装测试",
+      "focus": "CPU/GPU等封测，重点验证客户需求、稼动率与盈利弹性",
+      "price": 56.9,
+      "previousClose": 60.36,
+      "changePct": -5.73,
+      "marketCap": 90687000000,
+      "floatMarketCap": 86343000000,
+      "peTtm": 35.93,
+      "pb": 4.31,
+      "roe": 14.99,
+      "quoteTime": "2026-09-30T08:14:30.000Z",
+      "quoteSource": "腾讯行情聚合",
+      "score": 60,
+      "scoreStatus": "complete",
+      "components": {
+        "roe": 83,
+        "pe": 83,
+        "pb": 17,
+        "evidence": 50,
+        "price": 21
+      },
+      "confidence": 85,
+      "confidenceLabel": "相对较高",
+      "evidence": [
+        {
+          "title": "通富微电:关于开立募集资金专户并签订募集资金三方和四方监管协议的公告",
+          "date": "2026-09-23",
+          "url": "https://data.eastmoney.com/notices/detail/002156/AN202609231829807329.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=002156",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        },
+        {
+          "title": "通富微电:公司章程(2026年9月)",
+          "date": "2026-09-23",
+          "url": "https://data.eastmoney.com/notices/detail/002156/AN202609231829807328.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=002156",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        },
+        {
+          "title": "通富微电:关于使用承兑汇票、信用证及自有外汇支付募集资金投资项目所需资金并以募集资金等额置换的公告",
+          "date": "2026-09-23",
+          "url": "https://data.eastmoney.com/notices/detail/002156/AN202609231829807353.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=002156",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        }
+      ],
+      "irUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=002156",
+      "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=002156",
+      "valuation": {
+        "pePercentile": 17,
+        "pbPercentile": 83,
+        "roePercentile": 83,
+        "combinedPercentile": 50,
+        "band": "中性",
+        "comparisonScope": "A股 · 封装测试",
+        "sampleSize": 3,
+        "preferredMetrics": [
+          "EV/EBITDA",
+          "PB",
+          "PE"
+        ],
+        "interpretation": "估值位于可比样本中部，而ROE相对靠前；下一步应确认ROE是否由可持续经营产生，以及现金流是否同步。",
+        "caveat": "当前同组仅3只，分位对单只样本很敏感；历史分位和一致预期尚未接入。"
+      },
+      "industryValidation": {
+        "summary": "不要用单条新闻直接跳到估值结论；至少沿相邻节点核验需求、经营与财务兑现。",
+        "nodes": [
+          {
+            "stage": "终端需求",
+            "question": "终端需求与先进封装需求是否同步传导至订单",
+            "state": "待查证",
+            "sourceLabel": "工信部电子信息制造业数据",
+            "url": "https://www.miit.gov.cn/gxsj/tjfx/dzxx/index.html"
+          },
+          {
+            "stage": "供给/订单",
+            "question": "稼动率、单价、先进封装占比与资本开支效率",
+            "state": "待查证",
+            "sourceLabel": "SEMI 行业与晶圆厂更新",
+            "url": "https://www.semi.org/en/news-resources/press-releases"
+          },
+          {
+            "stage": "公司经营",
+            "question": "CPU/GPU等封测，重点验证客户需求、稼动率与盈利弹性",
+            "state": "有新披露",
+            "sourceLabel": "公司IR / 监管披露",
+            "url": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=002156"
+          },
+          {
+            "stage": "财务兑现",
+            "question": "毛利率、折旧压力与经营现金流是否改善",
+            "state": "有新披露",
+            "sourceLabel": "巨潮资讯",
+            "url": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=002156"
+          }
+        ]
+      },
+      "structure": {
+        "scoreImpact": "独立风险层，尚未计入研究分",
+        "riskSummary": "融资余额近5个交易日减少1.2%；占流通市值4.79%（池内P50）。",
+        "margin": {
+          "status": "ok",
+          "balance": 4136999999.9999995,
+          "buyAmount": 256999999.99999997,
+          "shortBalance": 14977300,
+          "totalBalance": 4151000000,
+          "change5dPct": -1.1941724385001184,
+          "toFloatMarketCapPct": 4.79135540808172,
+          "percentile": 50,
+          "asOf": "2026-09-29",
+          "source": "深交所官网",
+          "verifyUrl": "https://www.szse.cn/disclosure/margin/margin/index.html",
+          "note": "融资余额是杠杆拥挤代理，不代表国家队、量化或散户的真实身份。"
+        },
+        "chips": {
+          "status": "error",
+          "averageCost": null,
+          "peakCost": null,
+          "concentration70Pct": null,
+          "overheadSharePct": null,
+          "latestPrice": null,
+          "sampleBars": 0,
+          "asOf": null,
+          "source": "日K量价成本模型",
+          "verifyUrl": "https://quote.eastmoney.com/sz002156.html",
+          "note": "成本代理改为点开个股时按需计算，避免整池刷新触发行情源限流；若单股请求失败则保持空值。"
+        },
+        "identitySignals": [
+          {
+            "label": "两融杠杆",
+            "state": "官方日频",
+            "explanation": "融资余额衡量杠杆拥挤，不代表资金身份；融券余量与余额金额不会混用。"
+          },
+          {
+            "label": "成本密集区",
+            "state": "按需计算",
+            "explanation": "点开本页时用日K量价估算潜在套牢与集中区，只作为对手盘压力代理。"
+          },
+          {
+            "label": "股东结构",
+            "state": "待接季报批次",
+            "explanation": "国家队、机构与股东户数只能依公告滞后确认，不能推断实时净流入。"
+          },
+          {
+            "label": "账户身份",
+            "state": "公开数据不可穿透",
+            "explanation": "量化、散户与所谓主力账户无法由免费公开盘口可靠识别。"
+          }
+        ]
+      },
+      "sources": {
+        "marketData": {
+          "status": "ok",
+          "source": "腾讯行情聚合",
+          "asOf": "2026-09-30T08:14:30.000Z",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "reason": null
+        },
+        "evidence": {
+          "status": "ok",
+          "source": "上市公司公告",
+          "asOf": "2026-09-23",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "itemCount": 3,
+          "reason": null
+        },
+        "leverage": {
+          "status": "ok",
+          "source": "深交所官网",
+          "asOf": "2026-09-29",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "reason": null
+        }
+      },
+      "errors": [],
+      "groupRank": 1,
+      "groupSize": 3
+    },
+    {
+      "symbol": "688012",
+      "name": "中微公司",
+      "exchange": "科创板",
+      "market": "a",
+      "industry": "半导体",
+      "subIndustry": "半导体设备",
+      "focus": "刻蚀与薄膜设备，重点验证新品导入、订单与毛利率",
+      "price": 318.55,
+      "previousClose": 324.78,
+      "changePct": -1.92,
+      "marketCap": 305121000000,
+      "floatMarketCap": 300137000000,
+      "peTtm": 72.12,
+      "pb": 10.16,
+      "roe": 14.08,
+      "quoteTime": "2026-09-30T08:14:47.000Z",
+      "quoteSource": "腾讯行情聚合",
+      "score": 55,
+      "scoreStatus": "complete",
+      "components": {
+        "roe": 50,
+        "pe": 83,
+        "pb": 83,
+        "evidence": 30,
+        "price": 40
+      },
+      "confidence": 85,
+      "confidenceLabel": "相对较高",
+      "evidence": [
+        {
+          "title": "中微公司:董事、高级管理人员减持股份结果公告",
+          "date": "2026-09-11",
+          "url": "https://data.eastmoney.com/notices/detail/688012/AN202609111829282442.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688012",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "negative",
+          "impact": -1,
+          "impactReason": "标题命中风险关键词，尚未判断财务量级"
+        },
+        {
+          "title": "中微公司:关于参与设立私募投资基金暨关联交易进展的公告",
+          "date": "2026-09-24",
+          "url": "https://data.eastmoney.com/notices/detail/688012/AN202609241829869305.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688012",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        },
+        {
+          "title": "中微公司:关于持股5%以上股东权益变动触及1%刻度暨减持股份结果公告",
+          "date": "2026-09-09",
+          "url": "https://data.eastmoney.com/notices/detail/688012/AN202609091829183551.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688012",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "negative",
+          "impact": -1,
+          "impactReason": "标题命中风险关键词，尚未判断财务量级"
+        }
+      ],
+      "irUrl": "https://www.amec-inc.com/investor",
+      "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688012",
+      "valuation": {
+        "pePercentile": 17,
+        "pbPercentile": 17,
+        "roePercentile": 50,
+        "combinedPercentile": 17,
+        "band": "相对低位",
+        "comparisonScope": "A股 · 半导体设备",
+        "sampleSize": 3,
+        "preferredMetrics": [
+          "远期PE*",
+          "EV/EBITDA",
+          "PEG*"
+        ],
+        "interpretation": "半导体设备可比样本中估值处于较低分位；这可能是安全边际，也可能反映周期下行或盈利质量问题，需和库存、订单及现金流一起查证。",
+        "caveat": "当前同组仅3只，分位对单只样本很敏感；历史分位和一致预期尚未接入。"
+      },
+      "industryValidation": {
+        "summary": "不要用单条新闻直接跳到估值结论；至少沿相邻节点核验需求、经营与财务兑现。",
+        "nodes": [
+          {
+            "stage": "终端需求",
+            "question": "全球及本地晶圆厂资本开支是否进入确认与交付周期",
+            "state": "待查证",
+            "sourceLabel": "工信部电子信息制造业数据",
+            "url": "https://www.miit.gov.cn/gxsj/tjfx/dzxx/index.html"
+          },
+          {
+            "stage": "供给/订单",
+            "question": "订单/在手订单、客户验证、交付验收与合同负债",
+            "state": "待查证",
+            "sourceLabel": "SEMI 行业与晶圆厂更新",
+            "url": "https://www.semi.org/en/news-resources/press-releases"
+          },
+          {
+            "stage": "公司经营",
+            "question": "刻蚀与薄膜设备，重点验证新品导入、订单与毛利率",
+            "state": "有新披露",
+            "sourceLabel": "公司IR / 监管披露",
+            "url": "https://www.amec-inc.com/investor"
+          },
+          {
+            "stage": "财务兑现",
+            "question": "订单能否兑现为收入、毛利率与经营现金流",
+            "state": "有新披露",
+            "sourceLabel": "巨潮资讯",
+            "url": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688012"
+          }
+        ]
+      },
+      "structure": {
+        "scoreImpact": "独立风险层，尚未计入研究分",
+        "riskSummary": "融资余额近5个交易日减少1.4%；占流通市值1.50%（池内P17）。",
+        "margin": {
+          "status": "ok",
+          "balance": 4498953780,
+          "buyAmount": 221861513,
+          "shortBalance": null,
+          "totalBalance": null,
+          "change5dPct": -1.3602731504039567,
+          "toFloatMarketCapPct": 1.4989667318591176,
+          "percentile": 17,
+          "asOf": "2026-09-30",
+          "source": "上交所官网",
+          "verifyUrl": "https://www.sse.com.cn/market/othersdata/margin/detail/index.shtml",
+          "note": "融资余额是杠杆拥挤代理，不代表国家队、量化或散户的真实身份。"
+        },
+        "chips": {
+          "status": "error",
+          "averageCost": null,
+          "peakCost": null,
+          "concentration70Pct": null,
+          "overheadSharePct": null,
+          "latestPrice": null,
+          "sampleBars": 0,
+          "asOf": null,
+          "source": "日K量价成本模型",
+          "verifyUrl": "https://quote.eastmoney.com/sh688012.html",
+          "note": "成本代理改为点开个股时按需计算，避免整池刷新触发行情源限流；若单股请求失败则保持空值。"
+        },
+        "identitySignals": [
+          {
+            "label": "两融杠杆",
+            "state": "官方日频",
+            "explanation": "融资余额衡量杠杆拥挤，不代表资金身份；融券余量与余额金额不会混用。"
+          },
+          {
+            "label": "成本密集区",
+            "state": "按需计算",
+            "explanation": "点开本页时用日K量价估算潜在套牢与集中区，只作为对手盘压力代理。"
+          },
+          {
+            "label": "股东结构",
+            "state": "待接季报批次",
+            "explanation": "国家队、机构与股东户数只能依公告滞后确认，不能推断实时净流入。"
+          },
+          {
+            "label": "账户身份",
+            "state": "公开数据不可穿透",
+            "explanation": "量化、散户与所谓主力账户无法由免费公开盘口可靠识别。"
+          }
+        ]
+      },
+      "sources": {
+        "marketData": {
+          "status": "ok",
+          "source": "腾讯行情聚合",
+          "asOf": "2026-09-30T08:14:47.000Z",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "reason": null
+        },
+        "evidence": {
+          "status": "ok",
+          "source": "上市公司公告",
+          "asOf": "2026-09-11",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "itemCount": 3,
+          "reason": null
+        },
+        "leverage": {
+          "status": "ok",
+          "source": "上交所官网",
+          "asOf": "2026-09-30",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "reason": null
+        }
+      },
+      "errors": [],
+      "groupRank": 1,
+      "groupSize": 3
+    },
+    {
+      "symbol": "002185",
+      "name": "华天科技",
+      "exchange": "深交所",
+      "market": "a",
+      "industry": "半导体",
+      "subIndustry": "封装测试",
+      "focus": "封装测试，重点验证稼动率、先进封装占比与资本开支",
+      "price": 16.46,
+      "previousClose": 17.02,
+      "changePct": -3.29,
+      "marketCap": 54758000000.00001,
+      "floatMarketCap": 54746000000,
+      "peTtm": 42.21,
+      "pb": 2.88,
+      "roe": 6.82,
+      "quoteTime": "2026-09-30T08:14:45.000Z",
+      "quoteSource": "腾讯行情聚合",
+      "score": 54,
+      "scoreStatus": "complete",
+      "components": {
+        "roe": 50,
+        "pe": 50,
+        "pb": 83,
+        "evidence": 50,
+        "price": 34
+      },
+      "confidence": 85,
+      "confidenceLabel": "相对较高",
+      "evidence": [
+        {
+          "title": "华天科技:关于发行股份及支付现金购买资产并募集配套资金暨关联交易事项获得中国证监会同意注册批复的公告",
+          "date": "2026-09-27",
+          "url": "https://data.eastmoney.com/notices/detail/002185/AN202609271829937198.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=002185",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        },
+        {
+          "title": "关于同意华天科技重大资产重组注册的批复",
+          "date": "2026-09-24",
+          "url": "https://data.eastmoney.com/notices/detail/002185/AN202609241829867481.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=002185",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        },
+        {
+          "title": "华天科技:关于开展外汇套期保值业务的可行性分析",
+          "date": "2026-09-11",
+          "url": "https://data.eastmoney.com/notices/detail/002185/AN202609111829267296.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=002185",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        }
+      ],
+      "irUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=002185",
+      "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=002185",
+      "valuation": {
+        "pePercentile": 50,
+        "pbPercentile": 17,
+        "roePercentile": 50,
+        "combinedPercentile": 34,
+        "band": "偏低",
+        "comparisonScope": "A股 · 封装测试",
+        "sampleSize": 3,
+        "preferredMetrics": [
+          "EV/EBITDA",
+          "PB",
+          "PE"
+        ],
+        "interpretation": "估值位于可比样本中部，单靠PE/PB不足以形成结论；应优先寻找行业景气与公司财务兑现的同向证据。",
+        "caveat": "当前同组仅3只，分位对单只样本很敏感；历史分位和一致预期尚未接入。"
+      },
+      "industryValidation": {
+        "summary": "不要用单条新闻直接跳到估值结论；至少沿相邻节点核验需求、经营与财务兑现。",
+        "nodes": [
+          {
+            "stage": "终端需求",
+            "question": "终端需求与先进封装需求是否同步传导至订单",
+            "state": "待查证",
+            "sourceLabel": "工信部电子信息制造业数据",
+            "url": "https://www.miit.gov.cn/gxsj/tjfx/dzxx/index.html"
+          },
+          {
+            "stage": "供给/订单",
+            "question": "稼动率、单价、先进封装占比与资本开支效率",
+            "state": "待查证",
+            "sourceLabel": "SEMI 行业与晶圆厂更新",
+            "url": "https://www.semi.org/en/news-resources/press-releases"
+          },
+          {
+            "stage": "公司经营",
+            "question": "封装测试，重点验证稼动率、先进封装占比与资本开支",
+            "state": "有新披露",
+            "sourceLabel": "公司IR / 监管披露",
+            "url": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=002185"
+          },
+          {
+            "stage": "财务兑现",
+            "question": "毛利率、折旧压力与经营现金流是否改善",
+            "state": "有新披露",
+            "sourceLabel": "巨潮资讯",
+            "url": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=002185"
+          }
+        ]
+      },
+      "structure": {
+        "scoreImpact": "独立风险层，尚未计入研究分",
+        "riskSummary": "融资余额近5个交易日增加0.4%；占流通市值4.63%（池内P43）。",
+        "margin": {
+          "status": "ok",
+          "balance": 2534000000,
+          "buyAmount": 174000000,
+          "shortBalance": 16376300.000000002,
+          "totalBalance": 2550000000,
+          "change5dPct": 0.35643564356435675,
+          "toFloatMarketCapPct": 4.628648668395865,
+          "percentile": 43,
+          "asOf": "2026-09-29",
+          "source": "深交所官网",
+          "verifyUrl": "https://www.szse.cn/disclosure/margin/margin/index.html",
+          "note": "融资余额是杠杆拥挤代理，不代表国家队、量化或散户的真实身份。"
+        },
+        "chips": {
+          "status": "error",
+          "averageCost": null,
+          "peakCost": null,
+          "concentration70Pct": null,
+          "overheadSharePct": null,
+          "latestPrice": null,
+          "sampleBars": 0,
+          "asOf": null,
+          "source": "日K量价成本模型",
+          "verifyUrl": "https://quote.eastmoney.com/sz002185.html",
+          "note": "成本代理改为点开个股时按需计算，避免整池刷新触发行情源限流；若单股请求失败则保持空值。"
+        },
+        "identitySignals": [
+          {
+            "label": "两融杠杆",
+            "state": "官方日频",
+            "explanation": "融资余额衡量杠杆拥挤，不代表资金身份；融券余量与余额金额不会混用。"
+          },
+          {
+            "label": "成本密集区",
+            "state": "按需计算",
+            "explanation": "点开本页时用日K量价估算潜在套牢与集中区，只作为对手盘压力代理。"
+          },
+          {
+            "label": "股东结构",
+            "state": "待接季报批次",
+            "explanation": "国家队、机构与股东户数只能依公告滞后确认，不能推断实时净流入。"
+          },
+          {
+            "label": "账户身份",
+            "state": "公开数据不可穿透",
+            "explanation": "量化、散户与所谓主力账户无法由免费公开盘口可靠识别。"
+          }
+        ]
+      },
+      "sources": {
+        "marketData": {
+          "status": "ok",
+          "source": "腾讯行情聚合",
+          "asOf": "2026-09-30T08:14:45.000Z",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "reason": null
+        },
+        "evidence": {
+          "status": "ok",
+          "source": "上市公司公告",
+          "asOf": "2026-09-27",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "itemCount": 3,
+          "reason": null
+        },
+        "leverage": {
+          "status": "ok",
+          "source": "深交所官网",
+          "asOf": "2026-09-29",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "reason": null
+        }
+      },
+      "errors": [],
+      "groupRank": 2,
+      "groupSize": 3
+    },
+    {
+      "symbol": "688019",
+      "name": "安集科技",
+      "exchange": "科创板",
+      "market": "a",
+      "industry": "半导体",
+      "subIndustry": "半导体材料",
+      "focus": "CMP抛光液与功能湿电子化学品，重点验证客户验证与放量",
+      "price": 211,
+      "previousClose": 214.22,
+      "changePct": -1.5,
+      "marketCap": 48183000000,
+      "floatMarketCap": 48183000000,
+      "peTtm": 51.27,
+      "pb": 9.87,
+      "roe": 19.41,
+      "quoteTime": "2026-09-30T08:14:50.000Z",
+      "quoteSource": "腾讯行情聚合",
+      "score": 53,
+      "scoreStatus": "complete",
+      "components": {
+        "roe": 75,
+        "pe": 50,
+        "pb": 25,
+        "evidence": 50,
+        "price": 43
+      },
+      "confidence": 85,
+      "confidenceLabel": "相对较高",
+      "evidence": [
+        {
+          "title": "安集科技:关于召开科创板2026年半年度半导体制造、设备及材料行业集体业绩说明会的公告",
+          "date": "2026-09-01",
+          "url": "https://data.eastmoney.com/notices/detail/688019/AN202609011828880572.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688019",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        },
+        {
+          "title": "安集科技:申万宏源证券承销保荐有限责任公司关于安集微电子科技(上海)股份有限公司2026年半年度持续督导跟踪报告",
+          "date": "2026-09-11",
+          "url": "https://data.eastmoney.com/notices/detail/688019/AN202609111829276456.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688019",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        },
+        {
+          "title": "安集科技:投资者关系活动记录表2026-014",
+          "date": "2026-09-11",
+          "url": "https://data.eastmoney.com/notices/detail/688019/AN202609111829274515.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688019",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        }
+      ],
+      "irUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688019",
+      "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688019",
+      "valuation": {
+        "pePercentile": 50,
+        "pbPercentile": 75,
+        "roePercentile": 75,
+        "combinedPercentile": 63,
+        "band": "偏高",
+        "comparisonScope": "A股 · 半导体材料",
+        "sampleSize": 2,
+        "preferredMetrics": [
+          "PE",
+          "EV/EBITDA",
+          "FCF收益率"
+        ],
+        "interpretation": "估值位于可比样本中部，而ROE相对靠前；下一步应确认ROE是否由可持续经营产生，以及现金流是否同步。",
+        "caveat": "当前同组仅2只，分位对单只样本很敏感；历史分位和一致预期尚未接入。"
+      },
+      "industryValidation": {
+        "summary": "不要用单条新闻直接跳到估值结论；至少沿相邻节点核验需求、经营与财务兑现。",
+        "nodes": [
+          {
+            "stage": "终端需求",
+            "question": "晶圆投片量与先进制程用量是否带动材料消耗",
+            "state": "待查证",
+            "sourceLabel": "工信部电子信息制造业数据",
+            "url": "https://www.miit.gov.cn/gxsj/tjfx/dzxx/index.html"
+          },
+          {
+            "stage": "供给/订单",
+            "question": "客户认证、份额、销量、价格与新产能利用率",
+            "state": "待查证",
+            "sourceLabel": "SEMI 行业与晶圆厂更新",
+            "url": "https://www.semi.org/en/news-resources/press-releases"
+          },
+          {
+            "stage": "公司经营",
+            "question": "CMP抛光液与功能湿电子化学品，重点验证客户验证与放量",
+            "state": "有新披露",
+            "sourceLabel": "公司IR / 监管披露",
+            "url": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688019"
+          },
+          {
+            "stage": "财务兑现",
+            "question": "放量能否带来毛利率与现金流，而非应收和存货堆积",
+            "state": "有新披露",
+            "sourceLabel": "巨潮资讯",
+            "url": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688019"
+          }
+        ]
+      },
+      "structure": {
+        "scoreImpact": "独立风险层，尚未计入研究分",
+        "riskSummary": "融资余额近5个交易日减少3.7%；占流通市值2.63%（池内P23）。",
+        "margin": {
+          "status": "ok",
+          "balance": 1266802401,
+          "buyAmount": 62499764,
+          "shortBalance": null,
+          "totalBalance": null,
+          "change5dPct": -3.7118508717998266,
+          "toFloatMarketCapPct": 2.629148041840483,
+          "percentile": 23,
+          "asOf": "2026-09-30",
+          "source": "上交所官网",
+          "verifyUrl": "https://www.sse.com.cn/market/othersdata/margin/detail/index.shtml",
+          "note": "融资余额是杠杆拥挤代理，不代表国家队、量化或散户的真实身份。"
+        },
+        "chips": {
+          "status": "error",
+          "averageCost": null,
+          "peakCost": null,
+          "concentration70Pct": null,
+          "overheadSharePct": null,
+          "latestPrice": null,
+          "sampleBars": 0,
+          "asOf": null,
+          "source": "日K量价成本模型",
+          "verifyUrl": "https://quote.eastmoney.com/sh688019.html",
+          "note": "成本代理改为点开个股时按需计算，避免整池刷新触发行情源限流；若单股请求失败则保持空值。"
+        },
+        "identitySignals": [
+          {
+            "label": "两融杠杆",
+            "state": "官方日频",
+            "explanation": "融资余额衡量杠杆拥挤，不代表资金身份；融券余量与余额金额不会混用。"
+          },
+          {
+            "label": "成本密集区",
+            "state": "按需计算",
+            "explanation": "点开本页时用日K量价估算潜在套牢与集中区，只作为对手盘压力代理。"
+          },
+          {
+            "label": "股东结构",
+            "state": "待接季报批次",
+            "explanation": "国家队、机构与股东户数只能依公告滞后确认，不能推断实时净流入。"
+          },
+          {
+            "label": "账户身份",
+            "state": "公开数据不可穿透",
+            "explanation": "量化、散户与所谓主力账户无法由免费公开盘口可靠识别。"
+          }
+        ]
+      },
+      "sources": {
+        "marketData": {
+          "status": "ok",
+          "source": "腾讯行情聚合",
+          "asOf": "2026-09-30T08:14:50.000Z",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "reason": null
+        },
+        "evidence": {
+          "status": "ok",
+          "source": "上市公司公告",
+          "asOf": "2026-09-01",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "itemCount": 3,
+          "reason": null
+        },
+        "leverage": {
+          "status": "ok",
+          "source": "上交所官网",
+          "asOf": "2026-09-30",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "reason": null
+        }
+      },
+      "errors": [],
+      "groupRank": 1,
+      "groupSize": 2
+    },
+    {
+      "symbol": "688072",
+      "name": "拓荆科技",
+      "exchange": "科创板",
+      "market": "a",
+      "industry": "半导体",
+      "subIndustry": "半导体设备",
+      "focus": "薄膜沉积设备，重点验证客户验证、订单与交付节奏",
+      "price": 640,
+      "previousClose": 656.68,
+      "changePct": -2.54,
+      "marketCap": 186991000000,
+      "floatMarketCap": 181880000000,
+      "peTtm": 85.97,
+      "pb": 14.55,
+      "roe": 17.11,
+      "quoteTime": "2026-09-30T08:14:37.000Z",
+      "quoteSource": "腾讯行情聚合",
+      "score": 48,
+      "scoreStatus": "complete",
+      "components": {
+        "roe": 83,
+        "pe": 17,
+        "pb": 17,
+        "evidence": 50,
+        "price": 37
+      },
+      "confidence": 85,
+      "confidenceLabel": "相对较高",
+      "evidence": [
+        {
+          "title": "拓荆科技:关于召开2026年半年度业绩暨现金分红说明会的公告",
+          "date": "2026-09-21",
+          "url": "https://data.eastmoney.com/notices/detail/688072/AN202609211829720628.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688072",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        },
+        {
+          "title": "拓荆科技:中信建投证券股份有限公司关于拓荆科技股份有限公司差异化分红事项的核查意见",
+          "date": "2026-09-28",
+          "url": "https://data.eastmoney.com/notices/detail/688072/AN202609281829963779.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688072",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        },
+        {
+          "title": "拓荆科技:2026年半年度权益分派实施公告",
+          "date": "2026-09-28",
+          "url": "https://data.eastmoney.com/notices/detail/688072/AN202609281829963780.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688072",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        }
+      ],
+      "irUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688072",
+      "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688072",
+      "valuation": {
+        "pePercentile": 83,
+        "pbPercentile": 83,
+        "roePercentile": 83,
+        "combinedPercentile": 83,
+        "band": "相对高位",
+        "comparisonScope": "A股 · 半导体设备",
+        "sampleSize": 3,
+        "preferredMetrics": [
+          "远期PE*",
+          "EV/EBITDA",
+          "PEG*"
+        ],
+        "interpretation": "半导体设备可比样本中估值处于较高分位；需要盈利增速、ROE或现金流改善来验证溢价，而不是把“高PE”直接解释为高质量。",
+        "caveat": "当前同组仅3只，分位对单只样本很敏感；历史分位和一致预期尚未接入。"
+      },
+      "industryValidation": {
+        "summary": "不要用单条新闻直接跳到估值结论；至少沿相邻节点核验需求、经营与财务兑现。",
+        "nodes": [
+          {
+            "stage": "终端需求",
+            "question": "全球及本地晶圆厂资本开支是否进入确认与交付周期",
+            "state": "待查证",
+            "sourceLabel": "工信部电子信息制造业数据",
+            "url": "https://www.miit.gov.cn/gxsj/tjfx/dzxx/index.html"
+          },
+          {
+            "stage": "供给/订单",
+            "question": "订单/在手订单、客户验证、交付验收与合同负债",
+            "state": "待查证",
+            "sourceLabel": "SEMI 行业与晶圆厂更新",
+            "url": "https://www.semi.org/en/news-resources/press-releases"
+          },
+          {
+            "stage": "公司经营",
+            "question": "薄膜沉积设备，重点验证客户验证、订单与交付节奏",
+            "state": "有新披露",
+            "sourceLabel": "公司IR / 监管披露",
+            "url": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688072"
+          },
+          {
+            "stage": "财务兑现",
+            "question": "订单能否兑现为收入、毛利率与经营现金流",
+            "state": "有新披露",
+            "sourceLabel": "巨潮资讯",
+            "url": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688072"
+          }
+        ]
+      },
+      "structure": {
+        "scoreImpact": "独立风险层，尚未计入研究分",
+        "riskSummary": "融资余额近5个交易日减少3.6%；占流通市值0.82%（池内P10）。",
+        "margin": {
+          "status": "ok",
+          "balance": 1482812067,
+          "buyAmount": 85613044,
+          "shortBalance": null,
+          "totalBalance": null,
+          "change5dPct": -3.5617230111072096,
+          "toFloatMarketCapPct": 0.815269445238619,
+          "percentile": 10,
+          "asOf": "2026-09-30",
+          "source": "上交所官网",
+          "verifyUrl": "https://www.sse.com.cn/market/othersdata/margin/detail/index.shtml",
+          "note": "融资余额是杠杆拥挤代理，不代表国家队、量化或散户的真实身份。"
+        },
+        "chips": {
+          "status": "error",
+          "averageCost": null,
+          "peakCost": null,
+          "concentration70Pct": null,
+          "overheadSharePct": null,
+          "latestPrice": null,
+          "sampleBars": 0,
+          "asOf": null,
+          "source": "日K量价成本模型",
+          "verifyUrl": "https://quote.eastmoney.com/sh688072.html",
+          "note": "成本代理改为点开个股时按需计算，避免整池刷新触发行情源限流；若单股请求失败则保持空值。"
+        },
+        "identitySignals": [
+          {
+            "label": "两融杠杆",
+            "state": "官方日频",
+            "explanation": "融资余额衡量杠杆拥挤，不代表资金身份；融券余量与余额金额不会混用。"
+          },
+          {
+            "label": "成本密集区",
+            "state": "按需计算",
+            "explanation": "点开本页时用日K量价估算潜在套牢与集中区，只作为对手盘压力代理。"
+          },
+          {
+            "label": "股东结构",
+            "state": "待接季报批次",
+            "explanation": "国家队、机构与股东户数只能依公告滞后确认，不能推断实时净流入。"
+          },
+          {
+            "label": "账户身份",
+            "state": "公开数据不可穿透",
+            "explanation": "量化、散户与所谓主力账户无法由免费公开盘口可靠识别。"
+          }
+        ]
+      },
+      "sources": {
+        "marketData": {
+          "status": "ok",
+          "source": "腾讯行情聚合",
+          "asOf": "2026-09-30T08:14:37.000Z",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "reason": null
+        },
+        "evidence": {
+          "status": "ok",
+          "source": "上市公司公告",
+          "asOf": "2026-09-21",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "itemCount": 3,
+          "reason": null
+        },
+        "leverage": {
+          "status": "ok",
+          "source": "上交所官网",
+          "asOf": "2026-09-30",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "reason": null
+        }
+      },
+      "errors": [],
+      "groupRank": 2,
+      "groupSize": 3
+    },
+    {
+      "symbol": "300782",
+      "name": "卓胜微",
+      "exchange": "创业板",
+      "market": "a",
+      "industry": "半导体",
+      "subIndustry": "芯片设计",
+      "focus": "射频前端设计与制造，重点验证手机需求、模组渗透与库存",
+      "price": 70.17,
+      "previousClose": 70.08,
+      "changePct": 0.13,
+      "marketCap": 40347000000,
+      "floatMarketCap": 32177999999.999996,
+      "peTtm": null,
+      "pb": 3.12,
+      "roe": -3.99,
+      "quoteTime": "2026-09-30T08:14:45.000Z",
+      "quoteSource": "腾讯行情聚合",
+      "score": 45,
+      "scoreStatus": "complete",
+      "components": {
+        "roe": 17,
+        "pe": null,
+        "pb": 83,
+        "evidence": 50,
+        "price": 51
+      },
+      "confidence": 85,
+      "confidenceLabel": "相对较高",
+      "evidence": [
+        {
+          "title": "卓胜微:关于实际控制人部分股份质押、补充质押及解除质押的公告",
+          "date": "2026-09-21",
+          "url": "https://data.eastmoney.com/notices/detail/300782/AN202609211829725421.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=300782",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        },
+        {
+          "title": "卓胜微:中国国际金融股份有限公司关于江苏卓胜微电子股份有限公司2026年半年度跟踪报告",
+          "date": "2026-09-08",
+          "url": "https://data.eastmoney.com/notices/detail/300782/AN202609081829137163.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=300782",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        },
+        {
+          "title": "卓胜微:2026年8月26日投资者关系活动记录表",
+          "date": "2026-08-26",
+          "url": "https://data.eastmoney.com/notices/detail/300782/AN202608261828494578.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=300782",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        }
+      ],
+      "irUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=300782",
+      "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=300782",
+      "valuation": {
+        "pePercentile": null,
+        "pbPercentile": 17,
+        "roePercentile": 17,
+        "combinedPercentile": 17,
+        "band": "相对低位",
+        "comparisonScope": "A股 · 芯片设计",
+        "sampleSize": 3,
+        "preferredMetrics": [
+          "远期PE*",
+          "EV/Sales",
+          "FCF收益率"
+        ],
+        "interpretation": "芯片设计可比样本中估值处于较低分位；这可能是安全边际，也可能反映周期下行或盈利质量问题，需和库存、订单及现金流一起查证。",
+        "caveat": "当前同组仅3只，分位对单只样本很敏感；历史分位和一致预期尚未接入。"
+      },
+      "industryValidation": {
+        "summary": "不要用单条新闻直接跳到估值结论；至少沿相邻节点核验需求、经营与财务兑现。",
+        "nodes": [
+          {
+            "stage": "终端需求",
+            "question": "终端销量、平台迭代与客户库存是否支持真实出货",
+            "state": "待查证",
+            "sourceLabel": "工信部电子信息制造业数据",
+            "url": "https://www.miit.gov.cn/gxsj/tjfx/dzxx/index.html"
+          },
+          {
+            "stage": "供给/订单",
+            "question": "出货量、ASP、产品组合、库存天数与毛利率",
+            "state": "待查证",
+            "sourceLabel": "SEMI 行业与晶圆厂更新",
+            "url": "https://www.semi.org/en/news-resources/press-releases"
+          },
+          {
+            "stage": "公司经营",
+            "question": "射频前端设计与制造，重点验证手机需求、模组渗透与库存",
+            "state": "有新披露",
+            "sourceLabel": "公司IR / 监管披露",
+            "url": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=300782"
+          },
+          {
+            "stage": "财务兑现",
+            "question": "收入增速、毛利率与自由现金流是否同向兑现",
+            "state": "有新披露",
+            "sourceLabel": "巨潮资讯",
+            "url": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=300782"
+          }
+        ]
+      },
+      "structure": {
+        "scoreImpact": "独立风险层，尚未计入研究分",
+        "riskSummary": "融资余额近5个交易日减少0.6%；占流通市值4.88%（池内P63）。",
+        "margin": {
+          "status": "ok",
+          "balance": 1569000000,
+          "buyAmount": 33000000,
+          "shortBalance": 714800,
+          "totalBalance": 1570000000,
+          "change5dPct": -0.5703422053231932,
+          "toFloatMarketCapPct": 4.8760022375536085,
+          "percentile": 63,
+          "asOf": "2026-09-29",
+          "source": "深交所官网",
+          "verifyUrl": "https://www.szse.cn/disclosure/margin/margin/index.html",
+          "note": "融资余额是杠杆拥挤代理，不代表国家队、量化或散户的真实身份。"
+        },
+        "chips": {
+          "status": "error",
+          "averageCost": null,
+          "peakCost": null,
+          "concentration70Pct": null,
+          "overheadSharePct": null,
+          "latestPrice": null,
+          "sampleBars": 0,
+          "asOf": null,
+          "source": "日K量价成本模型",
+          "verifyUrl": "https://quote.eastmoney.com/sz300782.html",
+          "note": "成本代理改为点开个股时按需计算，避免整池刷新触发行情源限流；若单股请求失败则保持空值。"
+        },
+        "identitySignals": [
+          {
+            "label": "两融杠杆",
+            "state": "官方日频",
+            "explanation": "融资余额衡量杠杆拥挤，不代表资金身份；融券余量与余额金额不会混用。"
+          },
+          {
+            "label": "成本密集区",
+            "state": "按需计算",
+            "explanation": "点开本页时用日K量价估算潜在套牢与集中区，只作为对手盘压力代理。"
+          },
+          {
+            "label": "股东结构",
+            "state": "待接季报批次",
+            "explanation": "国家队、机构与股东户数只能依公告滞后确认，不能推断实时净流入。"
+          },
+          {
+            "label": "账户身份",
+            "state": "公开数据不可穿透",
+            "explanation": "量化、散户与所谓主力账户无法由免费公开盘口可靠识别。"
+          }
+        ]
+      },
+      "sources": {
+        "marketData": {
+          "status": "ok",
+          "source": "腾讯行情聚合",
+          "asOf": "2026-09-30T08:14:45.000Z",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "reason": null
+        },
+        "evidence": {
+          "status": "ok",
+          "source": "上市公司公告",
+          "asOf": "2026-09-21",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "itemCount": 3,
+          "reason": null
+        },
+        "leverage": {
+          "status": "ok",
+          "source": "深交所官网",
+          "asOf": "2026-09-29",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "reason": null
+        }
+      },
+      "errors": [],
+      "groupRank": 2,
+      "groupSize": 3
+    },
+    {
+      "symbol": "002371",
+      "name": "北方华创",
+      "exchange": "深交所",
+      "market": "a",
+      "industry": "半导体",
+      "subIndustry": "半导体设备",
+      "focus": "平台型半导体设备，重点验证订单、合同负债与收入兑现",
+      "price": 615.97,
+      "previousClose": 628.96,
+      "changePct": -2.07,
+      "marketCap": 447003000000,
+      "floatMarketCap": 446631000000.00006,
+      "peTtm": 78.64,
+      "pb": 11.02,
+      "roe": 14.02,
+      "quoteTime": "2026-09-30T08:14:39.000Z",
+      "quoteSource": "腾讯行情聚合",
+      "score": 40,
+      "scoreStatus": "complete",
+      "components": {
+        "roe": 17,
+        "pe": 50,
+        "pb": 50,
+        "evidence": 50,
+        "price": 40
+      },
+      "confidence": 85,
+      "confidenceLabel": "相对较高",
+      "evidence": [
+        {
+          "title": "北方华创:关于2026年员工持股计划实施进展的公告",
+          "date": "2026-09-18",
+          "url": "https://data.eastmoney.com/notices/detail/002371/AN202609181829618728.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=002371",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        },
+        {
+          "title": "北方华创:2026年半年度募集资金存放与使用情况的专项报告",
+          "date": "2026-08-25",
+          "url": "https://data.eastmoney.com/notices/detail/002371/AN202608251828412440.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=002371",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        },
+        {
+          "title": "北方华创:2026年半年度非经营性资金占用及其他关联资金往来情况汇总表",
+          "date": "2026-08-25",
+          "url": "https://data.eastmoney.com/notices/detail/002371/AN202608251828412439.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=002371",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        }
+      ],
+      "irUrl": "https://www.naura.com/Investor/index.aspx",
+      "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=002371",
+      "valuation": {
+        "pePercentile": 50,
+        "pbPercentile": 50,
+        "roePercentile": 17,
+        "combinedPercentile": 50,
+        "band": "中性",
+        "comparisonScope": "A股 · 半导体设备",
+        "sampleSize": 3,
+        "preferredMetrics": [
+          "远期PE*",
+          "EV/EBITDA",
+          "PEG*"
+        ],
+        "interpretation": "估值位于可比样本中部，单靠PE/PB不足以形成结论；应优先寻找行业景气与公司财务兑现的同向证据。",
+        "caveat": "当前同组仅3只，分位对单只样本很敏感；历史分位和一致预期尚未接入。"
+      },
+      "industryValidation": {
+        "summary": "不要用单条新闻直接跳到估值结论；至少沿相邻节点核验需求、经营与财务兑现。",
+        "nodes": [
+          {
+            "stage": "终端需求",
+            "question": "全球及本地晶圆厂资本开支是否进入确认与交付周期",
+            "state": "待查证",
+            "sourceLabel": "工信部电子信息制造业数据",
+            "url": "https://www.miit.gov.cn/gxsj/tjfx/dzxx/index.html"
+          },
+          {
+            "stage": "供给/订单",
+            "question": "订单/在手订单、客户验证、交付验收与合同负债",
+            "state": "待查证",
+            "sourceLabel": "SEMI 行业与晶圆厂更新",
+            "url": "https://www.semi.org/en/news-resources/press-releases"
+          },
+          {
+            "stage": "公司经营",
+            "question": "平台型半导体设备，重点验证订单、合同负债与收入兑现",
+            "state": "有新披露",
+            "sourceLabel": "公司IR / 监管披露",
+            "url": "https://www.naura.com/Investor/index.aspx"
+          },
+          {
+            "stage": "财务兑现",
+            "question": "订单能否兑现为收入、毛利率与经营现金流",
+            "state": "有新披露",
+            "sourceLabel": "巨潮资讯",
+            "url": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=002371"
+          }
+        ]
+      },
+      "structure": {
+        "scoreImpact": "独立风险层，尚未计入研究分",
+        "riskSummary": "融资余额近5个交易日减少1.8%；占流通市值0.54%（池内P3）。",
+        "margin": {
+          "status": "ok",
+          "balance": 2433000000,
+          "buyAmount": 112000000.00000001,
+          "shortBalance": 56860500,
+          "totalBalance": 2490000000,
+          "change5dPct": -1.8159806295399483,
+          "toFloatMarketCapPct": 0.5447449908313574,
+          "percentile": 3,
+          "asOf": "2026-09-29",
+          "source": "深交所官网",
+          "verifyUrl": "https://www.szse.cn/disclosure/margin/margin/index.html",
+          "note": "融资余额是杠杆拥挤代理，不代表国家队、量化或散户的真实身份。"
+        },
+        "chips": {
+          "status": "error",
+          "averageCost": null,
+          "peakCost": null,
+          "concentration70Pct": null,
+          "overheadSharePct": null,
+          "latestPrice": null,
+          "sampleBars": 0,
+          "asOf": null,
+          "source": "日K量价成本模型",
+          "verifyUrl": "https://quote.eastmoney.com/sz002371.html",
+          "note": "成本代理改为点开个股时按需计算，避免整池刷新触发行情源限流；若单股请求失败则保持空值。"
+        },
+        "identitySignals": [
+          {
+            "label": "两融杠杆",
+            "state": "官方日频",
+            "explanation": "融资余额衡量杠杆拥挤，不代表资金身份；融券余量与余额金额不会混用。"
+          },
+          {
+            "label": "成本密集区",
+            "state": "按需计算",
+            "explanation": "点开本页时用日K量价估算潜在套牢与集中区，只作为对手盘压力代理。"
+          },
+          {
+            "label": "股东结构",
+            "state": "待接季报批次",
+            "explanation": "国家队、机构与股东户数只能依公告滞后确认，不能推断实时净流入。"
+          },
+          {
+            "label": "账户身份",
+            "state": "公开数据不可穿透",
+            "explanation": "量化、散户与所谓主力账户无法由免费公开盘口可靠识别。"
+          }
+        ]
+      },
+      "sources": {
+        "marketData": {
+          "status": "ok",
+          "source": "腾讯行情聚合",
+          "asOf": "2026-09-30T08:14:39.000Z",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "reason": null
+        },
+        "evidence": {
+          "status": "ok",
+          "source": "上市公司公告",
+          "asOf": "2026-09-18",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "itemCount": 3,
+          "reason": null
+        },
+        "leverage": {
+          "status": "ok",
+          "source": "深交所官网",
+          "asOf": "2026-09-29",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "reason": null
+        }
+      },
+      "errors": [],
+      "groupRank": 3,
+      "groupSize": 3
+    },
+    {
+      "symbol": "688126",
+      "name": "沪硅产业",
+      "exchange": "科创板",
+      "market": "a",
+      "industry": "半导体",
+      "subIndustry": "半导体材料",
+      "focus": "半导体硅片，重点验证产能利用率、客户认证与价格",
+      "price": 23.38,
+      "previousClose": 23.66,
+      "changePct": -1.18,
+      "marketCap": 77271000000,
+      "floatMarketCap": 66811000000,
+      "peTtm": null,
+      "pb": 3.99,
+      "roe": -10.86,
+      "quoteTime": "2026-09-30T08:14:55.000Z",
+      "quoteSource": "腾讯行情聚合",
+      "score": 40,
+      "scoreStatus": "complete",
+      "components": {
+        "roe": 25,
+        "pe": null,
+        "pb": 75,
+        "evidence": 31,
+        "price": 44
+      },
+      "confidence": 85,
+      "confidenceLabel": "相对较高",
+      "evidence": [
+        {
+          "title": "沪硅产业:沪硅产业高级管理人员减持股份结果公告",
+          "date": "2026-09-22",
+          "url": "https://data.eastmoney.com/notices/detail/688126/AN202609221829758744.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688126",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "negative",
+          "impact": -1,
+          "impactReason": "标题命中风险关键词，尚未判断财务量级"
+        },
+        {
+          "title": "沪硅产业:沪硅产业关于董事长辞职的公告",
+          "date": "2026-09-29",
+          "url": "https://data.eastmoney.com/notices/detail/688126/AN202609291829997757.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688126",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        },
+        {
+          "title": "沪硅产业:沪硅产业董事、高级管理人员减持股份计划公告",
+          "date": "2026-08-24",
+          "url": "https://data.eastmoney.com/notices/detail/688126/AN202608241828369302.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688126",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "negative",
+          "impact": -1,
+          "impactReason": "标题命中风险关键词，尚未判断财务量级"
+        }
+      ],
+      "irUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688126",
+      "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688126",
+      "valuation": {
+        "pePercentile": null,
+        "pbPercentile": 25,
+        "roePercentile": 25,
+        "combinedPercentile": 25,
+        "band": "偏低",
+        "comparisonScope": "A股 · 半导体材料",
+        "sampleSize": 2,
+        "preferredMetrics": [
+          "PE",
+          "EV/EBITDA",
+          "FCF收益率"
+        ],
+        "interpretation": "半导体材料可比样本中估值处于较低分位；这可能是安全边际，也可能反映周期下行或盈利质量问题，需和库存、订单及现金流一起查证。",
+        "caveat": "当前同组仅2只，分位对单只样本很敏感；历史分位和一致预期尚未接入。"
+      },
+      "industryValidation": {
+        "summary": "不要用单条新闻直接跳到估值结论；至少沿相邻节点核验需求、经营与财务兑现。",
+        "nodes": [
+          {
+            "stage": "终端需求",
+            "question": "晶圆投片量与先进制程用量是否带动材料消耗",
+            "state": "待查证",
+            "sourceLabel": "工信部电子信息制造业数据",
+            "url": "https://www.miit.gov.cn/gxsj/tjfx/dzxx/index.html"
+          },
+          {
+            "stage": "供给/订单",
+            "question": "客户认证、份额、销量、价格与新产能利用率",
+            "state": "待查证",
+            "sourceLabel": "SEMI 行业与晶圆厂更新",
+            "url": "https://www.semi.org/en/news-resources/press-releases"
+          },
+          {
+            "stage": "公司经营",
+            "question": "半导体硅片，重点验证产能利用率、客户认证与价格",
+            "state": "有新披露",
+            "sourceLabel": "公司IR / 监管披露",
+            "url": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688126"
+          },
+          {
+            "stage": "财务兑现",
+            "question": "放量能否带来毛利率与现金流，而非应收和存货堆积",
+            "state": "有新披露",
+            "sourceLabel": "巨潮资讯",
+            "url": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688126"
+          }
+        ]
+      },
+      "structure": {
+        "scoreImpact": "独立风险层，尚未计入研究分",
+        "riskSummary": "融资余额近5个交易日减少2.3%；占流通市值3.70%（池内P37）。",
+        "margin": {
+          "status": "ok",
+          "balance": 2473596026,
+          "buyAmount": 27953542,
+          "shortBalance": null,
+          "totalBalance": null,
+          "change5dPct": -2.262276751282488,
+          "toFloatMarketCapPct": 3.702378389786113,
+          "percentile": 37,
+          "asOf": "2026-09-30",
+          "source": "上交所官网",
+          "verifyUrl": "https://www.sse.com.cn/market/othersdata/margin/detail/index.shtml",
+          "note": "融资余额是杠杆拥挤代理，不代表国家队、量化或散户的真实身份。"
+        },
+        "chips": {
+          "status": "error",
+          "averageCost": null,
+          "peakCost": null,
+          "concentration70Pct": null,
+          "overheadSharePct": null,
+          "latestPrice": null,
+          "sampleBars": 0,
+          "asOf": null,
+          "source": "日K量价成本模型",
+          "verifyUrl": "https://quote.eastmoney.com/sh688126.html",
+          "note": "成本代理改为点开个股时按需计算，避免整池刷新触发行情源限流；若单股请求失败则保持空值。"
+        },
+        "identitySignals": [
+          {
+            "label": "两融杠杆",
+            "state": "官方日频",
+            "explanation": "融资余额衡量杠杆拥挤，不代表资金身份；融券余量与余额金额不会混用。"
+          },
+          {
+            "label": "成本密集区",
+            "state": "按需计算",
+            "explanation": "点开本页时用日K量价估算潜在套牢与集中区，只作为对手盘压力代理。"
+          },
+          {
+            "label": "股东结构",
+            "state": "待接季报批次",
+            "explanation": "国家队、机构与股东户数只能依公告滞后确认，不能推断实时净流入。"
+          },
+          {
+            "label": "账户身份",
+            "state": "公开数据不可穿透",
+            "explanation": "量化、散户与所谓主力账户无法由免费公开盘口可靠识别。"
+          }
+        ]
+      },
+      "sources": {
+        "marketData": {
+          "status": "ok",
+          "source": "腾讯行情聚合",
+          "asOf": "2026-09-30T08:14:55.000Z",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "reason": null
+        },
+        "evidence": {
+          "status": "ok",
+          "source": "上市公司公告",
+          "asOf": "2026-09-22",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "itemCount": 3,
+          "reason": null
+        },
+        "leverage": {
+          "status": "ok",
+          "source": "上交所官网",
+          "asOf": "2026-09-30",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "reason": null
+        }
+      },
+      "errors": [],
+      "groupRank": 2,
+      "groupSize": 2
+    },
+    {
+      "symbol": "688008",
+      "name": "澜起科技",
+      "exchange": "科创板",
+      "market": "a",
+      "industry": "半导体",
+      "subIndustry": "芯片设计",
+      "focus": "内存接口与互连芯片，重点验证服务器平台放量与产品组合",
+      "price": 202.31,
+      "previousClose": 212.6,
+      "changePct": -4.84,
+      "marketCap": 246927000000,
+      "floatMarketCap": 231596999999.99997,
+      "peTtm": 80.33,
+      "pb": 11.6,
+      "roe": 14.29,
+      "quoteTime": "2026-09-30T08:14:49.000Z",
+      "quoteSource": "腾讯行情聚合",
+      "score": 38,
+      "scoreStatus": "complete",
+      "components": {
+        "roe": 50,
+        "pe": 25,
+        "pb": 17,
+        "evidence": 48,
+        "price": 26
+      },
+      "confidence": 85,
+      "confidenceLabel": "相对较高",
+      "evidence": [
+        {
+          "title": "澜起科技:澜起科技股东减持股份计划公告",
+          "date": "2026-09-24",
+          "url": "https://data.eastmoney.com/notices/detail/688008/AN202609241829866357.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688008",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "negative",
+          "impact": -1,
+          "impactReason": "标题命中风险关键词，尚未判断财务量级"
+        },
+        {
+          "title": "澜起科技:澜起科技关于以集中竞价交易方式回购A股股份的进展公告",
+          "date": "2026-09-30",
+          "url": "https://data.eastmoney.com/notices/detail/688008/AN202609301830050013.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688008",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "positive",
+          "impact": 1,
+          "impactReason": "标题命中正向经营关键词，尚未判断财务量级"
+        },
+        {
+          "title": "澜起科技:-投资者关系活动记录表(2026-011)",
+          "date": "2026-09-17",
+          "url": "https://data.eastmoney.com/notices/detail/688008/AN202609171829522334.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688008",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        }
+      ],
+      "irUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688008",
+      "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688008",
+      "valuation": {
+        "pePercentile": 75,
+        "pbPercentile": 83,
+        "roePercentile": 50,
+        "combinedPercentile": 79,
+        "band": "偏高",
+        "comparisonScope": "A股 · 芯片设计",
+        "sampleSize": 3,
+        "preferredMetrics": [
+          "远期PE*",
+          "EV/Sales",
+          "FCF收益率"
+        ],
+        "interpretation": "芯片设计可比样本中估值处于较高分位；需要盈利增速、ROE或现金流改善来验证溢价，而不是把“高PE”直接解释为高质量。",
+        "caveat": "当前同组仅3只，分位对单只样本很敏感；历史分位和一致预期尚未接入。"
+      },
+      "industryValidation": {
+        "summary": "不要用单条新闻直接跳到估值结论；至少沿相邻节点核验需求、经营与财务兑现。",
+        "nodes": [
+          {
+            "stage": "终端需求",
+            "question": "终端销量、平台迭代与客户库存是否支持真实出货",
+            "state": "待查证",
+            "sourceLabel": "工信部电子信息制造业数据",
+            "url": "https://www.miit.gov.cn/gxsj/tjfx/dzxx/index.html"
+          },
+          {
+            "stage": "供给/订单",
+            "question": "出货量、ASP、产品组合、库存天数与毛利率",
+            "state": "待查证",
+            "sourceLabel": "SEMI 行业与晶圆厂更新",
+            "url": "https://www.semi.org/en/news-resources/press-releases"
+          },
+          {
+            "stage": "公司经营",
+            "question": "内存接口与互连芯片，重点验证服务器平台放量与产品组合",
+            "state": "有新披露",
+            "sourceLabel": "公司IR / 监管披露",
+            "url": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688008"
+          },
+          {
+            "stage": "财务兑现",
+            "question": "收入增速、毛利率与自由现金流是否同向兑现",
+            "state": "有新披露",
+            "sourceLabel": "巨潮资讯",
+            "url": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688008"
+          }
+        ]
+      },
+      "structure": {
+        "scoreImpact": "独立风险层，尚未计入研究分",
+        "riskSummary": "融资余额近5个交易日减少0.3%；占流通市值5.58%（池内P77）。",
+        "margin": {
+          "status": "ok",
+          "balance": 12924871266,
+          "buyAmount": 493626076,
+          "shortBalance": null,
+          "totalBalance": null,
+          "change5dPct": -0.3368499587432239,
+          "toFloatMarketCapPct": 5.580759364758612,
+          "percentile": 77,
+          "asOf": "2026-09-30",
+          "source": "上交所官网",
+          "verifyUrl": "https://www.sse.com.cn/market/othersdata/margin/detail/index.shtml",
+          "note": "融资余额是杠杆拥挤代理，不代表国家队、量化或散户的真实身份。"
+        },
+        "chips": {
+          "status": "error",
+          "averageCost": null,
+          "peakCost": null,
+          "concentration70Pct": null,
+          "overheadSharePct": null,
+          "latestPrice": null,
+          "sampleBars": 0,
+          "asOf": null,
+          "source": "日K量价成本模型",
+          "verifyUrl": "https://quote.eastmoney.com/sh688008.html",
+          "note": "成本代理改为点开个股时按需计算，避免整池刷新触发行情源限流；若单股请求失败则保持空值。"
+        },
+        "identitySignals": [
+          {
+            "label": "两融杠杆",
+            "state": "官方日频",
+            "explanation": "融资余额衡量杠杆拥挤，不代表资金身份；融券余量与余额金额不会混用。"
+          },
+          {
+            "label": "成本密集区",
+            "state": "按需计算",
+            "explanation": "点开本页时用日K量价估算潜在套牢与集中区，只作为对手盘压力代理。"
+          },
+          {
+            "label": "股东结构",
+            "state": "待接季报批次",
+            "explanation": "国家队、机构与股东户数只能依公告滞后确认，不能推断实时净流入。"
+          },
+          {
+            "label": "账户身份",
+            "state": "公开数据不可穿透",
+            "explanation": "量化、散户与所谓主力账户无法由免费公开盘口可靠识别。"
+          }
+        ]
+      },
+      "sources": {
+        "marketData": {
+          "status": "ok",
+          "source": "腾讯行情聚合",
+          "asOf": "2026-09-30T08:14:49.000Z",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "reason": null
+        },
+        "evidence": {
+          "status": "ok",
+          "source": "上市公司公告",
+          "asOf": "2026-09-24",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "itemCount": 3,
+          "reason": null
+        },
+        "leverage": {
+          "status": "ok",
+          "source": "上交所官网",
+          "asOf": "2026-09-30",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "reason": null
+        }
+      },
+      "errors": [],
+      "groupRank": 3,
+      "groupSize": 3
+    },
+    {
+      "symbol": "688347",
+      "name": "华虹公司",
+      "exchange": "科创板",
+      "market": "a",
+      "industry": "半导体",
+      "subIndustry": "晶圆制造",
+      "focus": "特色工艺晶圆代工，重点验证稼动率、价格与折旧压力",
+      "price": 207.92,
+      "previousClose": 219.1,
+      "changePct": -5.1,
+      "marketCap": 400973000000,
+      "floatMarketCap": 84779000000,
+      "peTtm": 571.89,
+      "pb": 7.22,
+      "roe": 1.48,
+      "quoteTime": "2026-09-30T08:14:55.000Z",
+      "quoteSource": "腾讯行情聚合",
+      "score": 33,
+      "scoreStatus": "complete",
+      "components": {
+        "roe": 25,
+        "pe": 25,
+        "pb": 25,
+        "evidence": 50,
+        "price": 25
+      },
+      "confidence": 85,
+      "confidenceLabel": "相对较高",
+      "evidence": [
+        {
+          "title": "华虹宏力:关于召开2026年第三次临时股东会的通知",
+          "date": "2026-09-29",
+          "url": "https://data.eastmoney.com/notices/detail/688347/AN202609291829999600.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688347",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        },
+        {
+          "title": "华虹宏力:2026年第三次临时股东会会议材料",
+          "date": "2026-09-29",
+          "url": "https://data.eastmoney.com/notices/detail/688347/AN202609291829999602.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688347",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        },
+        {
+          "title": "华虹宏力:港股公告:有关成立合营企业的补充公告",
+          "date": "2026-09-29",
+          "url": "https://data.eastmoney.com/notices/detail/688347/AN202609291829997066.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688347",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        }
+      ],
+      "irUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688347",
+      "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688347",
+      "valuation": {
+        "pePercentile": 75,
+        "pbPercentile": 75,
+        "roePercentile": 25,
+        "combinedPercentile": 75,
+        "band": "偏高",
+        "comparisonScope": "A股 · 晶圆制造",
+        "sampleSize": 2,
+        "preferredMetrics": [
+          "PB",
+          "EV/EBITDA",
+          "EV/Sales"
+        ],
+        "interpretation": "晶圆制造可比样本中估值处于较高分位；需要盈利增速、ROE或现金流改善来验证溢价，而不是把“高PE”直接解释为高质量。",
+        "caveat": "当前同组仅2只，分位对单只样本很敏感；历史分位和一致预期尚未接入。"
+      },
+      "industryValidation": {
+        "summary": "不要用单条新闻直接跳到估值结论；至少沿相邻节点核验需求、经营与财务兑现。",
+        "nodes": [
+          {
+            "stage": "终端需求",
+            "question": "终端出货与晶圆需求是否共同改善，而不只是单月价格波动",
+            "state": "待查证",
+            "sourceLabel": "工信部电子信息制造业数据",
+            "url": "https://www.miit.gov.cn/gxsj/tjfx/dzxx/index.html"
+          },
+          {
+            "stage": "供给/订单",
+            "question": "产能利用率、ASP、先进/特色工艺占比与资本开支",
+            "state": "待查证",
+            "sourceLabel": "SEMI 行业与晶圆厂更新",
+            "url": "https://www.semi.org/en/news-resources/press-releases"
+          },
+          {
+            "stage": "公司经营",
+            "question": "特色工艺晶圆代工，重点验证稼动率、价格与折旧压力",
+            "state": "有新披露",
+            "sourceLabel": "公司IR / 监管披露",
+            "url": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688347"
+          },
+          {
+            "stage": "财务兑现",
+            "question": "收入和毛利率改善能否覆盖折旧，并转化为经营现金流",
+            "state": "有新披露",
+            "sourceLabel": "巨潮资讯",
+            "url": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688347"
+          }
+        ]
+      },
+      "structure": {
+        "scoreImpact": "独立风险层，尚未计入研究分",
+        "riskSummary": "融资余额近5个交易日增加1.2%；占流通市值3.13%（池内P30）。",
+        "margin": {
+          "status": "ok",
+          "balance": 2654157374,
+          "buyAmount": 232926740,
+          "shortBalance": null,
+          "totalBalance": null,
+          "change5dPct": 1.2225113846453528,
+          "toFloatMarketCapPct": 3.130677849467439,
+          "percentile": 30,
+          "asOf": "2026-09-30",
+          "source": "上交所官网",
+          "verifyUrl": "https://www.sse.com.cn/market/othersdata/margin/detail/index.shtml",
+          "note": "融资余额是杠杆拥挤代理，不代表国家队、量化或散户的真实身份。"
+        },
+        "chips": {
+          "status": "error",
+          "averageCost": null,
+          "peakCost": null,
+          "concentration70Pct": null,
+          "overheadSharePct": null,
+          "latestPrice": null,
+          "sampleBars": 0,
+          "asOf": null,
+          "source": "日K量价成本模型",
+          "verifyUrl": "https://quote.eastmoney.com/sh688347.html",
+          "note": "成本代理改为点开个股时按需计算，避免整池刷新触发行情源限流；若单股请求失败则保持空值。"
+        },
+        "identitySignals": [
+          {
+            "label": "两融杠杆",
+            "state": "官方日频",
+            "explanation": "融资余额衡量杠杆拥挤，不代表资金身份；融券余量与余额金额不会混用。"
+          },
+          {
+            "label": "成本密集区",
+            "state": "按需计算",
+            "explanation": "点开本页时用日K量价估算潜在套牢与集中区，只作为对手盘压力代理。"
+          },
+          {
+            "label": "股东结构",
+            "state": "待接季报批次",
+            "explanation": "国家队、机构与股东户数只能依公告滞后确认，不能推断实时净流入。"
+          },
+          {
+            "label": "账户身份",
+            "state": "公开数据不可穿透",
+            "explanation": "量化、散户与所谓主力账户无法由免费公开盘口可靠识别。"
+          }
+        ]
+      },
+      "sources": {
+        "marketData": {
+          "status": "ok",
+          "source": "腾讯行情聚合",
+          "asOf": "2026-09-30T08:14:55.000Z",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "reason": null
+        },
+        "evidence": {
+          "status": "ok",
+          "source": "上市公司公告",
+          "asOf": "2026-09-29",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "itemCount": 3,
+          "reason": null
+        },
+        "leverage": {
+          "status": "ok",
+          "source": "上交所官网",
+          "asOf": "2026-09-30",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "reason": null
+        }
+      },
+      "errors": [],
+      "groupRank": 2,
+      "groupSize": 2
+    },
+    {
+      "symbol": "688110",
+      "name": "东芯股份",
+      "exchange": "科创板",
+      "market": "a",
+      "industry": "半导体",
+      "subIndustry": "存储",
+      "focus": "中小容量存储芯片，重点验证价格、出货、库存与减值",
+      "price": 113.81,
+      "previousClose": 117.73,
+      "changePct": -3.33,
+      "marketCap": 50347000000,
+      "floatMarketCap": 50347000000,
+      "peTtm": 87.49,
+      "pb": 12.11,
+      "roe": 13.84,
+      "quoteTime": "2026-09-30T08:14:53.000Z",
+      "quoteSource": "腾讯行情聚合",
+      "score": 33,
+      "scoreStatus": "complete",
+      "components": {
+        "roe": 25,
+        "pe": 25,
+        "pb": 25,
+        "evidence": 50,
+        "price": 33
+      },
+      "confidence": 85,
+      "confidenceLabel": "相对较高",
+      "evidence": [
+        {
+          "title": "东芯股份:东芯半导体股份有限公司投资者关系活动记录表(2026年9月3日业绩暨现金分红说明会)",
+          "date": "2026-09-08",
+          "url": "https://data.eastmoney.com/notices/detail/688110/AN202609081829128133.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688110",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        },
+        {
+          "title": "东芯股份:东芯半导体股份有限公司投资者关系活动记录表(2026年9月30日)",
+          "date": "2026-09-30",
+          "url": "https://data.eastmoney.com/notices/detail/688110/AN202609301830039476.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688110",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        },
+        {
+          "title": "东芯股份:2026年半年度权益分派实施公告",
+          "date": "2026-09-28",
+          "url": "https://data.eastmoney.com/notices/detail/688110/AN202609281829963925.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688110",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        }
+      ],
+      "irUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688110",
+      "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688110",
+      "valuation": {
+        "pePercentile": 75,
+        "pbPercentile": 75,
+        "roePercentile": 25,
+        "combinedPercentile": 75,
+        "band": "偏高",
+        "comparisonScope": "A股 · 存储",
+        "sampleSize": 2,
+        "preferredMetrics": [
+          "PB",
+          "周期中枢EV/EBITDA",
+          "经营现金流"
+        ],
+        "interpretation": "存储可比样本中估值处于较高分位；需要盈利增速、ROE或现金流改善来验证溢价，而不是把“高PE”直接解释为高质量。",
+        "caveat": "当前同组仅2只，分位对单只样本很敏感；历史分位和一致预期尚未接入。"
+      },
+      "industryValidation": {
+        "summary": "不要用单条新闻直接跳到估值结论；至少沿相邻节点核验需求、经营与财务兑现。",
+        "nodes": [
+          {
+            "stage": "终端需求",
+            "question": "位元需求、合约价格与客户库存是否处于同一周期方向",
+            "state": "待查证",
+            "sourceLabel": "工信部电子信息制造业数据",
+            "url": "https://www.miit.gov.cn/gxsj/tjfx/dzxx/index.html"
+          },
+          {
+            "stage": "供给/订单",
+            "question": "ASP、位元出货、库存、产能纪律与高端产品占比",
+            "state": "待查证",
+            "sourceLabel": "SEMI 行业与晶圆厂更新",
+            "url": "https://www.semi.org/en/news-resources/press-releases"
+          },
+          {
+            "stage": "公司经营",
+            "question": "中小容量存储芯片，重点验证价格、出货、库存与减值",
+            "state": "有新披露",
+            "sourceLabel": "公司IR / 监管披露",
+            "url": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688110"
+          },
+          {
+            "stage": "财务兑现",
+            "question": "毛利率、库存减值和经营现金流能否持续改善",
+            "state": "有新披露",
+            "sourceLabel": "巨潮资讯",
+            "url": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=688110"
+          }
+        ]
+      },
+      "structure": {
+        "scoreImpact": "独立风险层，尚未计入研究分",
+        "riskSummary": "融资余额近5个交易日减少0.5%；占流通市值6.49%（池内P83）。",
+        "margin": {
+          "status": "ok",
+          "balance": 3268682563,
+          "buyAmount": 94793746,
+          "shortBalance": null,
+          "totalBalance": null,
+          "change5dPct": -0.548993629339678,
+          "toFloatMarketCapPct": 6.492308504975471,
+          "percentile": 83,
+          "asOf": "2026-09-30",
+          "source": "上交所官网",
+          "verifyUrl": "https://www.sse.com.cn/market/othersdata/margin/detail/index.shtml",
+          "note": "融资余额是杠杆拥挤代理，不代表国家队、量化或散户的真实身份。"
+        },
+        "chips": {
+          "status": "error",
+          "averageCost": null,
+          "peakCost": null,
+          "concentration70Pct": null,
+          "overheadSharePct": null,
+          "latestPrice": null,
+          "sampleBars": 0,
+          "asOf": null,
+          "source": "日K量价成本模型",
+          "verifyUrl": "https://quote.eastmoney.com/sh688110.html",
+          "note": "成本代理改为点开个股时按需计算，避免整池刷新触发行情源限流；若单股请求失败则保持空值。"
+        },
+        "identitySignals": [
+          {
+            "label": "两融杠杆",
+            "state": "官方日频",
+            "explanation": "融资余额衡量杠杆拥挤，不代表资金身份；融券余量与余额金额不会混用。"
+          },
+          {
+            "label": "成本密集区",
+            "state": "按需计算",
+            "explanation": "点开本页时用日K量价估算潜在套牢与集中区，只作为对手盘压力代理。"
+          },
+          {
+            "label": "股东结构",
+            "state": "待接季报批次",
+            "explanation": "国家队、机构与股东户数只能依公告滞后确认，不能推断实时净流入。"
+          },
+          {
+            "label": "账户身份",
+            "state": "公开数据不可穿透",
+            "explanation": "量化、散户与所谓主力账户无法由免费公开盘口可靠识别。"
+          }
+        ]
+      },
+      "sources": {
+        "marketData": {
+          "status": "ok",
+          "source": "腾讯行情聚合",
+          "asOf": "2026-09-30T08:14:53.000Z",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "reason": null
+        },
+        "evidence": {
+          "status": "ok",
+          "source": "上市公司公告",
+          "asOf": "2026-09-08",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "itemCount": 3,
+          "reason": null
+        },
+        "leverage": {
+          "status": "ok",
+          "source": "上交所官网",
+          "asOf": "2026-09-30",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "reason": null
+        }
+      },
+      "errors": [],
+      "groupRank": 2,
+      "groupSize": 2
+    },
+    {
+      "symbol": "600584",
+      "name": "长电科技",
+      "exchange": "上交所",
+      "market": "a",
+      "industry": "半导体",
+      "subIndustry": "封装测试",
+      "focus": "全球封测与先进封装，重点验证稼动率、产品结构与现金流",
+      "price": 64.28,
+      "previousClose": 65.7,
+      "changePct": -2.16,
+      "marketCap": 115024000000,
+      "floatMarketCap": 115024000000,
+      "peTtm": 59.32,
+      "pb": 3.99,
+      "roe": 6.7,
+      "quoteTime": "2026-09-30T08:14:51.000Z",
+      "quoteSource": "腾讯行情聚合",
+      "score": 30,
+      "scoreStatus": "complete",
+      "components": {
+        "roe": 17,
+        "pe": 17,
+        "pb": 50,
+        "evidence": 39,
+        "price": 39
+      },
+      "confidence": 85,
+      "confidenceLabel": "相对较高",
+      "evidence": [
+        {
+          "title": "长电科技:江苏长电科技股份有限公司关于最近五年不存在被证券监管部门和证券交易所处罚或采取监管措施情况的公告",
+          "date": "2026-09-03",
+          "url": "https://data.eastmoney.com/notices/detail/600584/AN202609031828971293.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=600584",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "negative",
+          "impact": -1,
+          "impactReason": "标题命中风险关键词，尚未判断财务量级"
+        },
+        {
+          "title": "长电科技:江苏长电科技股份有限公司关于收购晟碟半导体(上海)有限公司80%股权的进展公告",
+          "date": "2026-09-29",
+          "url": "https://data.eastmoney.com/notices/detail/600584/AN202609291829993756.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=600584",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        },
+        {
+          "title": "长电科技:江苏长电科技股份有限公司2026年半年度权益分派实施公告",
+          "date": "2026-09-17",
+          "url": "https://data.eastmoney.com/notices/detail/600584/AN202609171829522165.html",
+          "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=600584",
+          "source": "上市公司公告",
+          "kind": "财报/公告",
+          "tone": "neutral",
+          "impact": 0,
+          "impactReason": "标题规则未识别明确方向，按中性处理"
+        }
+      ],
+      "irUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=600584",
+      "verifyUrl": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=600584",
+      "valuation": {
+        "pePercentile": 83,
+        "pbPercentile": 50,
+        "roePercentile": 17,
+        "combinedPercentile": 67,
+        "band": "偏高",
+        "comparisonScope": "A股 · 封装测试",
+        "sampleSize": 3,
+        "preferredMetrics": [
+          "EV/EBITDA",
+          "PB",
+          "PE"
+        ],
+        "interpretation": "估值位于可比样本中部，单靠PE/PB不足以形成结论；应优先寻找行业景气与公司财务兑现的同向证据。",
+        "caveat": "当前同组仅3只，分位对单只样本很敏感；历史分位和一致预期尚未接入。"
+      },
+      "industryValidation": {
+        "summary": "不要用单条新闻直接跳到估值结论；至少沿相邻节点核验需求、经营与财务兑现。",
+        "nodes": [
+          {
+            "stage": "终端需求",
+            "question": "终端需求与先进封装需求是否同步传导至订单",
+            "state": "待查证",
+            "sourceLabel": "工信部电子信息制造业数据",
+            "url": "https://www.miit.gov.cn/gxsj/tjfx/dzxx/index.html"
+          },
+          {
+            "stage": "供给/订单",
+            "question": "稼动率、单价、先进封装占比与资本开支效率",
+            "state": "待查证",
+            "sourceLabel": "SEMI 行业与晶圆厂更新",
+            "url": "https://www.semi.org/en/news-resources/press-releases"
+          },
+          {
+            "stage": "公司经营",
+            "question": "全球封测与先进封装，重点验证稼动率、产品结构与现金流",
+            "state": "有新披露",
+            "sourceLabel": "公司IR / 监管披露",
+            "url": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=600584"
+          },
+          {
+            "stage": "财务兑现",
+            "question": "毛利率、折旧压力与经营现金流是否改善",
+            "state": "有新披露",
+            "sourceLabel": "巨潮资讯",
+            "url": "https://www.cninfo.com.cn/new/fulltextSearch?keyWord=600584"
+          }
+        ]
+      },
+      "structure": {
+        "scoreImpact": "独立风险层，尚未计入研究分",
+        "riskSummary": "融资余额近5个交易日减少1.3%；占流通市值5.35%（池内P70）。",
+        "margin": {
+          "status": "ok",
+          "balance": 6154918761,
+          "buyAmount": 228770370,
+          "shortBalance": null,
+          "totalBalance": null,
+          "change5dPct": -1.279299310116233,
+          "toFloatMarketCapPct": 5.3509865428084575,
+          "percentile": 70,
+          "asOf": "2026-09-30",
+          "source": "上交所官网",
+          "verifyUrl": "https://www.sse.com.cn/market/othersdata/margin/detail/index.shtml",
+          "note": "融资余额是杠杆拥挤代理，不代表国家队、量化或散户的真实身份。"
+        },
+        "chips": {
+          "status": "error",
+          "averageCost": null,
+          "peakCost": null,
+          "concentration70Pct": null,
+          "overheadSharePct": null,
+          "latestPrice": null,
+          "sampleBars": 0,
+          "asOf": null,
+          "source": "日K量价成本模型",
+          "verifyUrl": "https://quote.eastmoney.com/sh600584.html",
+          "note": "成本代理改为点开个股时按需计算，避免整池刷新触发行情源限流；若单股请求失败则保持空值。"
+        },
+        "identitySignals": [
+          {
+            "label": "两融杠杆",
+            "state": "官方日频",
+            "explanation": "融资余额衡量杠杆拥挤，不代表资金身份；融券余量与余额金额不会混用。"
+          },
+          {
+            "label": "成本密集区",
+            "state": "按需计算",
+            "explanation": "点开本页时用日K量价估算潜在套牢与集中区，只作为对手盘压力代理。"
+          },
+          {
+            "label": "股东结构",
+            "state": "待接季报批次",
+            "explanation": "国家队、机构与股东户数只能依公告滞后确认，不能推断实时净流入。"
+          },
+          {
+            "label": "账户身份",
+            "state": "公开数据不可穿透",
+            "explanation": "量化、散户与所谓主力账户无法由免费公开盘口可靠识别。"
+          }
+        ]
+      },
+      "sources": {
+        "marketData": {
+          "status": "ok",
+          "source": "腾讯行情聚合",
+          "asOf": "2026-09-30T08:14:51.000Z",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "reason": null
+        },
+        "evidence": {
+          "status": "ok",
+          "source": "上市公司公告",
+          "asOf": "2026-09-03",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "itemCount": 3,
+          "reason": null
+        },
+        "leverage": {
+          "status": "ok",
+          "source": "上交所官网",
+          "asOf": "2026-09-30",
+          "attemptedAt": "2026-10-03T08:19:20.176Z",
+          "reason": null
+        }
+      },
+      "errors": [],
+      "groupRank": 3,
+      "groupSize": 3
+    }
+  ],
+  "disclosure": "实验性研究优先级评分，不构成投资建议。行情可能延迟；标题规则只用于排序；资金身份不从公开成交中猜测，事实以原始链接为准。"
+}

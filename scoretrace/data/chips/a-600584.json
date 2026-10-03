@@ -1,0 +1,18 @@
+{
+  "market": "a",
+  "symbol": "600584",
+  "chips": {
+    "status": "ok",
+    "averageCost": 76.19465281267715,
+    "peakCost": 78.27915966386553,
+    "concentration70Pct": 49.057457818938246,
+    "overheadSharePct": 79.94262987328665,
+    "latestPrice": 64.28,
+    "sampleBars": 120,
+    "asOf": "2026-09-30",
+    "source": "东方财富复权日K聚合",
+    "verifyUrl": "https://quote.eastmoney.com/sh600584.html",
+    "note": "由近120个交易日OHLCV按日内三角分布估算，是成本密集区代理，不是账户级真实持仓，也不能识别主力身份。"
+  },
+  "generatedAt": "2026-10-03T08:19:25.241Z"
+}

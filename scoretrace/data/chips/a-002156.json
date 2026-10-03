@@ -1,0 +1,18 @@
+{
+  "market": "a",
+  "symbol": "002156",
+  "chips": {
+    "status": "ok",
+    "averageCost": 64.28478492773176,
+    "peakCost": 62.8564705882353,
+    "concentration70Pct": 24.8102933149873,
+    "overheadSharePct": 87.12728673277428,
+    "latestPrice": 56.9,
+    "sampleBars": 120,
+    "asOf": "2026-09-30",
+    "source": "东方财富复权日K聚合",
+    "verifyUrl": "https://quote.eastmoney.com/sz002156.html",
+    "note": "由近120个交易日OHLCV按日内三角分布估算，是成本密集区代理，不是账户级真实持仓，也不能识别主力身份。"
+  },
+  "generatedAt": "2026-10-03T08:19:25.000Z"
+}

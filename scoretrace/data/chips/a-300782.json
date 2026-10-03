@@ -1,0 +1,18 @@
+{
+  "market": "a",
+  "symbol": "300782",
+  "chips": {
+    "status": "ok",
+    "averageCost": 99.29253905719847,
+    "peakCost": 104.38739495798319,
+    "concentration70Pct": 41.48127897336148,
+    "overheadSharePct": 96.1225245663306,
+    "latestPrice": 70.17,
+    "sampleBars": 120,
+    "asOf": "2026-09-30",
+    "source": "东方财富复权日K聚合",
+    "verifyUrl": "https://quote.eastmoney.com/sz300782.html",
+    "note": "由近120个交易日OHLCV按日内三角分布估算，是成本密集区代理，不是账户级真实持仓，也不能识别主力身份。"
+  },
+  "generatedAt": "2026-10-03T08:19:25.121Z"
+}

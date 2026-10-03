@@ -1,0 +1,18 @@
+{
+  "market": "a",
+  "symbol": "603986",
+  "chips": {
+    "status": "ok",
+    "averageCost": 445.02191401666573,
+    "peakCost": 405.4384033613445,
+    "concentration70Pct": 52.422043158799646,
+    "overheadSharePct": 82.51446461790198,
+    "latestPrice": 353.9,
+    "sampleBars": 120,
+    "asOf": "2026-09-30",
+    "source": "东方财富复权日K聚合",
+    "verifyUrl": "https://quote.eastmoney.com/sh603986.html",
+    "note": "由近120个交易日OHLCV按日内三角分布估算，是成本密集区代理，不是账户级真实持仓，也不能识别主力身份。"
+  },
+  "generatedAt": "2026-10-03T08:19:24.981Z"
+}

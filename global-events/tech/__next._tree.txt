@@ -1,0 +1,2 @@
+:HL["/zihao-project-demos/global-events/_next/static/css/e600f0665a7d6bb7.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"tech","param":null,"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"QeUq_fErMGaGl2BdwW5i3"}

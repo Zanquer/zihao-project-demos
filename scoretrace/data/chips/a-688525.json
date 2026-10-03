@@ -1,0 +1,18 @@
+{
+  "market": "a",
+  "symbol": "688525",
+  "chips": {
+    "status": "ok",
+    "averageCost": 295.59626411634804,
+    "peakCost": 312.0442857142857,
+    "concentration70Pct": 44.2843408505776,
+    "overheadSharePct": 99.94476435955873,
+    "latestPrice": 192.35,
+    "sampleBars": 120,
+    "asOf": "2026-09-30",
+    "source": "东方财富复权日K聚合",
+    "verifyUrl": "https://quote.eastmoney.com/sh688525.html",
+    "note": "由近120个交易日OHLCV按日内三角分布估算，是成本密集区代理，不是账户级真实持仓，也不能识别主力身份。"
+  },
+  "generatedAt": "2026-10-03T08:19:24.997Z"
+}

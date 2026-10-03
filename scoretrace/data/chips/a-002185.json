@@ -1,0 +1,18 @@
+{
+  "market": "a",
+  "symbol": "002185",
+  "chips": {
+    "status": "ok",
+    "averageCost": 18.3766408482275,
+    "peakCost": 18.415294117647058,
+    "concentration70Pct": 32.04515764359494,
+    "overheadSharePct": 75.29758580787441,
+    "latestPrice": 16.46,
+    "sampleBars": 120,
+    "asOf": "2026-09-30",
+    "source": "东方财富复权日K聚合",
+    "verifyUrl": "https://quote.eastmoney.com/sz002185.html",
+    "note": "由近120个交易日OHLCV按日内三角分布估算，是成本密集区代理，不是账户级真实持仓，也不能识别主力身份。"
+  },
+  "generatedAt": "2026-10-03T08:19:25.047Z"
+}

@@ -1,0 +1,18 @@
+{
+  "market": "us",
+  "symbol": "AMD",
+  "chips": {
+    "status": "ok",
+    "averageCost": 461.68593741074966,
+    "peakCost": 514.446218487395,
+    "concentration70Pct": 42.929688793644196,
+    "overheadSharePct": 0.5972083070787026,
+    "latestPrice": 633.91,
+    "sampleBars": 120,
+    "asOf": "2026-10-02",
+    "source": "Nasdaq 历史行情",
+    "verifyUrl": "https://www.nasdaq.com/market-activity/stocks/amd/historical",
+    "note": "由近120个交易日OHLCV按日内三角分布估算，是成本密集区代理，不是账户级真实持仓，也不能识别主力身份。"
+  },
+  "generatedAt": "2026-10-03T08:19:27.987Z"
+}
