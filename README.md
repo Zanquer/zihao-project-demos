@@ -1,5 +1,7 @@
 # Zihao Guo · Interactive Project Demos
 
+**[AI 研究台 · 招聘演示](https://zanquer.github.io/zihao-project-demos/global-events/ai/)** — 从真实披露追踪 AI 资金，查看财报口径和宏观晨报。页面使用固定快照，研究原件可逐项打开。
+
 Interactive demos of two research tools, hosted on GitHub Pages. Explore the workflows, analysis and source evidence through a browser.
 
 **[Explore the demos](https://zanquer.github.io/zihao-project-demos/)**
