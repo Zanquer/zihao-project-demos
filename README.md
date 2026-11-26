@@ -21,7 +21,8 @@
 
 | 演示内容 | 资料日期 |
 | --- | --- |
-| AI 研究台 · 资金图及财报核对 | 2026-11-23 快照，财报示例为历史重建 |
+| AI 研究台 · 资金图、发行融资与总量指标 | 2026-11-26 快照 |
+| AI 研究台 · 财报核对 | 2026-11-23 快照，财报示例为历史重建 |
 | AI 研究台 · 宏观晨报 | 2026-11-19 归档 |
 | 全球事件台 · 市场工作台 | 2026-10-26 快照 |
 | ScoreTrace | 2026-10-03 快照 |
@@ -30,6 +31,6 @@
 
 ## English
 
-**[Global Events · AI Research Desk](https://zanquer.github.io/zihao-project-demos/global-events/#ai)** is part of the main dashboard navigation. Readers can trace AI funding to original disclosures, compare earnings with pre-release consensus on the same accounting basis, and read an archived macro thesis alongside the observations that could overturn it. The funding and earnings views use the November 23 snapshot. The November 19 brief retains the evidence available for that edition. Opening the demo makes no model calls.
+**[Global Events · AI Research Desk](https://zanquer.github.io/zihao-project-demos/global-events/#ai)** is part of the main dashboard navigation. Readers can trace AI funding to original disclosures, compare earnings with pre-release consensus on the same accounting basis, and read an archived macro thesis alongside the observations that could overturn it. The funding view uses disclosures reviewed through November 26, with financing and aggregate figures shown separately. Earnings use the November 23 snapshot. The November 19 brief retains the evidence available for that edition. Opening the demo makes no model calls.
 
 The [market dashboard](https://zanquer.github.io/zihao-project-demos/global-events/) covers calendars, indices, rates, commodities, news and technology companies. [ScoreTrace](https://zanquer.github.io/zihao-project-demos/scoretrace/) covers 30 semiconductor stocks across the Chinese and US markets. Both are interactive snapshots.
