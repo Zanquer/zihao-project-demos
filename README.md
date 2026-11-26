@@ -1,37 +1,35 @@
-# Zihao Guo · Interactive Project Demos
+# Zihao Guo · 项目交互演示
 
-**[AI 研究台 · 招聘演示](https://zanquer.github.io/zihao-project-demos/global-events/ai/)** — 从真实披露追踪 AI 资金，查看财报口径和宏观晨报。页面使用固定快照，研究原件可逐项打开。
+[打开作品集](https://zanquer.github.io/zihao-project-demos/) · [直接体验 AI 研究台](https://zanquer.github.io/zihao-project-demos/global-events/ai/)
 
-Interactive demos of two research tools, hosted on GitHub Pages. Explore the workflows, analysis and source evidence through a browser.
+## 全球事件台 · AI 研究台
 
-**[Explore the demos](https://zanquer.github.io/zihao-project-demos/)**
+给想用财报和宏观数据验证市场叙事的投资者。页面从一条可核对的判断开始，保留当时的证据和会改变判断的条件。
 
-- **[ScoreTrace](https://zanquer.github.io/zihao-project-demos/scoretrace/)** — A semiconductor research dashboard covering 15 A-share and 15 US stocks. Supports market switching, search, sub-industry filtering, sorting, score breakdowns, valuation context, and source evidence.
-- **[Global Events Dashboard](https://zanquer.github.io/zihao-project-demos/global-events/)** — The redesigned research workspace brings together a macroeconomic calendar, global indices, rates and commodities, news, and technology companies. Explore core-indicator guides for mainland China, the US and Hong Kong, company financials and valuation research, plus three visual themes. The updated interface was developed in collaboration.
-
-| Demo | Snapshot date |
+| 想回答的问题 | 在 Demo 里可以怎样看 |
 | --- | --- |
-| ScoreTrace | 2026-10-03 |
-| Global Events Dashboard · new UI | 2026-10-26 |
+| [AI 算力的钱从哪里来？](https://zanquer.github.io/zihao-project-demos/global-events/ai/#funding) | 从 OpenAI 追到软银或 Oracle。点选连线，对照已交割投资与多年合作规模，查看金额口径、合同期限和原件。 |
+| [一份财报到底有没有超预期？](https://zanquer.github.io/zihao-project-demos/global-events/ai/#earnings) | 切换 Palo Alto Networks 和阿里巴巴，比较公司实绩与发布前共识。阿里巴巴案例展示了每股与每 ADS 的口径如何影响结论，以及当期为什么保留「待核」。 |
+| [科技股的韧性扩散了吗？](https://zanquer.github.io/zihao-project-demos/global-events/ai/#macro) | 读 11 月 19 日归档晨报。把上一期判断、纳指表现与铜金信号放在一起，看哪些后续变化值得改判。 |
 
-These are **interactive static snapshots**, not live market feeds. Reloading reads the same captured data; source timestamps and missing values are preserved. Dates, companies or views outside the snapshot may be unavailable. Valuation content demonstrates a conditional research framework, not an automatic buy signal.
+**产品取舍**　AI 用已整理的证据解释市场分歧，程序负责比较可比的金额和每股收益。财报示例标明事后补证，晨报保留原期日期。访客打开即读，切换专题不产生模型费用。
 
-This repository contains the built static demos and their snapshot data, not the platform's development source code.
+## 市场工作台与 ScoreTrace
 
-## 中文说明
+- [全球事件台 · 市场工作台](https://zanquer.github.io/zihao-project-demos/global-events/) 汇集宏观日历、全球指数、利率与大宗商品、新闻和科技公司研究。可查看中国大陆、美国和中国香港的指标导读，以及公司财务、估值和三套配色。工作台界面由协作者共同参与设计与实现。
+- [ScoreTrace · 半导体研究](https://zanquer.github.io/zihao-project-demos/scoretrace/) 覆盖 15 只 A 股和 15 只美股。可切换市场、筛选细分行业、比较评分与估值，并回查原始证据。
 
-这是 Zihao Guo 的两个研究工具交互展示版，通过 GitHub Pages 公开访问，可用于了解研究流程、分析方法与产品交互。
-
-**[项目展示入口](https://zanquer.github.io/zihao-project-demos/)**
-
-- **[ScoreTrace](https://zanquer.github.io/zihao-project-demos/scoretrace/)**：覆盖 15 只 A 股及 15 只美股的半导体研究观察池，支持市场切换、搜索、子行业筛选、排序、评分拆解、估值解读及原始证据查看。
-- **[全球事件台](https://zanquer.github.io/zihao-project-demos/global-events/)**：新版研究工作台包含宏观日历、全球指数、利率与大宗商品、新闻、科技公司五个模块。可查看中国大陆、美国及中国香港核心指标导读、公司财务与估值研究，并切换三套配色。新版界面由协作者共同参与设计与实现。
-
-| 演示项目 | 快照日期 |
+| 演示内容 | 资料日期 |
 | --- | --- |
-| ScoreTrace | 2026-10-03 |
-| 全球事件台 · 新版 UI | 2026-10-26 |
+| AI 研究台 · 资金图及财报核对 | 2026-11-23 快照，财报示例为历史重建 |
+| AI 研究台 · 宏观晨报 | 2026-11-19 归档 |
+| 全球事件台 · 市场工作台 | 2026-10-26 快照 |
+| ScoreTrace | 2026-10-03 快照 |
 
-两者均为**可交互的静态快照**，不获取实时行情；重新加载仍读取相同数据，保留来源时间与缺失值。快照未收录的日期、公司或视图可能不可用。估值内容用于展示条件式研究框架，不构成自动买入信号。
+本仓库托管可交互的静态页面与快照。刷新读取同一批资料，各项数据保留来源时间和缺失状态。估值与预期差只用于研究。
 
-仓库仅保存已构建的静态演示页面及快照数据，不包含平台开发源码。
+## English
+
+**[Global Events · AI Research Desk](https://zanquer.github.io/zihao-project-demos/global-events/ai/)** lets readers trace AI funding to original disclosures, compare earnings with pre-release consensus on the same accounting basis, and read an archived macro thesis alongside the observations that could overturn it. The funding and earnings views use the November 23 snapshot. The November 19 brief retains the evidence available for that edition. Opening the demo makes no model calls.
+
+The [market dashboard](https://zanquer.github.io/zihao-project-demos/global-events/) covers calendars, indices, rates, commodities, news and technology companies. [ScoreTrace](https://zanquer.github.io/zihao-project-demos/scoretrace/) covers 30 semiconductor stocks across the Chinese and US markets. Both are interactive snapshots.
