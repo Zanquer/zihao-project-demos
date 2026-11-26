@@ -8,7 +8,7 @@
 
 | 想回答的问题 | 在 Demo 里可以怎样看 |
 | --- | --- |
-| [AI 算力的钱从哪里来？](https://zanquer.github.io/zihao-project-demos/global-events/#ai/funding) | 从 OpenAI 追到软银或 Oracle。点选连线，对照已交割投资与多年合作规模，查看金额口径、合同期限和原件。 |
+| [AI 算力的钱从哪里来？](https://zanquer.github.io/zihao-project-demos/global-events/#ai/funding) | 从全景图进入一组往来，或沿链路追踪云商投资、模型公司采购与终端付费。点开每份披露可核对双方、金额、期限和出处。 |
 | [一份财报到底有没有超预期？](https://zanquer.github.io/zihao-project-demos/global-events/#ai/earnings) | 阅读五家公司的焦点分析，比较经营表现、风险与下一次披露要验证的事。Palo Alto Networks 和阿里巴巴另附事后核对，可查当时为何保留「待核」。 |
 | [哪些证据改变了今天的市场判断？](https://zanquer.github.io/zihao-project-demos/global-events/#ai/macro) | 默认打开最新归档，串读上一期判断、当期证据和改判条件。选择其他期次可回到当日视角，并分享该期链接。 |
 
